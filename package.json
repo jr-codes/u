@@ -4,7 +4,7 @@
   "description": "Utility for building web apps",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node bin/u"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,9 @@
     "url": "https://github.com/jr-codes/u/issues"
   },
   "homepage": "https://github.com/jr-codes/u#readme",
+  "bin": {
+    "u": "./bin/u.js"
+  },
   "dependencies": {
     "debug": "^4.1.1",
     "execa": "^2.0.4"
