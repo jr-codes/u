@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/jr-codes/u/issues"
   },
-  "homepage": "https://github.com/jr-codes/u#readme"
+  "homepage": "https://github.com/jr-codes/u#readme",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "execa": "^2.0.4"
+  }
 }
