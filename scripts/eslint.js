@@ -14,6 +14,7 @@ const args = getArgs({
   default: {
     config,
     format: require.resolve('eslint-formatter-pretty'),
+    ignorePath: require.resolve('../config/.eslintignore'),
     noEslintrc: true,
     resolvePluginsRelativeTo: __dirname
   }
