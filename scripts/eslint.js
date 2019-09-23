@@ -12,6 +12,7 @@ const args = getArgs({
     format: 'f',
   },
   default: {
+    cache: true,
     config,
     format: require.resolve('eslint-formatter-pretty'),
     ignorePath: require.resolve('../config/.eslintignore'),
