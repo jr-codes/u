@@ -1,0 +1,16 @@
+.editorconfig
+.eslintcache
+.gitignore
+.prettierignore
+.vscode
+build
+CHANGELOG.md
+coverage
+dist
+LICENSE
+node_modules
+npm-debug.log*
+package-lock.json
+package.json
+yarn-error.log*
+yarn.lock

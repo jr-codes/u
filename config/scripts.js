@@ -2,5 +2,6 @@
 
 module.exports = [
   'eslint',
-  'jest'
+  'jest',
+  'prettier'
 ]

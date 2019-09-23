@@ -1,12 +1,13 @@
 'use strict'
 
+const prettierConfig = require('./prettier')
+
 module.exports = {
   env: {
     es6: true,
     node: true,
   },
   extends: [
-    'eslint:recommended'
   ],
   globals: {
     document: 'readonly',
@@ -33,9 +34,14 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: [
+    'prettier',
     'react'
   ],
   rules: {
+    // 📐 eslint-plugin-prettier: https://github.com/prettier/eslint-plugin-prettier
+    // ---
+    'prettier/prettier': ['error', prettierConfig],
+
     // 📐 eslint-plugin-react: https://github.com/yannickcr/eslint-plugin-react
     // ---
     // 'react/boolean-prop-naming': 'off',
