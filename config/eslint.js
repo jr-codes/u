@@ -7,8 +7,7 @@ module.exports = {
     es6: true,
     node: true,
   },
-  extends: [
-  ],
+  extends: [],
   globals: {
     document: 'readonly',
     navigator: 'readonly',
@@ -19,13 +18,13 @@ module.exports = {
       files: ['*.test.[jt]s?(x)', '*.spec.[jt]s?(x)'],
       env: {
         jest: true,
-      }
-    }
+      },
+    },
   ],
   parser: require.resolve('babel-eslint'),
   parserOptions: {
     babelOptions: {
-      configFile: require.resolve('./babel')
+      configFile: require.resolve('./babel'),
     },
     ecmaFeatures: {
       jsx: true,
@@ -33,10 +32,7 @@ module.exports = {
     ecmaVersion: 2020,
     sourceType: 'module',
   },
-  plugins: [
-    'prettier',
-    'react'
-  ],
+  plugins: ['prettier', 'react'],
   rules: {
     // 📐 eslint-plugin-prettier: https://github.com/prettier/eslint-plugin-prettier
     // ---
@@ -128,5 +124,5 @@ module.exports = {
     // 'react/static-property-placement': 'off',
     // 'react/style-prop-object': 'off',
     // 'react/void-dom-elements-no-children': 'off'
-  }
+  },
 }

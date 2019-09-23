@@ -10,7 +10,7 @@ const args = getArgs({
   default: {
     config,
     ignorePath: require.resolve('../config/.prettierignore'),
-  }
+  },
 })
 
 process.exitCode = run(name, args)

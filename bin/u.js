@@ -20,7 +20,9 @@ if (scripts.includes(script)) {
 } else if (command in commands) {
   exitCode = runCommand(command, commands)
 } else {
-  const options = [...scripts, ...Object.keys(commands)].map(x => chalk.blue(x)).join(', ')
+  const options = [...scripts, ...Object.keys(commands)]
+    .map(x => chalk.blue(x))
+    .join(', ')
   console.log("  Couldn't run", chalk.bold(script))
   console.log('  Did you mean one of these?', options)
   exitCode = -1

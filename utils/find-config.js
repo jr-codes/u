@@ -7,9 +7,11 @@ const cosmiconfig = require('cosmiconfig')
 module.exports = (name, options = {}) => {
   const explorer = cosmiconfig(name, options)
   const results = explorer.searchSync()
-  return results || {
-    config: require(`../config/${name}`),
-    filepath: require.resolve(`../config/${name}`),
-    isEmpty: false
-  }
+  return (
+    results || {
+      config: require(`../config/${name}`),
+      filepath: require.resolve(`../config/${name}`),
+      isEmpty: false,
+    }
+  )
 }

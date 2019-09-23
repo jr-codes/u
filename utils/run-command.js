@@ -25,5 +25,5 @@ module.exports = (command, commands) => {
     }
 
     return exitCode === 0
-  }) ? 0 : -1
+  }) ? 0 : -1 // prettier-ignore
 }

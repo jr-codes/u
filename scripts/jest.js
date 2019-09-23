@@ -14,8 +14,8 @@ const args = getArgs({
     config: 'c',
   },
   default: {
-    config
-  }
+    config,
+  },
 })
 
 process.exitCode = run(name, args)
