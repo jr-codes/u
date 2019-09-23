@@ -6,6 +6,13 @@
   "scripts": {
     "test": "node bin/u test"
   },
+  "files": [
+    "bin",
+    "config",
+    "scripts",
+    "utils",
+    "!__tests__"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jr-codes/u.git"
