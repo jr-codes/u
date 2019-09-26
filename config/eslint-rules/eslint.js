@@ -5,36 +5,36 @@ module.exports = {
   rules: {
     'accessor-pairs': 'error',
     // 'array-bracket-newline': 'off',
-    // 'array-bracket-spacing': 'off',
+    'array-bracket-spacing': ['error', 'never'], // ✘ disabled by eslint-config-prettier
     'array-callback-return': 'error',
     // 'array-element-newline': 'off',
-    // 'arrow-body-style': 'error',
+    'arrow-body-style': 'error', // ✘ disabled by eslint-config-prettier
     // 'arrow-parens': 'off',
     // 'arrow-spacing': 'off',
     // 'block-scoped-var': 'off',
     // 'block-spacing': 'off',
-    'brace-style': ['error', '1tbs', { allowSingleLine: true }],
+    'brace-style': ['error', '1tbs', { allowSingleLine: true }], // ✘ disabled by eslint-config-prettier
     // 'callback-return': 'off',
     camelcase: ['error', { allow: ['^UNSAFE_'], properties: 'never' }],
     // 'capitalized-comments': 'off',
     // 'class-methods-use-this': 'off',
     // 'comma-dangle': 'off',
-    // 'comma-spacing': 'off',
-    'comma-style': ['error', 'last'],
+    'comma-spacing': ['error', { before: false, after: true }], // ✘ disabled by eslint-config-prettier
+    'comma-style': ['error', 'last'], // ✘ disabled by eslint-config-prettier
     complexity: 'warn',
-    // 'computed-property-spacing': 'off',
+    'computed-property-spacing': 'error', // ✘ disabled by eslint-config-prettier
     'consistent-return': 'error',
     // 'consistent-this': 'off',
     'constructor-super': 'error',
-    // curly: ['error', 'multi-line'],
+    curly: ['error', 'multi-line'], // ✘ disabled by eslint-config-prettier
     'default-case': 'error',
     // 'default-param-last': 'off',
-    'dot-location': ['error', 'property'],
+    'dot-location': ['error', 'property'], // ✘ disabled by eslint-config-prettier
     'dot-notation': 'error',
-    // 'eol-last': 'off',
+    'eol-last': 'error', // ✘ disabled by eslint-config-prettier
     eqeqeq: ['error', 'always', { null: 'ignore' }],
     'for-direction': 'error',
-    // 'func-call-spacing': 'off',
+    'func-call-spacing': 'error', // ✘ disabled by eslint-config-prettier
     // 'func-name-matching': 'off',
     'func-names': ['warn', 'as-needed'],
     // 'func-style': 'off',
@@ -51,9 +51,9 @@ module.exports = {
     // 'implicit-arrow-linebreak': 'off',
     // 'indent': 'off',
     // 'init-declarations': 'off',
-    // 'jsx-quotes': 'off',
-    // 'key-spacing': 'off',
-    // 'keyword-spacing': 'off',
+    'jsx-quotes': ['error', 'prefer-single'], // ✘ disabled by eslint-config-prettier
+    'key-spacing': 'error', // ✘ disabled by eslint-config-prettier
+    'keyword-spacing': 'error', // ✘ disabled by eslint-config-prettier
     // 'line-comment-position': 'off',
     // 'linebreak-style': 'off',
     // 'lines-around-comment': 'off',
@@ -70,7 +70,7 @@ module.exports = {
     // 'multiline-comment-style': 'off',
     // 'multiline-ternary': 'off',
     'new-cap': ['error', { newIsCap: true, capIsNew: false, properties: true }],
-    // 'new-parens': 'off',
+    'new-parens': 'error', // ✘ disabled by eslint-config-prettier
     // 'newline-per-chained-call': 'off',
     'no-alert': 'error',
     'no-array-constructor': 'error',
@@ -83,7 +83,7 @@ module.exports = {
     'no-class-assign': 'error',
     'no-compare-neg-zero': 'error',
     'no-cond-assign': 'error',
-    // 'no-confusing-arrow': 'error',
+    'no-confusing-arrow': 'error', // ✘ disabled by eslint-config-prettier
     'no-console': 'warn',
     'no-const-assign': 'error',
     'no-constant-condition': ['error', { checkLoops: false }],
@@ -110,9 +110,9 @@ module.exports = {
     'no-extra-boolean-cast': 'error',
     'no-extra-label': 'error',
     // 'no-extra-parens': 'off',
-    // 'no-extra-semi': 'off',
+    'no-extra-semi': 'error', // ✘ disabled by eslint-config-prettier
     'no-fallthrough': 'error',
-    // 'no-floating-decimal': 'off',
+    'no-floating-decimal': 'error', // ✘ disabled by eslint-config-prettier
     'no-func-assign': 'error',
     'no-global-assign': 'error',
     // 'no-implicit-coercion': 'off',
@@ -132,13 +132,13 @@ module.exports = {
     'no-loop-func': 'error',
     // 'no-magic-numbers': 'off',
     'no-misleading-character-class': 'error',
-    // 'no-mixed-operators': 'error',
+    'no-mixed-operators': 'error', // ✘ disabled by eslint-config-prettier
     // 'no-mixed-requires': 'off',
-    // 'no-mixed-spaces-and-tabs': 'off',
+    'no-mixed-spaces-and-tabs': ['error', 'smart-tabs'], // ✘ disabled by eslint-config-prettier
     'no-multi-assign': 'error',
-    // 'no-multi-spaces': 'off',
+    'no-multi-spaces': 'error', // ✘ disabled by eslint-config-prettier
     'no-multi-str': 'error',
-    'no-multiple-empty-lines': ['error', { max: 1 }],
+    'no-multiple-empty-lines': ['error', { max: 1 }], // ✘ disabled by eslint-config-prettier
     // 'no-negated-condition': 'off',
     // 'no-nested-ternary': 'off',
     'no-new': 'error',
@@ -185,12 +185,12 @@ module.exports = {
     // 'no-ternary': 'off',
     'no-this-before-super': 'error',
     'no-throw-literal': 'error',
-    'no-trailing-spaces': 'error',
+    'no-trailing-spaces': 'error', // ✘ disabled by eslint-config-prettier
     'no-undef': 'error',
     'no-undef-init': 'error',
     // 'no-undefined': 'off',
     // 'no-underscore-dangle': 'off',
-    // 'no-unexpected-multiline': 'error',
+    'no-unexpected-multiline': 'error', // ✘ disabled by eslint-config-prettier
     'no-unmodified-loop-condition': 'error',
     'no-unneeded-ternary': ['error', { defaultAssignment: false }],
     'no-unreachable': 'error',
@@ -218,18 +218,18 @@ module.exports = {
     'no-var': 'error',
     'no-void': 'error',
     'no-warning-comments': ['warn', { location: 'anywhere' }],
-    // 'no-whitespace-before-property': 'off',
+    'no-whitespace-before-property': 'error', // ✘ disabled by eslint-config-prettier
     'no-with': 'error',
     // 'nonblock-statement-body-position': 'off',
     // 'object-curly-newline': 'off',
-    // 'object-curly-spacing': 'off',
+    'object-curly-spacing': ['error', 'always'], // ✘ disabled by eslint-config-prettier
     // 'object-property-newline': 'off',
     'object-shorthand': ['error', 'always', { avoidQuotes: true }],
     'one-var': ['error', { initialized: 'never' }],
     // 'one-var-declaration-per-line': 'off',
     'operator-assignment': 'error',
     // 'operator-linebreak': 'off',
-    // 'padded-blocks': 'off',
+    'padded-blocks': ['error', 'never'], // ✘ disabled by eslint-config-prettier
     // 'padding-line-between-statements': 'off',
     // 'prefer-arrow-callback': 'off',
     'prefer-const': ['error', { destructuring: 'all' }],
@@ -242,36 +242,36 @@ module.exports = {
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',
     'prefer-template': 'error',
-    // 'quote-props': 'off',
-    // 'quotes': 'off',
+    'quote-props': ['error', 'as-needed'], // ✘ disabled by eslint-config-prettier
+    quotes: ['error', 'single', { avoidEscape: true }], // ✘ disabled by eslint-config-prettier
     radix: 'error',
     'require-atomic-updates': 'error',
     // 'require-await': 'off',
     // 'require-unicode-regexp': 'off',
     'require-yield': 'error',
-    // 'rest-spread-spacing': 'off',
-    // 'semi': 'off',
-    // 'semi-spacing': 'off',
+    'rest-spread-spacing': 'error', // ✘ disabled by eslint-config-prettier
+    semi: ['error', 'never'], // ✘ disabled by eslint-config-prettier
+    'semi-spacing': 'error', // ✘ disabled by eslint-config-prettier
     // 'semi-style': 'off',
     // 'sort-imports': 'off',
     // 'sort-keys': 'off',
     // 'sort-vars': 'off',
-    // 'space-before-blocks': 'off',
-    // 'space-before-function-paren': 'off',
-    // 'space-in-parens': 'off',
-    // 'space-infix-ops': 'off',
-    // 'space-unary-ops': 'off',
+    'space-before-blocks': 'error', // ✘ disabled by eslint-config-prettier
+    'space-before-function-paren': 'error', // ✘ disabled by eslint-config-prettier
+    'space-in-parens': 'error',
+    'space-infix-ops': 'error', // ✘ disabled by eslint-config-prettier
+    'space-unary-ops': 'error', // ✘ disabled by eslint-config-prettier
     // 'spaced-comment': 'off',
     // strict: 'off',
-    // 'switch-colon-spacing': 'off',
+    'switch-colon-spacing': 'error', // ✘ disabled by eslint-config-prettier
     'symbol-description': 'error',
-    // 'template-curly-spacing': 'off',
-    // 'template-tag-spacing': 'off',
-    'unicode-bom': 'error',
+    'template-curly-spacing': 'error', // ✘ disabled by eslint-config-prettier
+    'template-tag-spacing': 'error', // ✘ disabled by eslint-config-prettier
+    'unicode-bom': 'error', // ✘ disabled by eslint-config-prettier
     'use-isnan': 'error',
     'valid-typeof': ['error', { requireStringLiterals: true }],
     'vars-on-top': 'error',
-    'wrap-iife': ['error', 'any', { functionPrototypeMethods: true }],
+    'wrap-iife': ['error', 'any', { functionPrototypeMethods: true }], // ✘ disabled by eslint-config-prettier
     // 'wrap-regex': 'off',
     // 'yield-star-spacing': 'off',
     yoda: 'error',
