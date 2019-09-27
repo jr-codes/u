@@ -4,17 +4,17 @@ module.exports = {
   commands: {
     build: [],
     lint: [
+      'eslint --fix .',
       'prettier --write "**/*.{css,json,md,scss,yaml,yml}"',
-      'eslint . --fix',
     ],
     test: [
+      'eslint --fix .',
       'prettier --write "**/*.{css,json,md,scss,yaml,yml}"',
-      'eslint . --fix',
       'jest',
     ],
     'test ci': [
-      'prettier --check "**/*.{css,json,md,scss,yaml,yml}"',
       'eslint .',
+      'prettier --check "**/*.{css,json,md,scss,yaml,yml}"',
       'jest --ci',
     ],
   },

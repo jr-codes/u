@@ -6,6 +6,7 @@ module.exports = {
   },
   extends: [
     './eslint-rules/eslint',
+    './eslint-rules/import',
     './eslint-rules/prettier',
     './eslint-rules/react',
   ].map(require.resolve),
