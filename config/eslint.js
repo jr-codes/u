@@ -4,12 +4,9 @@ module.exports = {
     es6: true,
     node: true,
   },
-  extends: [
-    './eslint-rules/eslint',
-    './eslint-rules/import',
-    './eslint-rules/prettier',
-    './eslint-rules/react',
-  ].map(require.resolve),
+  extends: ['eslint', 'import', 'jsx-a11y', 'prettier', 'react'].map(x =>
+    require.resolve(`./eslint-rules/${x}`)
+  ),
   globals: {
     document: 'readonly',
     navigator: 'readonly',
