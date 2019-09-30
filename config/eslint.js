@@ -11,8 +11,9 @@ module.exports = {
     'jsx-a11y',
     'promise',
     'react',
+    'security',
     'unicorn',
-    'prettier',
+    'prettier', // prettier must go last to disable styling rules
   ].map(x => require.resolve(`./eslint-rules/${x}`)),
   globals: {
     document: 'readonly',
