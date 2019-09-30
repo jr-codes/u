@@ -11,6 +11,7 @@ module.exports = {
     'jsx-a11y',
     'promise',
     'react',
+    'react-hooks',
     'security',
     'unicorn',
     'prettier', // prettier must go last to disable styling rules
