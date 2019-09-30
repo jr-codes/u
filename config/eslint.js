@@ -7,6 +7,7 @@ module.exports = {
   extends: [
     'eslint',
     'import',
+    'json',
     'jsx-a11y',
     'promise',
     'react',

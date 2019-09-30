@@ -14,6 +14,7 @@ const args = getArgs({
   default: {
     cache: true,
     config,
+    ext: ['.js', '.jsx', '.json'],
     format: require.resolve('eslint-formatter-pretty'),
     ignorePath: require.resolve('../config/.eslintignore'),
     noEslintrc: true,
