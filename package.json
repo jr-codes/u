@@ -29,8 +29,8 @@
     "u": "./bin/u.js"
   },
   "dependencies": {
-    "@babel/core": "^7.6.0",
-    "@babel/preset-env": "^7.6.0",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
     "@babel/preset-react": "^7.0.0",
     "@testing-library/jest-dom": "^4.1.0",
     "babel-eslint": "^10.0.3",
@@ -38,7 +38,7 @@
     "chalk": "^2.4.2",
     "cosmiconfig": "^5.2.1",
     "debug": "^4.1.1",
-    "eslint": "^6.4.0",
+    "eslint": "^6.5.0",
     "eslint-config-prettier": "^6.3.0",
     "eslint-formatter-pretty": "^2.1.1",
     "eslint-plugin-import": "^2.18.2",
