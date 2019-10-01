@@ -5,15 +5,15 @@
 /* eslint-disable no-console */
 
 const chalk = require('chalk')
-const findConfig = require('../utils/find-config')
+const getConfig = require('../utils/get-config')
 const runCommand = require('../utils/run-command')
 const runScript = require('../utils/run-script')
 const scripts = require('../config/scripts')
 
-const [, , script, ...args] = process.argv
-const { config } = findConfig('u')
-const command = [script, ...args].join(' ')
+const config = getConfig('u')
 const commands = config.commands || []
+const command = process.argv.slice(2)
+const [script, ...args] = command
 
 let exitCode = 0
 

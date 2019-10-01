@@ -1,11 +1,11 @@
 'use strict'
 
 const getArgs = require('../utils/get-args')
-const findConfig = require('../utils/find-config')
+const getConfigPath = require('../utils/get-config-path')
 const run = require('../utils/run')
 
 const name = 'eslint'
-const config = findConfig(name, { packageProp: 'eslintConfig' }).filepath
+const config = getConfigPath(name, { packageProp: 'eslintConfig' })
 const args = getArgs({
   alias: {
     config: 'c',

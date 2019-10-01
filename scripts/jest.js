@@ -4,11 +4,11 @@ process.env.BABEL_ENV = 'test'
 process.env.NODE_ENV = 'test'
 
 const getArgs = require('../utils/get-args')
-const findConfig = require('../utils/find-config')
+const getConfigPath = require('../utils/get-config-path')
 const run = require('../utils/run')
 
 const name = 'jest'
-const config = findConfig(name).filepath
+const config = getConfigPath(name)
 const args = getArgs({
   alias: {
     config: 'c',
