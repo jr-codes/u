@@ -10,6 +10,7 @@ module.exports = {
     'import',
     'json',
     'jsx-a11y',
+    'node',
     'promise',
     'react',
     'react-hooks',
