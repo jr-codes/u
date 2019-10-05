@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "eslint-check": "node bin/u eslint --print-config utils/run.js | eslint-config-prettier-check",
-    "test": "node bin/u jest --config u.jest.config.js"
+    "test": "node bin/u test"
   },
   "files": [
     "bin",

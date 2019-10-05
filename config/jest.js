@@ -14,10 +14,11 @@ module.exports = {
     ),
     '\\.(css|less|scss)$': require.resolve('identity-obj-proxy'),
   },
+  restoreMocks: true,
   rootDir,
   setupFilesAfterEnv: [require.resolve('./jest-setup.js')],
   transform: {
     '^.+\\.[t|j]sx?$': require.resolve('./babel-jest-transform.js'),
   },
-  verbose: true
+  verbose: true,
 }

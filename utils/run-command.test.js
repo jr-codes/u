@@ -10,16 +10,21 @@ describe('run-command', () => {
       all: [
         'eslint .',
         'babel',
-        'jest --ci',
         'prettier --write "**/*.js"',
-        'webpack'
-      ]
+        'webpack',
+        'jest --ci',
+      ],
     }
 
     const result = runCommand('all', commands)
 
     expect(result).toBe(0)
     expect(runScript).toHaveBeenCalledTimes(commands.all.length)
+    expect(runScript).toHaveBeenLastCalledWith(
+      'jest',
+      expect.arrayContaining(['--ci']),
+      expect.any(Object)
+    )
   })
 
   it('fails on an invalid script', () => {
@@ -30,8 +35,8 @@ describe('run-command', () => {
         'jest',
         'node',
         'prettier "src/**/*.js"',
-        'webpack'
-      ]
+        'webpack',
+      ],
     }
 
     const result = runCommand('invalid', commands)
@@ -43,10 +48,7 @@ describe('run-command', () => {
   it('fails when a script fails', () => {
     runScript.mockImplementation(() => 1)
     const commands = {
-      lint: [
-        'eslint',
-        'prettier'
-      ]
+      lint: ['eslint', 'prettier'],
     }
 
     const result = runCommand('lint', commands)
@@ -59,14 +61,15 @@ describe('run-command', () => {
     runScript.mockImplementation(() => 0)
     const env = { DEBUG: 'u', NODE_ENV: 'production' }
     const commands = {
-      build: [
-        'eslint --fix .',
-        ['webpack', env]
-      ]
+      build: ['eslint --fix .', ['webpack', env]],
     }
 
-    const result = runCommand('build', commands)
+    runCommand('build', commands)
 
-    expect(runScript.mock.calls[1][2]).toEqual(env)
+    expect(runScript).toHaveBeenLastCalledWith(
+      'webpack',
+      expect.any(Array),
+      env
+    )
   })
 })
