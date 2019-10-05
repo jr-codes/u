@@ -6,8 +6,10 @@ module.exports = {
     node: true,
   },
   extends: [
+    'babel',
     'eslint',
     'import',
+    'jest',
     'json',
     'jsx-a11y',
     'node',
@@ -22,24 +24,5 @@ module.exports = {
     document: 'readonly',
     navigator: 'readonly',
     window: 'readonly',
-  },
-  overrides: [
-    {
-      files: ['*.test.[jt]s?(x)', '*.spec.[jt]s?(x)'],
-      env: {
-        jest: true,
-      },
-    },
-  ],
-  parser: require.resolve('babel-eslint'),
-  parserOptions: {
-    babelOptions: {
-      configFile: require.resolve('./babel'),
-    },
-    ecmaFeatures: {
-      jsx: true,
-    },
-    ecmaVersion: 2020,
-    sourceType: 'module',
   },
 }
