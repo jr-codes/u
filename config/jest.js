@@ -5,6 +5,7 @@ const resolveProjectPath = require('../utils/resolve-project-path')
 const rootDir = resolveProjectPath('.')
 
 module.exports = {
+  clearMocks: true,
   collectCoverage: true,
   collectCoverageFrom: ['src/**/*.{js,jsx}'],
   moduleNameMapper: {
@@ -18,4 +19,5 @@ module.exports = {
   transform: {
     '^.+\\.[t|j]sx?$': require.resolve('./babel-jest-transform.js'),
   },
+  verbose: true
 }

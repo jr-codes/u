@@ -15,6 +15,7 @@ const args = getArgs({
   },
   default: {
     config,
+    silent: true,
   },
 })
 
