@@ -1,6 +1,8 @@
 'use strict'
 
-const getProjectPath = require('../utils/get-project-path')
+const resolveProjectPath = require('../utils/resolve-project-path')
+
+const rootDir = resolveProjectPath('.')
 
 module.exports = {
   collectCoverage: true,
@@ -11,7 +13,7 @@ module.exports = {
     ),
     '\\.(css|less|scss)$': require.resolve('identity-obj-proxy'),
   },
-  rootDir: getProjectPath(),
+  rootDir,
   setupFilesAfterEnv: [require.resolve('./jest-setup.js')],
   transform: {
     '^.+\\.[t|j]sx?$': require.resolve('./babel-jest-transform.js'),

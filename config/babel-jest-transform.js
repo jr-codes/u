@@ -1,6 +1,16 @@
 'use strict'
 
 const babelJest = require('babel-jest')
-const config = require('./babel')
 
-module.exports = babelJest.createTransformer(config)
+module.exports = babelJest.createTransformer({
+  presets: [
+    [
+      require.resolve('@babel/preset-env'),
+      {
+        targets: {
+          node: 'current',
+        },
+      },
+    ],
+  ],
+})

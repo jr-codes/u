@@ -2,7 +2,8 @@
 
 module.exports = {
   commands: {
-    build: [],
+    build: [['webpack', { BABEL_ENV: 'production', NODE_ENV: 'production' }]],
+    dev: [['webpack', { BABEL_ENV: 'development', NODE_ENV: 'development' }]],
     lint: [
       'eslint --fix .',
       'prettier --write "**/*.{css,json,md,scss,yaml,yml}"',

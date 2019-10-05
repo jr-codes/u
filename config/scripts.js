@@ -1,3 +1,3 @@
 'use strict'
 
-module.exports = ['babel', 'eslint', 'jest', 'prettier']
+module.exports = ['babel', 'eslint', 'jest', 'prettier', 'webpack']
