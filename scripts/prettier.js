@@ -6,6 +6,8 @@ const run = require('../utils/run')
 
 const name = 'prettier'
 const config = getConfigPath(name)
+
+// https://prettier.io/docs/en/cli.html
 const args = getArgs({
   default: {
     config,

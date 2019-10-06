@@ -6,6 +6,8 @@ const run = require('../utils/run')
 
 const name = 'eslint'
 const config = getConfigPath(name, { packageProp: 'eslintConfig' })
+
+// https://eslint.org/docs/user-guide/command-line-interface
 const args = getArgs({
   alias: {
     config: 'c',

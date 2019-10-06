@@ -6,6 +6,8 @@ const run = require('../utils/run')
 
 const name = 'babel'
 const configFile = getConfigPath(name)
+
+// https://babeljs.io/docs/en/babel-cli/
 const args = getArgs({
   default: {
     configFile,

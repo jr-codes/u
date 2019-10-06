@@ -4,6 +4,7 @@ const resolveProjectPath = require('../utils/resolve-project-path')
 
 const rootDir = resolveProjectPath('.')
 
+// https://jestjs.io/docs/en/configuration
 module.exports = {
   clearMocks: true,
   collectCoverage: true,

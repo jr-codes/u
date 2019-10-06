@@ -9,6 +9,8 @@ const run = require('../utils/run')
 
 const name = 'jest'
 const config = getConfigPath(name)
+
+// https://jestjs.io/docs/en/cli
 const args = getArgs({
   alias: {
     config: 'c',

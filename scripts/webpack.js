@@ -6,6 +6,8 @@ const run = require('../utils/run')
 
 const name = 'webpack'
 const config = getConfigPath(name)
+
+// https://webpack.js.org/api/cli/
 const args = getArgs({
   default: {
     config,

@@ -9,6 +9,7 @@ const isDevelopment = env === 'development'
 
 debug('env %s', env)
 
+// https://webpack.js.org/configuration/
 module.exports = {
   bail: true,
   entry: './src/index.js',
