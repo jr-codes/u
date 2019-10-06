@@ -17,6 +17,7 @@ const args = getArgs({
   },
   default: {
     config,
+    passWithNoTests: true,
     silent: true,
   },
 })
