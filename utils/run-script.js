@@ -12,5 +12,8 @@ module.exports = (script, args = [], env = {}) => {
   const exitCode = run('node', [scriptPath, ...args], { env })
   time('end %s', script)
 
+  // Add line break between scripts
+  console.log()
+
   return exitCode
 }

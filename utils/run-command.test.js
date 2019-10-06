@@ -57,18 +57,18 @@ describe('run-command', () => {
     expect(runScript).toHaveBeenCalledTimes(1)
   })
 
-  it('handles passing environment variables', () => {
+  it('runs script with args and environment variables', () => {
     runScript.mockImplementation(() => 0)
     const env = { DEBUG: 'u', NODE_ENV: 'production' }
     const commands = {
-      build: ['eslint --fix .', ['webpack', env]],
+      build: ['eslint --fix .', ['webpack --json', env]],
     }
 
     runCommand('build', commands)
 
     expect(runScript).toHaveBeenLastCalledWith(
       'webpack',
-      expect.any(Array),
+      expect.arrayContaining(['--json']),
       env
     )
   })

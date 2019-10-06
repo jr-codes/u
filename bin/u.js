@@ -2,8 +2,6 @@
 
 'use strict'
 
-/* eslint-disable no-console */
-
 const chalk = require('chalk')
 const getConfig = require('../utils/get-config')
 const runCommand = require('../utils/run-command')

@@ -1,7 +1,5 @@
 'use strict'
 
-/* eslint-disable no-console */
-
 const chalk = require('chalk')
 const debug = require('debug')('u')
 const runScript = require('./run-script')
