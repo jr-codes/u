@@ -1,0 +1,25 @@
+{
+  "name": "create-u",
+  "version": "0.1.0",
+  "description": "Create a new u project with npm init u",
+  "bin": "bin/create-u.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jr-codes/create-u.git"
+  },
+  "keywords": [],
+  "author": "JR Shampang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jr-codes/create-u/issues"
+  },
+  "homepage": "https://github.com/jr-codes/create-u#readme",
+  "dependencies": {
+    "write-pkg": "^4.0.0",
+    "yargs": "^14.2.0"
+  },
+  "devDependencies": {}
+}
