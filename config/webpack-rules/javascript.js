@@ -1,8 +1,8 @@
 'use strict'
 
-const env = require('../../utils/env')
-const getConfigPath = require('../../utils/get-config-path')
-const resolveProjectPath = require('../../utils/resolve-project-path')
+const env = require('../../lib/utils/env')
+const getConfigPath = require('../../lib/utils/get-config-path')
+const resolveProjectPath = require('../../lib/utils/resolve-project-path')
 
 const configFile = getConfigPath('babel')
 const isDevelopment = env === 'development'

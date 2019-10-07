@@ -1,8 +1,8 @@
 'use strict'
 
 const debug = require('debug')('u')
-const env = require('../utils/env')
-const resolveProjectPath = require('../utils/resolve-project-path')
+const env = require('../lib/utils/env')
+const resolveProjectPath = require('../lib/utils/resolve-project-path')
 const TerserPlugin = require('terser-webpack-plugin')
 
 const isDevelopment = env === 'development'

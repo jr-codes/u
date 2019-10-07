@@ -1,6 +1,6 @@
 'use strict'
 
-const getConfig = require('../../utils/get-config')
+const getConfig = require('../../lib/utils/get-config')
 
 const config = getConfig('prettier')
 

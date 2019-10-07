@@ -3,9 +3,9 @@
 'use strict'
 
 const chalk = require('chalk')
-const getConfig = require('../utils/get-config')
-const runCommand = require('../utils/run-command')
-const runScript = require('../utils/run-script')
+const getConfig = require('../lib/utils/get-config')
+const runCommand = require('../lib/utils/run-command')
+const runScript = require('../lib/utils/run-script')
 const scripts = require('../config/scripts')
 
 const config = getConfig('u')

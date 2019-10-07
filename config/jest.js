@@ -1,6 +1,6 @@
 'use strict'
 
-const resolveProjectPath = require('../utils/resolve-project-path')
+const resolveProjectPath = require('../lib/utils/resolve-project-path')
 
 const rootDir = resolveProjectPath('.')
 
