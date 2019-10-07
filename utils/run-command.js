@@ -16,8 +16,9 @@ module.exports = (command, commands) => {
 
       if (!scripts.includes(script)) {
         const options = scripts.map(x => chalk.blue(x)).join(', ')
-        console.log(chalk`  Couldn't run {bold ${script}} in {bold ${command}}`)
-        console.log('  Did you mean one of these?', options)
+        console.log(chalk`{red.bold ERROR} Couldn't run {red ${script}} in command {red ${command}}`)
+        console.log('Did you mean one of these?', options)
+        console.log()
         return false
       }
 

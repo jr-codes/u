@@ -22,9 +22,14 @@ if (scripts.includes(script)) {
 } else {
   const options = [...scripts, ...Object.keys(commands)]
     .map(x => chalk.blue(x))
+    .sort()
     .join(', ')
-  console.log("  Couldn't run", chalk.bold(script))
-  console.log('  Did you mean one of these?', options)
+
+  console.log()
+  console.log(chalk`{red.bold ERROR} Couldn't run {red ${script}}`)
+  console.log('Did you mean one of these?', options)
+  console.log()
+
   exitCode = 1
 }
 
