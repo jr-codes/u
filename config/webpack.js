@@ -30,7 +30,7 @@ module.exports = {
   },
   output: {
     filename: 'main.js',
-    path: resolveProjectPath('dist'),
+    path: resolveProjectPath('build'),
   },
   plugins: [],
 }
