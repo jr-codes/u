@@ -1,6 +1,6 @@
 {
   "name": "create-u",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Create a new u project with npm init u",
   "bin": "bin/create-u.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "keywords": [],
   "author": "JR Shampang",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jr-codes/create-u/issues"
   },
