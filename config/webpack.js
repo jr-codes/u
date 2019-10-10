@@ -1,36 +1,23 @@
 'use strict'
 
+const addBase = require('./webpack-parts/base')
+const addJavaScript = require('./webpack-parts/javascript')
+const addImages = require('./webpack-parts/images')
+const addStyles = require('./webpack-parts/styles')
+const buildWebpackConfig = require('../lib/utils/build-webpack-config')
 const debug = require('debug')('u')
-const env = require('../lib/utils/env')
-const resolveProjectPath = require('../lib/utils/resolve-project-path')
-const TerserPlugin = require('terser-webpack-plugin')
-
-const isDevelopment = env === 'development'
+const { env, isDevelopment, isProduction } = require('../lib/utils/env')
 
 debug('env %s', env)
 
-// https://webpack.js.org/configuration/
-module.exports = {
-  bail: true,
-  entry: './src/index.js',
-  mode: 'production',
-  module: {
-    rules: [
-      ...require('./webpack-rules/javascript'),
-      ...require('./webpack-rules/styles'),
-      {
-        test: /\.svg$/,
-        use: [require.resolve('@svgr/webpack')],
-      },
-    ],
-  },
-  optimization: {
-    minimize: !isDevelopment,
-    minimizer: [new TerserPlugin()],
-  },
-  output: {
-    filename: 'main.js',
-    path: resolveProjectPath('build'),
-  },
-  plugins: [],
+const parts = [addBase, addJavaScript, addStyles, addImages]
+
+const options = {
+  env,
+  isDevelopment,
+  isProduction,
+  useSourceMap: true,
 }
+
+// https://webpack.js.org/configuration/
+module.exports = buildWebpackConfig(parts, options)

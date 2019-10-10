@@ -12,7 +12,7 @@ module.exports = {
     // 'react/forbid-component-props': 'off',
     // 'react/forbid-dom-props': 'off',
     // 'react/forbid-elements': 'off',
-    // 'react/forbid-foreign-prop-types': 'off',
+    'react/forbid-foreign-prop-types': 'error',
     // 'react/forbid-prop-types': 'off',
     'react/jsx-boolean-value': 'error',
     // 'react/jsx-child-element-spacing': 'off',
