@@ -19,7 +19,6 @@ module.exports = {
     'jest/no-commented-out-tests': 'warn',
     'jest/no-disabled-tests': 'warn',
     'jest/no-duplicate-hooks': 'error',
-    'jest/no-empty-title': 'error',
     // 'jest/no-expect-resolves': 'off',
     'jest/no-export': 'error',
     'jest/no-focused-tests': 'warn',
@@ -38,6 +37,7 @@ module.exports = {
     'jest/no-try-expect': 'error',
     // 'jest/prefer-called-with': 'off',
     // 'jest/prefer-expect-assertions': 'off',
+    'jest/prefer-hooks-on-top': 'error',
     // 'jest/prefer-inline-snapshots': 'off',
     'jest/prefer-spy-on': 'error',
     // 'jest/prefer-strict-equal': 'off',
@@ -51,5 +51,6 @@ module.exports = {
     'jest/valid-describe': 'error',
     'jest/valid-expect-in-promise': 'error',
     'jest/valid-expect': 'error',
+    'jest/valid-title': 'error',
   },
 }
