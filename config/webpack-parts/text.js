@@ -2,8 +2,8 @@
 
 module.exports = config => {
   config.module.rules.push({
-    test: /\.(gif|jpeg|jpg|png|svg)$/,
-    use: [require.resolve('file-loader')],
+    test: /\.(md|txt)$/,
+    use: [require.resolve('raw-loader')],
   })
 
   return config
