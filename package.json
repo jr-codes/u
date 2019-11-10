@@ -2,6 +2,7 @@
   "name": "@jr.codes/u",
   "version": "1.0.0",
   "description": "Utility for building web apps",
+  "main": "index.js",
   "files": [
     "bin",
     "config",
