@@ -4,10 +4,11 @@
 
 const chalk = require('chalk')
 const getConfig = require('./lib/utils/get-config')
-const runCommand = require('./lib/utils/run-command')
 const runScript = require('./lib/utils/run-script')
-const scripts = require('./config/scripts')
+const runScripts = require('./lib/utils/run-scripts')
+const scripts = require('./lib/scripts')
 
+/** @type {{ commands: Array }} */
 const config = getConfig('u')
 const commands = config.commands || []
 
@@ -27,25 +28,28 @@ const commands = config.commands || []
  * @example
  * u('build')
  */
-module.exports = command => {
+function u(command) {
   if (command in commands) {
-    return runCommand(command, commands)
+    return runScripts(commands[command])
   }
 
   const [script, ...args] = command.split(' ')
-  if (scripts.includes(script)) {
+
+  if (script in scripts) {
     return runScript(script, args)
   }
 
-  const options = [...scripts, ...Object.keys(commands)]
+  const options = [...Object.keys(scripts), ...Object.keys(commands)]
     .map(x => chalk.blue(x))
     .sort()
     .join(', ')
 
   console.log()
-  console.log(chalk`{red.bold ERROR} Couldn't run {red ${command}}`)
+  console.log(chalk`{red ERROR} Couldn't find {red ${command}}`)
   console.log('Did you mean one of these?', options)
   console.log()
 
   return 1
 }
+
+module.exports = u

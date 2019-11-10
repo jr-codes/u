@@ -17,7 +17,7 @@ const options = {
   env,
   isDevelopment,
   isProduction,
-  measurePerformance: true,
+  measurePerformance: false,
   useSourceMap: true,
 }
 
