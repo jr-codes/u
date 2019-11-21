@@ -11,10 +11,11 @@
     "!__tests__"
   ],
   "scripts": {
-    "eslint-check": "node bin/u eslint --print-config utils/run.js | eslint-config-prettier-check",
+    "eslint-check": "u eslint --print-config utils/run.js | eslint-config-prettier-check",
     "format": "u prettier --write '**/*.{css,json,md,scss,yaml,yml}'",
     "jest": "u jest lib",
     "lint": "u eslint . --fix --ignore-pattern '/examples/'",
+    "stylelint-check": "stylelint-config-prettier-check",
     "test": "run-s lint format jest"
   },
   "engines": {
@@ -84,6 +85,10 @@
     "sass-loader": "^8.0.0",
     "speed-measure-webpack-plugin": "^1.3.1",
     "style-loader": "^1.0.0",
+    "stylelint": "^12.0.0",
+    "stylelint-config-prettier": "^6.0.0",
+    "stylelint-formatter-pretty": "^1.1.3",
+    "stylelint-prettier": "^1.1.1",
     "terser-webpack-plugin": "^2.2.1",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
