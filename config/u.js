@@ -6,16 +6,19 @@ module.exports = {
     dev: [['webpack', { BABEL_ENV: 'development', NODE_ENV: 'development' }]],
     lint: [
       'eslint --fix .',
-      'prettier --write "**/*.{css,json,md,scss,yaml,yml}"',
+      'stylelint **/*.{css,js,jsx,scss} --fix',
+      'prettier --write "**/*.{json,md,yaml,yml}"',
     ],
     test: [
       'eslint --fix .',
-      'prettier --write "**/*.{css,json,md,scss,yaml,yml}"',
+      'stylelint **/*.{css,js,jsx,scss} --fix',
+      'prettier --write "**/*.{json,md,yaml,yml}"',
       'jest',
     ],
     'test ci': [
       'eslint .',
-      'prettier --check "**/*.{css,json,md,scss,yaml,yml}"',
+      'stylelint **/*.{css,js,jsx,scss}',
+      'prettier --check "**/*.{json,md,yaml,yml}"',
       'jest --ci',
     ],
   },
