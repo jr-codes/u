@@ -5,6 +5,7 @@ const addFonts = require('./webpack-parts/fonts')
 const addHtml = require('./webpack-parts/html')
 const addImages = require('./webpack-parts/images')
 const addJavaScript = require('./webpack-parts/javascript')
+const addOptimization = require('./webpack-parts/optimization')
 const addStyles = require('./webpack-parts/styles')
 const addText = require('./webpack-parts/text')
 const buildWebpackConfig = require('../lib/utils/build-webpack-config')
@@ -23,6 +24,7 @@ const options = {
 
 const parts = [
   addBase,
+  addOptimization,
   addFonts,
   // SpeedMeasurePlugin conflicts with html-webpack-plugin,
   // so exclude this when speed testing
