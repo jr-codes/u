@@ -1,6 +1,7 @@
 'use strict'
 
 const addBase = require('./webpack-parts/base')
+const addDevServer = require('./webpack-parts/dev-server')
 const addFonts = require('./webpack-parts/fonts')
 const addHtml = require('./webpack-parts/html')
 const addImages = require('./webpack-parts/images')
@@ -24,6 +25,7 @@ const options = {
 
 const parts = [
   addBase,
+  addDevServer,
   addOptimization,
   addFonts,
   // SpeedMeasurePlugin conflicts with html-webpack-plugin,
