@@ -1,10 +1,9 @@
 'use strict'
 
-const resolveProjectPath = require('../../lib/utils/resolve-project-path')
-
-module.exports = config => {
+module.exports = (config, options) => {
   config.devServer = {
-    contentBase: resolveProjectPath('dist'),
+    contentBase: options.paths.output,
+    publicPath: options.paths.public,
   }
 
   return config

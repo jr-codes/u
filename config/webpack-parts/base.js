@@ -9,11 +9,11 @@ module.exports = (config, options) => ({
   devtool:
     options.useSourceMap &&
     (options.isProduction ? 'source-map' : 'cheap-module-source-map'),
-  entry: ['./src/index.js'],
+  entry: options.paths.entry,
   mode: options.env,
   output: {
     filename: options.isDevelopment ? 'main.js' : '[name].[contenthash:8].js',
-    path: resolveProjectPath('dist'),
+    path: options.paths.output,
   },
   plugins: [new CleanWebpackPlugin()],
 })

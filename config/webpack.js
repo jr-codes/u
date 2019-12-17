@@ -11,6 +11,7 @@ const addStyles = require('./webpack-parts/styles')
 const addText = require('./webpack-parts/text')
 const buildWebpackConfig = require('../lib/utils/build-webpack-config')
 const debug = require('debug')('u')
+const resolveProjectPath = require('../lib/utils/resolve-project-path')
 const { env, isDevelopment, isProduction } = require('../lib/utils/env')
 
 debug('env %s', env)
@@ -20,6 +21,11 @@ const options = {
   isDevelopment,
   isProduction,
   measurePerformance: false,
+  paths: {
+    entry: ['./src/index.js'],
+    public: '/',
+    output: resolveProjectPath('dist'),
+  },
   useSourceMap: true,
 }
 
