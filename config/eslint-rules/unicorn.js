@@ -41,6 +41,7 @@ module.exports = {
     // 'unicorn/prefer-exponentiation-operator': 'off',
     // 'unicorn/prefer-flat-map': 'off',
     // 'unicorn/prefer-includes': 'off',
+    'unicorn/prefer-negative-index': 'error',
     // 'unicorn/prefer-node-append': 'off',
     // 'unicorn/prefer-node-remove': 'off',
     'unicorn/prefer-query-selector': 'error',
