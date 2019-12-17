@@ -1,6 +1,9 @@
 'use strict'
 
-const { isProduction, isTest } = require('../lib/utils/env')
+const debug = require('debug')('u:babel')
+const { env, isProduction, isTest } = require('../lib/utils/env')
+
+debug('env %s', env)
 
 // https://babeljs.io/docs/en/configuration#babelrcjs
 module.exports = {

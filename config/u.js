@@ -2,8 +2,8 @@
 
 module.exports = {
   commands: {
-    build: [['webpack', { BABEL_ENV: 'production', NODE_ENV: 'production' }]],
-    dev: [['webpack', { BABEL_ENV: 'development', NODE_ENV: 'development' }]],
+    build: [['webpack', { NODE_ENV: 'production' }]],
+    dev: [['webpack-dev-server --open', { NODE_ENV: 'development' }]],
     lint: [
       'eslint --fix .',
       'stylelint **/*.{css,js,jsx,scss} --fix',
