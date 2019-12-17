@@ -10,7 +10,7 @@ const addOptimization = require('./webpack-parts/optimization')
 const addStyles = require('./webpack-parts/styles')
 const addText = require('./webpack-parts/text')
 const buildWebpackConfig = require('../lib/utils/build-webpack-config')
-const debug = require('debug')('u')
+const debug = require('debug')('u:webpack')
 const resolveProjectPath = require('../lib/utils/resolve-project-path')
 const { env, isDevelopment, isProduction } = require('../lib/utils/env')
 
