@@ -96,6 +96,7 @@
     "webpack": "^4.41.3",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0",
+    "webpack-manifest-plugin": "^2.2.0",
     "yargs-parser": "^16.1.0",
     "yargs-unparser": "^1.5.0"
   },
