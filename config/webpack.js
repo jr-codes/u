@@ -1,5 +1,6 @@
 'use strict'
 
+const addAssets = require('./webpack-parts/assets')
 const addBase = require('./webpack-parts/base')
 const addDevServer = require('./webpack-parts/dev-server')
 const addFonts = require('./webpack-parts/fonts')
@@ -31,6 +32,7 @@ const options = {
 
 const parts = [
   addBase,
+  addAssets,
   addDevServer,
   addOptimization,
   addFonts,
