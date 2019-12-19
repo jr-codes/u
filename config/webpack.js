@@ -8,6 +8,7 @@ const addHtml = require('./webpack-parts/html')
 const addImages = require('./webpack-parts/images')
 const addJavaScript = require('./webpack-parts/javascript')
 const addOptimization = require('./webpack-parts/optimization')
+const addStats = require('./webpack-parts/stats')
 const addStyles = require('./webpack-parts/styles')
 const addText = require('./webpack-parts/text')
 const buildWebpackConfig = require('../lib/utils/build-webpack-config')
@@ -32,6 +33,7 @@ const options = {
 
 const parts = [
   addBase,
+  addStats,
   addAssets,
   addDevServer,
   addOptimization,
