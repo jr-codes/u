@@ -3,6 +3,9 @@
   "version": "0.1.1",
   "description": "Create a new u project with npm init u",
   "bin": "bin/create-u.js",
+  "files": [
+    "bin"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
