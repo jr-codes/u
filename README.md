@@ -4,15 +4,11 @@ U is a JavaScript bundler, transpiler, linter, formatter, dev server, and test f
 
 I made this so I can set up projects easier without having to maintain multiple dependencies and configurations for each project.
 
-
-
 ## 🔧 Install
 
 ```shell
-npm install jr-codes/u --save-dev
+npm install u-scripts --save-dev
 ```
-
-
 
 ## 📝 Usage
 
@@ -22,13 +18,11 @@ U comes with a set of default commands. You can make your own commands by defini
 
 | Command     | Description                                                      |
 | ----------- | ---------------------------------------------------------------- |
-| `u build`   | Runs `webpack ` with `NODE_ENV` set to `production`.             |
+| `u build`   | Runs `webpack` with `NODE_ENV` set to `production`.              |
 | `u dev`     | Runs `webpack-dev-server` with `NODE_ENV` set to `development`.  |
 | `u lint`    | Runs `eslint --fix`, `stylelint --fix`, and `prettier --write`.  |
 | `u test`    | Runs the same scripts as `u lint` and also runs `jest`.          |
 | `u test ci` | Runs `eslint`, `stylelint`, `prettier --check`, and `jest --ci`. |
-
-
 
 ### Scripts
 
@@ -43,8 +37,6 @@ You can also run scripts directly. Each script is run with preconfigured default
 | `u stylelint`          | Runs [stylelint](https://stylelint.io/). Customize with `stylelint.config.js`.                                |
 | `u webpack`            | Runs [webpack](https://webpack.js.org/). Customize with `webpack.config.js`.                                  |
 | `u webpack-dev-server` | Runs [webpack-dev-server](https://github.com/webpack/webpack-dev-server). Customize with `webpack.config.js`. |
-
-
 
 ## 🌱 Inspiration
 
