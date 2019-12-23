@@ -18,7 +18,7 @@ async function main() {
       test: 'u test'
     },
     devDependencies: {
-      '@jr.codes/u': '*'
+      'u-scripts': '*'
     },
   })
 }
