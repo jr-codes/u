@@ -17,9 +17,9 @@
   "author": "JR Shampang",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jr-codes/create-u/issues"
+    "url": "https://github.com/jr-codes/u/issues"
   },
-  "homepage": "https://github.com/jr-codes/create-u#readme",
+  "homepage": "https://github.com/jr-codes/u#readme",
   "dependencies": {
     "write-pkg": "^4.0.0",
     "yargs": "^14.2.0"
