@@ -10,5 +10,5 @@ module.exports = (name, options = {}) => {
 
   // `name` does not come from user input
   // eslint-disable-next-line security/detect-non-literal-require
-  return results ? results.config : require(`../../config/${name}`)
+  return results ? results.config : require(`./packages/config`)
 }
