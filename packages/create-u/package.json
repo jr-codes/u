@@ -1,6 +1,6 @@
 {
   "name": "create-u",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Create a new u project with npm init u",
   "bin": "bin/create-u.js",
   "files": [
@@ -23,6 +23,5 @@
   "dependencies": {
     "write-pkg": "^4.0.0",
     "yargs": "^14.2.0"
-  },
-  "devDependencies": {}
+  }
 }

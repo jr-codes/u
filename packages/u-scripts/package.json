@@ -1,6 +1,6 @@
 {
   "name": "u-scripts",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "Utility for building web apps",
   "main": "index.js",
   "files": [
@@ -101,9 +101,9 @@
     "yargs-unparser": "^1.5.0"
   },
   "devDependencies": {
-    "u-scripts": "file:.",
     "@types/jest": "^24.0.23",
     "eslint-find-rules": "^3.4.0",
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "u-scripts": "file:."
   }
 }
