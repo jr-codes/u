@@ -2,7 +2,7 @@
 
 'use strict'
 
-const u = require('../index')
+const u = require('..')
 
 const command = process.argv.slice(2).join(' ')
 

@@ -15,10 +15,10 @@ async function main() {
     scripts: {
       build: 'u build',
       dev: 'u dev',
-      test: 'u test'
+      test: 'u test',
     },
     devDependencies: {
-      'u-scripts': '*'
+      'u-scripts': '*',
     },
   })
 }
