@@ -1,13 +1,12 @@
 {
   "name": "create-u",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Create a new u project with npm init u",
   "bin": "bin/create-u.js",
   "files": [
     "bin"
   ],
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jr-codes/create-u.git"
