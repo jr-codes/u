@@ -62,7 +62,7 @@ describe('run-command', () => {
   it('runs script with args and environment variables', () => {
     mockRunScript.mockImplementation(() => 0)
     const env = { DEBUG: 'u', NODE_ENV: 'production' }
-    const scripts = ['eslint --fix .', ['webpack --json', env]]
+    const scripts = ['eslint --fix .', ['webpack --json', { env }]]
 
     runScripts(scripts)
 

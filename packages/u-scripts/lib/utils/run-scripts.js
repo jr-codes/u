@@ -11,7 +11,7 @@ const runScript = require('./run-script')
  * @example
  * runScripts([
  *  'eslint --fix .',
- *  ['webpack', { BABEL_ENV: 'production', NODE_ENV: 'production' }]
+ *  ['webpack', { env: { NODE_ENV: 'production' } }]
  * ])
  */
 function runScripts(scripts) {
@@ -19,8 +19,8 @@ function runScripts(scripts) {
     .map(script => (typeof script === 'string' ? [script, {}] : script))
     .map(script => [script[0].split(' '), script[1]])
     .every(script => {
-      const [[name, ...args], env] = script
-      return runScript(name, args, env) === 0
+      const [[name, ...args], options] = script
+      return runScript(name, args, options.env || {}) === 0
     })
     ? 0
     : 1
