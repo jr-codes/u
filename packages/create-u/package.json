@@ -1,6 +1,6 @@
 {
   "name": "create-u",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Create a new u project with npm init u",
   "bin": "bin/create-u.js",
   "files": [
