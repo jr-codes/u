@@ -20,6 +20,6 @@
   "homepage": "https://github.com/jr-codes/u#readme",
   "dependencies": {
     "write-pkg": "^4.0.0",
-    "yargs": "^14.2.0"
+    "yargs": "^15.1.0"
   }
 }
