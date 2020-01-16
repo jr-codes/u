@@ -26,7 +26,7 @@
     "u": "bin/u.js"
   },
   "scripts": {
-    "format": "node lib/scripts/prettier --write '**/*.{css,json,md,scss,yaml,yml}'",
+    "format": "node lib/scripts/prettier --write '**/*.*'",
     "jest": "node lib/scripts/jest lib",
     "lint": "node lib/scripts/eslint . --fix --ignore-pattern '/examples/'",
     "stylelint-check": "stylelint-config-prettier-check",

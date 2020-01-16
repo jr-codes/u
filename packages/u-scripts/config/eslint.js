@@ -2,5 +2,5 @@
 
 // https://eslint.org/docs/user-guide/configuring
 module.exports = {
-  extends: ['u-scripts']
+  extends: ['u-scripts'],
 }

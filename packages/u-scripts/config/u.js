@@ -7,18 +7,18 @@ module.exports = {
     lint: [
       'eslint --fix .',
       'stylelint **/*.{css,js,jsx,scss} --fix',
-      'prettier --write "**/*.{json,md,yaml,yml}"',
+      'prettier --write "**/*.*"',
     ],
     test: [
       'eslint --fix .',
       'stylelint **/*.{css,js,jsx,scss} --fix',
-      'prettier --write "**/*.{json,md,yaml,yml}"',
+      'prettier --write "**/*.*"',
       'jest',
     ],
     'test ci': [
       'eslint .',
       'stylelint **/*.{css,js,jsx,scss}',
-      'prettier --check "**/*.{json,md,yaml,yml}"',
+      'prettier --check "**/*.*"',
       'jest --ci',
     ],
   },
