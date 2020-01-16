@@ -3,7 +3,10 @@
   "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap --hoist",
-    "check": "lerna exec -- npm pack --dry-run"
+    "check": "lerna exec -- npm pack --dry-run",
+    "clean": "lerna clean",
+    "publish": "lerna publish --sign-git-commit --sign-git-tag",
+    "test": "lerna run test"
   },
   "devDependencies": {
     "lerna": "^3.20.2"
