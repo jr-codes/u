@@ -1,9 +1,6 @@
 'use strict'
 
-const getConfigPath = require('../../lib/utils/get-config-path')
 const TerserPlugin = require('terser-webpack-plugin')
-
-const configFile = getConfigPath('babel')
 
 module.exports = (config, options) => {
   config.optimization.minimizer.push(new TerserPlugin())
@@ -16,7 +13,7 @@ module.exports = (config, options) => {
         loader: require.resolve('babel-loader'),
         options: {
           babelrc: false,
-          configFile,
+          presets: [require.resolve('babel-preset-u-scripts')],
           cacheDirectory: options.isDevelopment,
         },
       },

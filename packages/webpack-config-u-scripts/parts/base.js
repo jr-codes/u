@@ -1,11 +1,11 @@
 'use strict'
 
-const resolveProjectPath = require('../../lib/utils/resolve-project-path')
+const utils = require('../utils')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = (config, options) => ({
   ...config,
-  context: resolveProjectPath(),
+  context: utils.resolveUserPath(),
   devtool:
     options.useSourceMap &&
     (options.isProduction ? 'source-map' : 'cheap-module-source-map'),

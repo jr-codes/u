@@ -1,0 +1,46 @@
+{
+  "name": "webpack-config-u-scripts",
+  "version": "0.4.0",
+  "description": "Webpack config for u-scripts",
+  "homepage": "https://github.com/jr-codes/u#readme",
+  "bugs": {
+    "url": "https://github.com/jr-codes/u/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jr-codes/u.git"
+  },
+  "license": "MIT",
+  "author": "JR Shampang",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "node ../u-scripts/lib/scripts/eslint . --fix"
+  },
+  "dependencies": {
+    "babel-loader": "^8.0.6",
+    "babel-preset-u-scripts": "^0.4.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.4.2",
+    "file-loader": "^5.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "raw-loader": "^4.0.0",
+    "sass-loader": "^8.0.2",
+    "speed-measure-webpack-plugin": "^1.3.1",
+    "style-loader": "^1.1.2",
+    "terser-webpack-plugin": "^2.3.2",
+    "webpack-manifest-plugin": "^2.2.0"
+  },
+  "peerDependencies": {
+    "webpack": ">=4.41.5"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.5"
+  }
+}
