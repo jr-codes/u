@@ -13,6 +13,10 @@
   },
   "license": "MIT",
   "author": "JR Shampang",
+  "main": "index.js",
+  "bin": {
+    "u": "bin/u.js"
+  },
   "files": [
     "bin",
     "config",
@@ -21,10 +25,6 @@
     "!*.test.js",
     "!__tests__"
   ],
-  "main": "index.js",
-  "bin": {
-    "u": "bin/u.js"
-  },
   "scripts": {
     "lint": "node ../u-scripts/lib/scripts/eslint . --fix",
     "test": "npm run lint && node lib/scripts/jest lib"

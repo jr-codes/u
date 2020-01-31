@@ -12,10 +12,10 @@
   },
   "license": "MIT",
   "author": "JR Shampang",
+  "main": "index.js",
   "files": [
     "index.js"
   ],
-  "main": "index.js",
   "scripts": {
     "test": "node ../u-scripts/lib/scripts/eslint . --fix"
   },

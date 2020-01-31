@@ -12,11 +12,11 @@
   },
   "license": "MIT",
   "author": "JR Shampang",
+  "main": "index.js",
   "files": [
     "index.js",
     "rules"
   ],
-  "main": "index.js",
   "scripts": {
     "eslint-check": "eslint --config index.js --print-config index.js | eslint-config-prettier-check",
     "eslint-find-all": "eslint-find-rules index.js -a",
