@@ -1,6 +1,6 @@
 'use strict'
 
-module.exports = (api, options = {}) => {
+module.exports = api => {
   const isProd = api.env('production')
   const isTest = api.env('test')
 
@@ -15,7 +15,10 @@ module.exports = (api, options = {}) => {
       isTest && require.resolve('babel-plugin-dynamic-import-node'),
     ].filter(Boolean),
     presets: [
-      isTest && [require.resolve('@babel/preset-env'), { targets: { node: 'current' } }],
+      isTest && [
+        require.resolve('@babel/preset-env'),
+        { targets: { node: 'current' } },
+      ],
       !isTest && require.resolve('@babel/preset-env'),
       require.resolve('@babel/preset-react'),
     ].filter(Boolean),

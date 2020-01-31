@@ -5,8 +5,9 @@
     "bootstrap": "lerna bootstrap --hoist",
     "check": "lerna exec -- npm pack --dry-run",
     "clean": "lerna clean",
+    "format": "node packages/u-scripts/lib/scripts/prettier --write '**/*.*'",
     "publish": "lerna publish --sign-git-commit --sign-git-tag",
-    "test": "lerna run test"
+    "test": "npm run format && lerna run test"
   },
   "devDependencies": {
     "lerna": "^3.20.2"

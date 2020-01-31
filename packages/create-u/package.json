@@ -6,7 +6,9 @@
   "files": [
     "bin"
   ],
-  "scripts": {},
+  "scripts": {
+    "test": "node ../u-scripts/lib/scripts/eslint . --fix"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jr-codes/create-u.git"

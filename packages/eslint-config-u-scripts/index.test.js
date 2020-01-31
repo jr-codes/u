@@ -19,10 +19,8 @@ describe('index', () => {
 
     expect(result.errorCount).toBeGreaterThan(0)
     expect(result.results).toHaveLength(1)
-    expect(rules).toEqual(expect.arrayContaining([
-      'no-var',
-      'no-unused-vars',
-      'no-undef'
-    ]))
+    expect(rules).toEqual(
+      expect.arrayContaining(['no-var', 'no-unused-vars', 'no-undef'])
+    )
   })
 })
