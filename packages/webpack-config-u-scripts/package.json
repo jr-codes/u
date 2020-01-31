@@ -12,10 +12,13 @@
   },
   "license": "MIT",
   "author": "JR Shampang",
-  "files": [
-    "index.js"
-  ],
   "main": "index.js",
+  "files": [
+    "index.js",
+    "parts",
+    "templates",
+    "utils"
+  ],
   "scripts": {
     "test": "node ../u-scripts/lib/scripts/eslint . --fix"
   },
@@ -37,10 +40,10 @@
     "terser-webpack-plugin": "^2.3.2",
     "webpack-manifest-plugin": "^2.2.0"
   },
-  "peerDependencies": {
-    "webpack": ">=4.41.5"
-  },
   "devDependencies": {
     "webpack": "^4.41.5"
+  },
+  "peerDependencies": {
+    "webpack": ">=4.41.5"
   }
 }
