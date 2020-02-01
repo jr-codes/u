@@ -17,7 +17,7 @@
     "index.js"
   ],
   "scripts": {
-    "test": "node ../u-scripts/lib/scripts/eslint . --fix"
+    "test": "node ../u-scripts/bin/u eslint . --fix"
   },
   "dependencies": {
     "@babel/core": "^7.8.3",

@@ -5,7 +5,7 @@
     "bootstrap": "lerna bootstrap --hoist",
     "check": "lerna exec -- npm pack --dry-run",
     "clean": "lerna clean",
-    "format": "node packages/u-scripts/lib/scripts/prettier --write '**/*.*'",
+    "format": "node packages/u-scripts/bin/u prettier --write '**/*.*'",
     "publish": "lerna publish --sign-git-commit --sign-git-tag",
     "test": "npm run format && lerna run test"
   },

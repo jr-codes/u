@@ -1,6 +1,6 @@
 'use strict'
 
-const debug = require('debug')('u:run')
+const debug = require('debug')('u:utils')
 const execa = require('execa')
 
 const defaultOptions = {
@@ -14,20 +14,20 @@ const defaultOptions = {
  * Runs the specified executable.
  *
  * @param {string} cmd Name of the executable to run
- * @param {string[]} args Arguments array
- * @param {Object} initialOptions Options passed to execa
+ * @param {string[]} [args] Arguments array
+ * @param {object} [options] Options passed to execa
  * @returns {number} Resulting exit code from running executable
  */
-function run(cmd, args = [], initialOptions = {}) {
+function run(cmd, args = [], options = {}) {
   let exitCode = 0
 
   /** @type {object} */
-  const options = { ...defaultOptions, ...initialOptions }
+  const mergedOptions = { ...defaultOptions, ...options }
 
-  debug('run %s %o', cmd, args, options)
+  debug('run %s %o %o', cmd, args, mergedOptions)
 
   try {
-    const result = execa.sync(cmd, args, options)
+    const result = execa.sync(cmd, args, mergedOptions)
     exitCode = result.exitCode
   } catch (error) {
     debug('%s threw an error', cmd)

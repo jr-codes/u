@@ -1,9 +1,9 @@
 'use strict'
 
 const debug = require('debug')('u:babel')
-const { env } = require('../lib/utils/env')
 
-debug('env %s', env)
+debug('BABEL_ENV %s', process.env.BABEL_ENV)
+debug('NODE_ENV %s', process.env.NODE_ENV)
 
 // https://babeljs.io/docs/en/configuration#babelrcjs
 module.exports = {

@@ -12,13 +12,14 @@ describe('run-script', () => {
   it('runs script', () => {
     mockRun.mockImplementation(() => 0)
     const script = 'webpack'
+    const scriptPath = 'path/to/webpack.js'
 
-    const result = runScript(script)
+    const result = runScript(script, scriptPath)
 
     expect(result).toBe(0)
     expect(run).toHaveBeenCalledWith(
       'node',
-      expect.any(Array),
+      expect.arrayContaining([scriptPath]),
       expect.any(Object)
     )
   })
@@ -26,7 +27,7 @@ describe('run-script', () => {
   it("returns with script's exit code", () => {
     mockRun.mockImplementation(() => 2)
 
-    const result = runScript('prettier')
+    const result = runScript('prettier', 'a/b/c.js')
 
     expect(run).toHaveBeenCalled()
     expect(result).toBe(2)
@@ -35,14 +36,15 @@ describe('run-script', () => {
   it('runs script with args', () => {
     mockRun.mockImplementation(() => 0)
     const script = 'eslint'
+    const scriptPath = 'path/to/eslint'
     const args = ['.', '--fix']
 
-    const result = runScript(script, args)
+    const result = runScript(script, scriptPath, args)
 
     expect(result).toBe(0)
     expect(run).toHaveBeenCalledWith(
       'node',
-      expect.arrayContaining(args),
+      expect.arrayContaining([scriptPath, ...args]),
       expect.any(Object)
     )
   })
@@ -50,31 +52,34 @@ describe('run-script', () => {
   it('runs script with env', () => {
     mockRun.mockImplementation(() => 0)
     const script = 'babel'
-    const env = { BABEL_ENV: 'production' }
+    const scriptPath = 'a/b/c'
+    const args = []
+    const options = { env: { BABEL_ENV: 'production' } }
 
-    const result = runScript(script, [], env)
+    const result = runScript(script, scriptPath, args, options)
 
     expect(result).toBe(0)
     expect(run).toHaveBeenCalledWith(
       'node',
-      expect.any(Array),
-      expect.objectContaining({ env })
+      expect.arrayContaining([scriptPath, ...args]),
+      expect.objectContaining({ env: options.env })
     )
   })
 
   it('runs script with args and env', () => {
     mockRun.mockImplementation(() => 0)
     const script = 'jest'
+    const scriptPath = 'some/path/to/jest'
     const args = ['--ci']
-    const env = { BABEL_ENV: 'test', NODE_ENV: 'test' }
+    const options = { env: { BABEL_ENV: 'test', NODE_ENV: 'test' } }
 
-    const result = runScript(script, args, env)
+    const result = runScript(script, scriptPath, args, options)
 
     expect(result).toBe(0)
     expect(run).toHaveBeenCalledWith(
       'node',
-      expect.arrayContaining(args),
-      expect.objectContaining({ env })
+      expect.arrayContaining([scriptPath, ...args]),
+      expect.objectContaining({ env: options.env })
     )
   })
 

@@ -1,7 +1,6 @@
 'use strict'
 
-const getConfigPath = require('../utils/get-config-path')
-const runYargs = require('../utils/run-yargs')
+const helper = require('../utils/script-helper')
 
 const name = 'jest'
 
@@ -11,7 +10,7 @@ const args = {
     config: 'c',
   },
   default: {
-    config: getConfigPath(name),
+    config: helper.getConfig(name),
     passWithNoTests: true,
     silent: true,
   },
@@ -20,4 +19,4 @@ const args = {
 // Add line break before jest runs
 console.log() // eslint-disable-line no-console
 
-process.exitCode = runYargs(name, args)
+process.exitCode = helper.run(name, args)

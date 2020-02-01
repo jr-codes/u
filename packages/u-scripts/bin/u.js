@@ -4,6 +4,6 @@
 
 const u = require('..')
 
-const command = process.argv.slice(2).join(' ')
+const arg = process.argv.slice(2).join(' ')
 
-process.exitCode = u(command)
+process.exitCode = u(arg)

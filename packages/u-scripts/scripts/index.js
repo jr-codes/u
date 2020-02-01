@@ -1,5 +1,7 @@
 'use strict'
 
+const path = require('path')
+
 const scripts = [
   'babel',
   'eslint',
@@ -9,7 +11,7 @@ const scripts = [
   'webpack',
   'webpack-dev-server',
 ].reduce((a, b) => {
-  a[b] = require.resolve(`./${b}`)
+  a[b] = path.join(__dirname, b)
   return a
 }, {})
 

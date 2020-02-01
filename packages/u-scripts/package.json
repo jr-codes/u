@@ -21,13 +21,15 @@
     "bin",
     "config",
     "index.js",
-    "lib",
+    "scripts",
+    "utils",
     "!*.test.js",
     "!__tests__"
   ],
   "scripts": {
-    "lint": "node ../u-scripts/lib/scripts/eslint . --fix",
-    "test": "npm run lint && node lib/scripts/jest lib"
+    "lint": "node bin/u eslint . --fix",
+    "jest": "node bin/u jest",
+    "test": "npm run lint && npm run jest"
   },
   "dependencies": {
     "@babel/cli": "^7.8.3",
@@ -35,29 +37,23 @@
     "@testing-library/jest-dom": "^4.2.4",
     "babel-jest": "^24.9.0",
     "babel-preset-u-scripts": "^0.5.1",
-    "chalk": "^3.0.0",
-    "cosmiconfig": "^6.0.0",
     "debug": "^4.1.1",
     "eslint": "^6.8.0",
     "eslint-config-u-scripts": "^0.5.1",
     "eslint-formatter-pretty": "^3.0.1",
-    "execa": "^4.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
-    "node-sass": "^4.13.0",
-    "pkg-dir": "^4.2.0",
     "prettier": "1.19.1",
     "stylelint": "^13.0.0",
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-formatter-pretty": "^1.1.4",
     "stylelint-prettier": "^1.1.2",
     "typescript": "^3.7.4",
+    "u-scripts-utils": "^0.5.1",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
     "webpack-config-u-scripts": "^0.5.1",
-    "webpack-dev-server": "^3.10.1",
-    "yargs-parser": "^16.1.0",
-    "yargs-unparser": "^1.5.0"
+    "webpack-dev-server": "^3.10.1"
   },
   "devDependencies": {
     "@types/jest": "^24.9.0",

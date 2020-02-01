@@ -15,9 +15,8 @@ const unparse = require('yargs-unparser')
  * mergeArgs(['--silent'], { default: { passWithNoTests: true } })
  * // returns ['--silent', '--pass-with-no-tests']
  */
-function mergeArgs(initialArgs, options) {
-  const args = parse(initialArgs, options)
-  return unparse(args, { alias: options.alias })
+function mergeArgs(args, options) {
+  return unparse(parse(args, options), { alias: options.alias })
 }
 
 module.exports = mergeArgs

@@ -1,9 +1,5 @@
 'use strict'
 
-const resolveProjectPath = require('../lib/utils/resolve-project-path')
-
-const rootDir = resolveProjectPath('.')
-
 // https://jestjs.io/docs/en/configuration
 module.exports = {
   clearMocks: true,
@@ -16,7 +12,7 @@ module.exports = {
     '\\.(css|less|scss)$': require.resolve('identity-obj-proxy'),
   },
   restoreMocks: true,
-  rootDir,
+  rootDir: process.cwd(),
   setupFilesAfterEnv: [require.resolve('./jest-setup.js')],
   transform: {
     '^.+\\.[t|j]sx?$': require.resolve('./babel-jest-transform.js'),

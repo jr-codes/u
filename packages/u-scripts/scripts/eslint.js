@@ -1,7 +1,6 @@
 'use strict'
 
-const getConfigPath = require('../utils/get-config-path')
-const runYargs = require('../utils/run-yargs')
+const helper = require('../utils/script-helper')
 
 const name = 'eslint'
 
@@ -13,13 +12,13 @@ const args = {
   },
   default: {
     cache: true,
-    config: getConfigPath(name, { packageProp: 'eslintConfig' }),
+    config: helper.getConfig(name, { packageProp: 'eslintConfig' }),
     ext: ['.js', '.jsx', '.json'],
     format: require.resolve('eslint-formatter-pretty'),
-    ignorePath: require.resolve('../../config/.eslintignore'),
+    ignorePath: helper.getIgnore('.eslintignore'),
     noEslintrc: true,
     resolvePluginsRelativeTo: __dirname,
   },
 }
 
-process.exitCode = runYargs(name, args)
+process.exitCode = helper.run(name, args)
