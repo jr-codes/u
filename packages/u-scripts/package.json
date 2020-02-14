@@ -27,8 +27,8 @@
     "!__tests__"
   ],
   "scripts": {
-    "lint": "node bin/u eslint . --fix",
     "jest": "node bin/u jest",
+    "lint": "node bin/u eslint . --fix",
     "test": "npm run lint && npm run jest"
   },
   "dependencies": {

@@ -3,10 +3,11 @@
   "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap --hoist",
-    "check": "lerna exec -- npm pack --dry-run",
+    "check": "lerna exec --stream -- npm pack --dry-run",
     "clean": "lerna clean",
     "format": "node packages/u-scripts/bin/u prettier --write '**/*.*'",
     "publish": "lerna publish --sign-git-commit --sign-git-tag",
+    "sort": "lerna exec -- npx sort-package-json",
     "test": "npm run format && lerna run test"
   },
   "devDependencies": {
