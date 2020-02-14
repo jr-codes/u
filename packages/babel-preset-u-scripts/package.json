@@ -20,7 +20,7 @@
     "test": "node ../u-scripts/bin/u eslint . --fix"
   },
   "dependencies": {
-    "@babel/core": "^7.8.3",
+    "@babel/core": "^7.8.4",
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
     "@babel/preset-react": "^7.8.3",

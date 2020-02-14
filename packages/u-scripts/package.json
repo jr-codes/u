@@ -32,31 +32,31 @@
     "test": "npm run lint && npm run jest"
   },
   "dependencies": {
-    "@babel/cli": "^7.8.3",
-    "@babel/core": "^7.8.3",
-    "@testing-library/jest-dom": "^4.2.4",
-    "babel-jest": "^24.9.0",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@testing-library/jest-dom": "^5.1.1",
+    "babel-jest": "^25.1.0",
     "babel-preset-u-scripts": "^0.5.1",
     "debug": "^4.1.1",
     "eslint": "^6.8.0",
     "eslint-config-u-scripts": "^0.5.1",
     "eslint-formatter-pretty": "^3.0.1",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^24.9.0",
+    "jest": "^25.1.0",
     "prettier": "1.19.1",
-    "stylelint": "^13.0.0",
+    "stylelint": "^13.2.0",
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-formatter-pretty": "^1.1.4",
     "stylelint-prettier": "^1.1.2",
-    "typescript": "^3.7.4",
+    "typescript": "^3.7.5",
     "u-scripts-utils": "^0.5.1",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
     "webpack-config-u-scripts": "^0.5.1",
-    "webpack-dev-server": "^3.10.1"
+    "webpack-dev-server": "^3.10.3"
   },
   "devDependencies": {
-    "@types/jest": "^24.9.0",
+    "@types/jest": "^25.1.2",
     "npm-run-all": "^4.1.5"
   },
   "engines": {
