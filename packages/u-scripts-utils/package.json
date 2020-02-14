@@ -15,7 +15,6 @@
     "url": "git+https://github.com/jr-codes/u.git"
   },
   "scripts": {
-    "jest": "node ../u-scripts/bin/u jest --watch",
     "test": "node ../u-scripts/bin/u test"
   },
   "bugs": {

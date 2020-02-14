@@ -1,0 +1,36 @@
+{
+  "name": "jest-config-u-scripts",
+  "version": "0.5.1",
+  "description": "Jest config for u-scripts",
+  "author": "JR Shampang <jr@shampang.com>",
+  "homepage": "https://github.com/jr-codes/u#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "babel-jest-transform.js",
+    "file-stub.js",
+    "index.js",
+    "jest-setup.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jr-codes/u.git"
+  },
+  "scripts": {},
+  "dependencies": {
+    "@babel/core": "^7.8.4",
+    "@testing-library/jest-dom": "^5.1.1",
+    "babel-jest": "^25.1.0",
+    "babel-preset-u-scripts": "^0.5.1",
+    "identity-obj-proxy": "^3.0.0"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0"
+  },
+  "peerDependencies": {
+    "jest": ">=25.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/jr-codes/u/issues"
+  }
+}
