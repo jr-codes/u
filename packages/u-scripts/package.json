@@ -21,6 +21,7 @@
     "bin",
     "config",
     "index.js",
+    "jest-preset.js",
     "scripts",
     "utils",
     "!*.test.js",
