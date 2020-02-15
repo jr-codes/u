@@ -1,3 +1,3 @@
 # u-scripts-utils
 
-Utilities used by u-scripts
+Utilities for loading and customizing scripts

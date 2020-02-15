@@ -1,7 +1,7 @@
 {
   "name": "u-scripts-utils",
   "version": "0.6.0",
-  "description": "> TODO: description",
+  "description": "Utilities for loading and customizing scripts",
   "homepage": "https://github.com/jr-codes/u#readme",
   "bugs": {
     "url": "https://github.com/jr-codes/u/issues"
