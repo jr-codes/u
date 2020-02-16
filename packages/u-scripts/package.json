@@ -42,6 +42,7 @@
     "eslint-formatter-pretty": "^3.0.1",
     "jest": "^25.1.0",
     "jest-config-u-scripts": "^0.7.0",
+    "nodemon": "^2.0.2",
     "prettier": "1.19.1",
     "stylelint": "^13.2.0",
     "stylelint-config-prettier": "^8.0.1",
