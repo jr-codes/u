@@ -25,6 +25,7 @@
     "url": "https://github.com/jr-codes/u/issues"
   },
   "dependencies": {
+    "stylelint-config-prettier": "^8.0.1",
     "stylelint-order": "^4.0.0"
   },
   "devDependencies": {
@@ -32,7 +33,6 @@
     "stylelint": "^13.2.0"
   },
   "peerDependencies": {
-    "stylelint": "^13.2.0",
-    "stylelint-order": "^4.0.0"
+    "stylelint": "^13.2.0"
   }
 }
