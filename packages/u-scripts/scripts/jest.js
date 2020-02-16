@@ -19,4 +19,4 @@ const args = {
 // Add line break before jest runs
 console.log() // eslint-disable-line no-console
 
-process.exitCode = helper.run(name, args)
+helper.run(name, args)

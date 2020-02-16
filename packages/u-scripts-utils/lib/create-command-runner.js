@@ -31,7 +31,7 @@ function createCommandRunner({ scripts = {}, commands = {} }) {
    * @example
    * u('build')
    */
-  function u(arg) {
+  async function u(arg) {
     debug('scripts %o', scripts)
     debug('commands %j', commands)
 
@@ -54,16 +54,13 @@ function createCommandRunner({ scripts = {}, commands = {} }) {
       return 1
     }
 
-    // Run every script in the queue (until truthy value is returned)
-    // some() stops on first truthy value
-    // error exit codes are all truthy values
-    const hasErrors = queue.some(script => {
+    for (const script of queue) {
       const args = parseScript(script, scripts)
-      return runScript(...args)
-    })
+      const exitCode = await runScript(...args) // eslint-disable-line no-await-in-loop
+      if (exitCode) return 1
+    }
 
-    // Return an error code only if there are errors
-    return hasErrors ? 1 : 0
+    return 0
   }
 
   return u

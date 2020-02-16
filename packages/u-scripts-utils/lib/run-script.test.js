@@ -9,12 +9,12 @@ jest.mock('./run')
 const mockRun = run
 
 describe('run-script', () => {
-  it('runs script', () => {
+  it('runs script', async () => {
     mockRun.mockImplementation(() => 0)
     const script = 'webpack'
     const scriptPath = 'path/to/webpack.js'
 
-    const result = runScript(script, scriptPath)
+    const result = await runScript(script, scriptPath)
 
     expect(result).toBe(0)
     expect(run).toHaveBeenCalledWith(
@@ -24,22 +24,22 @@ describe('run-script', () => {
     )
   })
 
-  it("returns with script's exit code", () => {
+  it("returns with script's exit code", async () => {
     mockRun.mockImplementation(() => 2)
 
-    const result = runScript('prettier', 'a/b/c.js')
+    const result = await runScript('prettier', 'a/b/c.js')
 
     expect(run).toHaveBeenCalled()
     expect(result).toBe(2)
   })
 
-  it('runs script with args', () => {
+  it('runs script with args', async () => {
     mockRun.mockImplementation(() => 0)
     const script = 'eslint'
     const scriptPath = 'path/to/eslint'
     const args = ['.', '--fix']
 
-    const result = runScript(script, scriptPath, args)
+    const result = await runScript(script, scriptPath, args)
 
     expect(result).toBe(0)
     expect(run).toHaveBeenCalledWith(
@@ -49,14 +49,14 @@ describe('run-script', () => {
     )
   })
 
-  it('runs script with env', () => {
+  it('runs script with env', async () => {
     mockRun.mockImplementation(() => 0)
     const script = 'babel'
     const scriptPath = 'a/b/c'
     const args = []
     const options = { env: { BABEL_ENV: 'production' } }
 
-    const result = runScript(script, scriptPath, args, options)
+    const result = await runScript(script, scriptPath, args, options)
 
     expect(result).toBe(0)
     expect(run).toHaveBeenCalledWith(
@@ -66,14 +66,14 @@ describe('run-script', () => {
     )
   })
 
-  it('runs script with args and env', () => {
+  it('runs script with args and env', async () => {
     mockRun.mockImplementation(() => 0)
     const script = 'jest'
     const scriptPath = 'some/path/to/jest'
     const args = ['--ci']
     const options = { env: { BABEL_ENV: 'test', NODE_ENV: 'test' } }
 
-    const result = runScript(script, scriptPath, args, options)
+    const result = await runScript(script, scriptPath, args, options)
 
     expect(result).toBe(0)
     expect(run).toHaveBeenCalledWith(
@@ -83,10 +83,10 @@ describe('run-script', () => {
     )
   })
 
-  it("doesn't run invalid script", () => {
+  it("doesn't run invalid script", async () => {
     mockRun.mockImplementation(() => 0)
 
-    const result = runScript('foo')
+    const result = await runScript('foo')
 
     expect(run).not.toHaveBeenCalled()
     expect(result).toBe(1)

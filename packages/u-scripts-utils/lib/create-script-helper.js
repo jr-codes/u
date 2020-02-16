@@ -59,7 +59,13 @@ function createScriptHelper(defaultConfigPath) {
      * @example
      * run('jest', { default: { silent: true }})
      */
-    run: runWithYargs,
+    run: async (cmd, args = [], options = {}) => {
+      try {
+        process.exitCode = await runWithYargs(cmd, args, options)
+      } catch (error) {
+        process.exitCode = 1
+      }
+    },
   }
 }
 

@@ -16,14 +16,19 @@ const time = require('debug')('u:time')
  * @param {Object.<string,string>} [options] Options
  * @returns {number} Resulting exit code from running script
  */
-function runScript(name, scriptPath, args = [], options = {}) {
+async function runScript(name, scriptPath, args = [], options = {}) {
   debug('run-script %s %s %o %o', name, scriptPath, args, options)
+
+  const { env, label } = options
 
   if (scriptPath) {
     console.log(chalk`{bold RUN} {blue ${name}}`)
 
     time('start %s', name)
-    const exitCode = run('node', [scriptPath, ...args], { env: options.env })
+    const exitCode = await run('node', [scriptPath, ...args], {
+      env,
+      label,
+    })
     time('end %s', name)
 
     // Add line break between scripts

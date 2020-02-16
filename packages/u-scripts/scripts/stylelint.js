@@ -14,4 +14,4 @@ const args = {
   },
 }
 
-process.exitCode = helper.run(name, args)
+helper.run(name, args)
