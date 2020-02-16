@@ -20,6 +20,7 @@
     "!__tests__"
   ],
   "scripts": {
+    "jest": "node ../u-scripts/bin/u jest --watch",
     "test": "node ../u-scripts/bin/u test"
   },
   "dependencies": {

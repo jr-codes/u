@@ -2,7 +2,6 @@
 
 const debug = require('debug')('u:utils')
 const execa = require('execa')
-const prefixStream = require('./prefix-stream')
 
 const defaultOptions = {
   buffer: false,
@@ -20,35 +19,14 @@ const defaultOptions = {
  * @returns {number} Resulting exit code from running executable
  */
 async function run(cmd, args = [], options = {}) {
-  debug('run:initial %s %o %o', cmd, args, options)
-
-  const { label, ...execaOptions } = options
-  let exitCode = 0
-
-  if (label) {
-    execaOptions.env = {
-      DEBUG_COLORS: true,
-      ...execaOptions.env,
-    }
-    execaOptions.stdio = ['inherit', 'pipe', 'pipe']
-    args.push('--color')
-  }
-
   /** @type {object} */
-  const mergedOptions = { ...defaultOptions, ...execaOptions }
+  const mergedOptions = { ...defaultOptions, ...options }
 
-  debug('run:final %s %o %o', cmd, args, mergedOptions)
-
+  debug('run %s %o %o', cmd, args, mergedOptions)
   const child = execa(cmd, args, mergedOptions)
 
-  if (label) {
-    child.stdout.pipe(prefixStream(label, child.pid)).pipe(process.stdout)
-    child.stderr.pipe(prefixStream(label, child.pid)).pipe(process.stderr)
-  }
-
   const result = await child
-  exitCode = result.exitCode
-  return exitCode
+  return result.exitCode
 }
 
 module.exports = run

@@ -4,13 +4,8 @@
 
 const u = require('..')
 
-async function init() {
-  try {
-    const arg = process.argv.slice(2).join(' ')
-    process.exitCode = await u(arg)
-  } catch(error) {
-    process.exitCode = 1
-  }
-}
+const arg = process.argv.slice(2).join(' ')
 
-init()
+u(arg)
+  .then(exitCode => (process.exitCode = exitCode))
+  .catch(() => (process.exitCode = 1))

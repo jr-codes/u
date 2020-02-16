@@ -19,16 +19,14 @@ const time = require('debug')('u:time')
 async function runScript(name, scriptPath, args = [], options = {}) {
   debug('run-script %s %s %o %o', name, scriptPath, args, options)
 
-  const { env, label } = options
+  // Control what options get passed to execa
+  const { env } = options
 
   if (scriptPath) {
     console.log(chalk`{bold RUN} {blue ${name}}`)
 
     time('start %s', name)
-    const exitCode = await run('node', [scriptPath, ...args], {
-      env,
-      label,
-    })
+    const exitCode = await run('node', [scriptPath, ...args], { env })
     time('end %s', name)
 
     // Add line break between scripts
