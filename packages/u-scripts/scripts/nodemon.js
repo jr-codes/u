@@ -1,12 +1,12 @@
-'use strict';
+'use strict'
 
-const helper = require('../utils/script-helper');
+const helper = require('../utils/script-helper')
 
-const name = 'nodemon';
+const name = 'nodemon'
 
 const args = {
   alias: {},
   default: {}
-};
+}
 
-helper.run(name, args);
+helper.run(name, args)

@@ -1,6 +1,6 @@
-'use strict';
+'use strict'
 
-const path = require('path');
+const path = require('path')
 
 const scripts = [
   'babel',
@@ -12,8 +12,8 @@ const scripts = [
   'webpack',
   'webpack-dev-server'
 ].reduce((a, b) => {
-  a[b] = path.join(__dirname, b);
-  return a;
-}, {});
+  a[b] = path.join(__dirname, b)
+  return a
+}, {})
 
-module.exports = scripts;
+module.exports = scripts
