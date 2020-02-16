@@ -6,7 +6,7 @@ const name = 'nodemon'
 
 const args = {
   alias: {},
-  default: {}
+  default: {},
 }
 
 helper.run(name, args)

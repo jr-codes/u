@@ -2,8 +2,8 @@
 
 module.exports = {
   extends: [
-  	'limit-language-features',
+    'limit-language-features',
     'possible-errors',
     'stylistic-issues',
-  ].map(x => require.resolve(`./${x}`))
+  ].map(x => require.resolve(`./${x}`)),
 }
