@@ -1,16 +1,7 @@
 'use strict'
 
-const debug = require('debug')('u:utils')
+const debug = require('debug')('u:utils:find-config')
 const { cosmiconfigSync } = require('cosmiconfig')
-
-/**
- * Cosmiconfig result object.
- *
- * @typedef {Object<string, any>} Result
- * @property {string | undefined} config The name of the person.
- * @property {string} filePath The age of the person.
- * @property {boolean} isEmpty The age of the person.
- */
 
 /**
  * Searches for the given config file using cosmiconfig and returns the result.
@@ -18,7 +9,7 @@ const { cosmiconfigSync } = require('cosmiconfig')
  * @param {string} name Name of the config to find
  * @param {Object} options Options passed to cosmiconfig
  * @param {string} defaultConfigPath Default config path to use if config isn't found.
- * @returns {Result | null} Cosmiconfig result
+ * @returns { import('cosmiconfig/dist/types').CosmiconfigResult | null} Cosmiconfig result
  *
  * @example
  * findConfig('babel')

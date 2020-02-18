@@ -2,10 +2,14 @@
 
 'use strict'
 
+const debug = require('debug')('u')
 const u = require('..')
 
 const arg = process.argv.slice(2).join(' ')
 
 u(arg)
   .then(exitCode => (process.exitCode = exitCode))
-  .catch(() => (process.exitCode = 1))
+  .catch(error => {
+    debug(error)
+    process.exitCode = 1
+  })

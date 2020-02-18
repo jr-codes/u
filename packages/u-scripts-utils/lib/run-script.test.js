@@ -10,85 +10,99 @@ const mockRun = run
 
 describe('run-script', () => {
   it('runs script', async () => {
-    mockRun.mockImplementation(() => 0)
-    const script = 'webpack'
-    const scriptPath = 'path/to/webpack.js'
+    mockRun.mockImplementation(() => Promise.resolve(0))
+    const script = {
+      name: 'webpack',
+      path: 'path/to/webpack',
+      args: [],
+      options: {},
+    }
 
-    const result = await runScript(script, scriptPath)
-
-    expect(result).toBe(0)
+    await expect(runScript(script)).resolves.toBe(0)
     expect(run).toHaveBeenCalledWith(
       'node',
-      expect.arrayContaining([scriptPath]),
+      expect.arrayContaining([script.path]),
       expect.any(Object)
     )
   })
 
   it("returns with script's exit code", async () => {
-    mockRun.mockImplementation(() => 2)
+    mockRun.mockImplementation(() => Promise.resolve(2))
+    const script = {
+      name: 'prettier',
+      path: 'a/b/c.js',
+      args: [],
+      options: {},
+    }
 
-    const result = await runScript('prettier', 'a/b/c.js')
+    const result = await runScript(script)
 
     expect(run).toHaveBeenCalled()
     expect(result).toBe(2)
   })
 
   it('runs script with args', async () => {
-    mockRun.mockImplementation(() => 0)
-    const script = 'eslint'
-    const scriptPath = 'path/to/eslint'
-    const args = ['.', '--fix']
-
-    const result = await runScript(script, scriptPath, args)
+    mockRun.mockImplementation(() => Promise.resolve(0))
+    const script = {
+      name: 'eslint',
+      path: 'path/to/eslint',
+      args: ['.', '--fix'],
+      options: {},
+    }
+    const result = await runScript(script)
 
     expect(result).toBe(0)
     expect(run).toHaveBeenCalledWith(
       'node',
-      expect.arrayContaining([scriptPath, ...args]),
+      expect.arrayContaining([script.path, ...script.args]),
       expect.any(Object)
     )
   })
 
   it('runs script with env', async () => {
-    mockRun.mockImplementation(() => 0)
-    const script = 'babel'
-    const scriptPath = 'a/b/c'
-    const args = []
-    const options = { env: { BABEL_ENV: 'production' } }
+    mockRun.mockImplementation(() => Promise.resolve(0))
+    const script = {
+      name: 'babel',
+      path: 'e/f/g',
+      args: [],
+      options: { env: { BABEL_ENV: 'produciton' } },
+    }
 
-    const result = await runScript(script, scriptPath, args, options)
+    const result = await runScript(script)
 
     expect(result).toBe(0)
     expect(run).toHaveBeenCalledWith(
       'node',
-      expect.arrayContaining([scriptPath, ...args]),
-      expect.objectContaining({ env: options.env })
+      expect.arrayContaining([script.path, ...script.args]),
+      expect.objectContaining({ env: script.options.env })
     )
   })
 
   it('runs script with args and env', async () => {
-    mockRun.mockImplementation(() => 0)
-    const script = 'jest'
-    const scriptPath = 'some/path/to/jest'
-    const args = ['--ci']
-    const options = { env: { BABEL_ENV: 'test', NODE_ENV: 'test' } }
+    mockRun.mockImplementation(() => Promise.resolve(0))
+    const script = {
+      name: 'jest',
+      path: 'some/path/to/jest',
+      args: ['--ci'],
+      options: { env: { BABEL_ENV: 'test', NODE_ENV: 'test' } },
+    }
 
-    const result = await runScript(script, scriptPath, args, options)
+    const result = await runScript(script)
 
     expect(result).toBe(0)
     expect(run).toHaveBeenCalledWith(
       'node',
-      expect.arrayContaining([scriptPath, ...args]),
-      expect.objectContaining({ env: options.env })
+      expect.arrayContaining([script.path, ...script.args]),
+      expect.objectContaining({ env: script.options.env })
     )
   })
 
   it("doesn't run invalid script", async () => {
-    mockRun.mockImplementation(() => 0)
+    mockRun.mockImplementation(() => Promise.resolve(0))
 
     const result = await runScript('foo')
 
     expect(run).not.toHaveBeenCalled()
-    expect(result).toBe(1)
+    expect(result).not.toBe(0)
   })
 })

@@ -28,8 +28,8 @@
     "!__tests__"
   ],
   "scripts": {
-    "test": "node bin/u eslint . --fix && node bin/u jest",
-    "test-ci": "node bin/u eslint . && node bin/u jest --ci"
+    "test": "node bin/u eslint . --fix",
+    "test-ci": "node bin/u eslint ."
   },
   "dependencies": {
     "@babel/cli": "^7.8.4",
