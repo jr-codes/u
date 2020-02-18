@@ -5,7 +5,7 @@ const helper = require('../utils/script-helper')
 const name = 'jest'
 
 // https://jestjs.io/docs/en/cli
-const args = {
+const defaultArgs = {
   alias: {
     config: 'c',
   },
@@ -19,4 +19,4 @@ const args = {
 // Add line break before jest runs
 console.log() // eslint-disable-line no-console
 
-helper.run(name, args)
+helper.run(name, defaultArgs)

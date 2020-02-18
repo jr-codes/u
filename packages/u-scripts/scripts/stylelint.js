@@ -5,7 +5,7 @@ const helper = require('../utils/script-helper')
 const name = 'stylelint'
 
 // https://stylelint.io/user-guide/cli
-const args = {
+const defaultArgs = {
   alias: {
     ignorePath: 'i',
   },
@@ -17,4 +17,4 @@ const args = {
   },
 }
 
-helper.run(name, args)
+helper.run(name, defaultArgs)

@@ -5,7 +5,7 @@ const helper = require('../utils/script-helper')
 const name = 'prettier'
 
 // https://prettier.io/docs/en/cli.html
-const args = {
+const defaultArgs = {
   default: {
     config: helper.getConfig(name),
     ignorePath: helper.getIgnore('.prettierignore'),
@@ -15,4 +15,4 @@ const args = {
 // Add line break before prettier runs
 console.log() // eslint-disable-line no-console
 
-helper.run(name, args)
+helper.run(name, defaultArgs)
