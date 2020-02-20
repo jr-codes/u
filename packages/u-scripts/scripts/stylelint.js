@@ -6,6 +6,9 @@ const name = 'stylelint'
 
 // https://stylelint.io/user-guide/cli
 const args = {
+  alias: {
+    ignorePath: 'i',
+  },
   default: {
     cache: true,
     config: helper.getConfig(name),

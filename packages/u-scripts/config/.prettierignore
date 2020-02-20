@@ -11,11 +11,13 @@
 .DS_Store
 .editorconfig
 .idea
+.npmrc
 .vscode
 build
 CHANGELOG.md
 coverage
 dist
+lerna-debug.log
 LICENSE
 node_modules
 npm-debug.log*
