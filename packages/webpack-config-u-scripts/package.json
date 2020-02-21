@@ -20,7 +20,8 @@
     "utils"
   ],
   "scripts": {
-    "test": "node ../u-scripts/bin/u eslint . --fix"
+    "test": "node ../u-scripts/bin/u eslint . --fix",
+    "test-ci": "node ../u-scripts/bin/u eslint ."
   },
   "dependencies": {
     "babel-loader": "^8.0.6",

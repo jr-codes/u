@@ -21,7 +21,8 @@
   ],
   "scripts": {
     "jest": "node ../u-scripts/bin/u jest --watch",
-    "test": "node ../u-scripts/bin/u test"
+    "test": "node ../u-scripts/bin/u eslint . --fix && node ../u-scripts/bin/u jest",
+    "test-ci": "node ../u-scripts/bin/u eslint . && node ../u-scripts/bin/u jest --ci"
   },
   "dependencies": {
     "chalk": "^3.0.0",

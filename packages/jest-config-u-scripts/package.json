@@ -19,7 +19,10 @@
     "index.js",
     "jest-setup.js"
   ],
-  "scripts": {},
+  "scripts": {
+    "test": "node ../u-scripts/bin/u eslint . --fix",
+    "test-ci": "node ../u-scripts/bin/u eslint ."
+  },
   "dependencies": {
     "@babel/core": "^7.8.4",
     "@testing-library/jest-dom": "^5.1.1",

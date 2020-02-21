@@ -24,7 +24,8 @@
     "eslint-find-deprecated": "eslint-find-rules index.js -d",
     "eslint-find-unused": "eslint-find-rules index.js -u",
     "lint": "eslint fixtures/**",
-    "test": "npm run lint && jest"
+    "test": "npm run lint && jest",
+    "test-ci": "npm run lint && jest --ci"
   },
   "eslintConfig": {
     "extends": [

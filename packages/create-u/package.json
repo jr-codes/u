@@ -18,7 +18,8 @@
     "bin"
   ],
   "scripts": {
-    "test": "node ../u-scripts/bin/u eslint . --fix"
+    "test": "node ../u-scripts/bin/u eslint . --fix",
+    "test-ci": "node ../u-scripts/bin/u eslint ."
   },
   "dependencies": {
     "write-pkg": "^4.0.0",

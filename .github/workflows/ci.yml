@@ -8,24 +8,23 @@ on:
 
 jobs:
   test:
-    name: Test (node-${{ matrix.node_version }} on ${{ matrix.os }})
+    name: Test
     runs-on: ${{ matrix.os }}
 
     strategy:
       matrix:
+        os: [macOS-latest, ubuntu-latest]
         node_version: [10.x, 12.x, 13.x]
-        os: [ubuntu-latest, windows-latest, macOS-latest]
 
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node ${{ matrix.node_version }}
-        uses: actions/setup-node@v1
+      - uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node_version }}
       - name: Install and test
         run: |
           npm install lerna
           npm run bootstrap
-          npm test
+          npm run test-ci
         env:
           CI: true

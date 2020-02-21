@@ -28,9 +28,8 @@
     "!__tests__"
   ],
   "scripts": {
-    "jest": "node bin/u jest",
-    "lint": "node bin/u eslint . --fix",
-    "test": "npm run lint && npm run jest"
+    "test": "node bin/u eslint . --fix && node bin/u jest",
+    "test-ci": "node bin/u eslint . && node bin/u jest --ci"
   },
   "dependencies": {
     "@babel/cli": "^7.8.4",
