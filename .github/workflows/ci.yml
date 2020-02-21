@@ -24,7 +24,8 @@ jobs:
           node-version: ${{ matrix.node_version }}
       - name: Install and test
         run: |
-          npm install
+          npm install lerna
+          npm run bootstrap
           npm test
         env:
           CI: true
