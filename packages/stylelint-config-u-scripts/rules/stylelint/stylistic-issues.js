@@ -6,7 +6,7 @@ module.exports = {
       'always',
       {
         except: 'after-same-name',
-        ignore: 'after-comment'
+        ignore: 'after-comment',
       },
     ], // disabled by stylelint-config-prettier
     'at-rule-name-case': 'lower', // disabled by stylelint-config-prettier
