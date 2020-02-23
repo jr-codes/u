@@ -2,7 +2,7 @@
 
 const helper = require('../utils/script-helper')
 
-const args = {
+const defaultArgs = {
   default: {
     config: helper.getConfig('webpack'),
   },
@@ -11,4 +11,4 @@ const args = {
 // Add line break before webpack runs
 console.log() // eslint-disable-line no-console
 
-helper.run('webpack-dev-server', args)
+helper.run('webpack-dev-server', defaultArgs)

@@ -1,44 +1,40 @@
 'use strict'
 
-/* eslint-disable no-console, max-params */
+/* eslint-disable no-console */
 
-const chalk = require('chalk')
-const debug = require('debug')('u:utils')
+const debug = require('debug')('u:utils:run-script')
+const messages = require('./messages')
 const run = require('./run')
 const time = require('debug')('u:time')
 
 /**
- * Runs the script with the given name.
+ * Run the given script.
  *
- * @param {string} name Name of the script to path
- * @param {string} scriptPath Path of script file
- * @param {string[]} [args] Arguments array
- * @param {Object.<string,string>} [options] Options
+ * @param { import('./parse-script').Script } script Script to run
  * @returns {number} Resulting exit code from running script
  */
-async function runScript(name, scriptPath, args = [], options = {}) {
-  debug('run-script %s %s %o %o', name, scriptPath, args, options)
+async function runScript({ name = '', path = '', args = [], options = {} }) {
+  debug('%s %s %o %o', name, path, args, options)
 
-  // Control what options get passed to execa
-  const { env } = options
-
-  if (scriptPath) {
-    console.log(chalk`{bold RUN} {blue ${name}}`)
-
-    time('start %s', name)
-    const exitCode = await run('node', [scriptPath, ...args], { env })
-    time('end %s', name)
-
-    // Add line break between scripts
+  if (!path) {
+    console.log(messages.invalidCommand(name))
     console.log()
-
-    return exitCode
+    return 1
   }
 
-  console.log(chalk`{red.bold ERROR} Invalid command {red ${name}}`)
+  console.log(messages.run(name))
+
+  // Limit what options get passed to execa
+  const { env } = options
+
+  time('start %s', name)
+  const exitCode = await run('node', [path, ...args], { env })
+  time('end %s', name)
+
+  // Add line break between scripts
   console.log()
 
-  return 1
+  return exitCode
 }
 
 module.exports = runScript

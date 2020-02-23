@@ -1,6 +1,6 @@
 'use strict'
 
-const debug = require('debug')('u:utils')
+const debug = require('debug')('u:utils:get-config')
 const findConfig = require('./find-config')
 
 /**

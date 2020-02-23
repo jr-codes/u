@@ -2,19 +2,19 @@
 
 /* eslint-disable no-console */
 
-const chalk = require('chalk')
-const debug = require('debug')('u:utils')
-const parseScript = require('./parse-script')
-const runScript = require('./run-script')
+const debug = require('debug')('u:utils:command-runner')
+const messages = require('./messages')
+const parseScripts = require('./parse-scripts')
+const runScripts = require('./run-scripts')
 
 /**
  * Returns a runner utility used for running commands.
  *
  * @param {object} options
- * @param {Object.<string,string>} options.scripts Map of script names to file paths.
  * @param {Object.<string,Array>} options.commands Map of command names to an array of script commands.
+ * @param {Object.<string,string>} options.scriptMap Map of script names to file paths.
  */
-function createCommandRunner({ scripts = {}, commands = {} }) {
+function createCommandRunner({ commands = {}, scriptMap = {} }) {
   /**
    * Runs the given argument and returns the resulting exit code.
    *
@@ -32,35 +32,33 @@ function createCommandRunner({ scripts = {}, commands = {} }) {
    * u('build')
    */
   async function u(arg) {
-    debug('scripts %o', scripts)
     debug('commands %j', commands)
+    debug('scriptMap %O', scriptMap)
 
-    const queue = []
+    const rawScripts = []
 
     // Check if first word matches a script name
     const argHead = arg.split(' ')[0]
 
     // If arg is a script, add script to the queue
     // Else if arg is a command, add command's scripts to the queue
-    // Else if neither, exit with an error code
-    if (argHead in scripts) {
-      queue.push(arg)
+    // Else, exit with an error code
+    if (argHead in scriptMap) {
+      debug('found script %s', argHead)
+      rawScripts.push(arg)
     } else if (arg in commands) {
-      queue.push(...commands[arg])
+      debug('found command %s', arg)
+      rawScripts.push(...commands[arg])
     } else {
       console.log()
-      console.log(chalk`{red ERROR} Invalid command {red ${arg}}`)
+      console.log(messages.invalidCommand(arg))
       console.log()
       return 1
     }
 
-    for (const script of queue) {
-      const args = parseScript(script, scripts)
-      const exitCode = await runScript(...args) // eslint-disable-line no-await-in-loop
-      if (exitCode) return 1
-    }
-
-    return 0
+    const scripts = parseScripts(rawScripts, scriptMap)
+    const exitCode = await runScripts(scripts)
+    return exitCode
   }
 
   return u

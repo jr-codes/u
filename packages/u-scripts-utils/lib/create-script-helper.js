@@ -1,5 +1,6 @@
 'use strict'
 
+const debug = require('debug')('u:utils:script-error')
 const path = require('path')
 const getConfigPath = require('./get-config-path')
 const getIgnorePath = require('./get-ignore-path')
@@ -59,10 +60,12 @@ function createScriptHelper(defaultConfigPath) {
      * @example
      * run('jest', { default: { silent: true }})
      */
-    run: async (cmd, args = [], options = {}) => {
+    run: async (cmd, args, options) => {
       try {
-        process.exitCode = await runWithYargs(cmd, args, options)
+        const exitCode = await runWithYargs(cmd, args, options)
+        process.exitCode = exitCode
       } catch (error) {
+        debug(error)
         process.exitCode = 1
       }
     },

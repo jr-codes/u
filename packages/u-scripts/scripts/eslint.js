@@ -5,7 +5,7 @@ const helper = require('../utils/script-helper')
 const name = 'eslint'
 
 // https://eslint.org/docs/user-guide/command-line-interface
-const args = {
+const defaultArgs = {
   alias: {
     config: 'c',
     format: 'f',
@@ -21,4 +21,4 @@ const args = {
   },
 }
 
-helper.run(name, args)
+helper.run(name, defaultArgs)
