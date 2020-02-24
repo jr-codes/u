@@ -46,7 +46,7 @@
     "stylelint": "^13.2.0",
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-config-u-scripts": "^0.7.0",
-    "stylelint-formatter-pretty": "^1.1.4",
+    "stylelint-formatter-pretty": "^2.0.0",
     "stylelint-prettier": "^1.1.2",
     "typescript": "^3.7.5",
     "u-scripts-utils": "^0.7.0",
