@@ -1,3 +1,5 @@
+![npm](https://img.shields.io/npm/v/u-scripts) ![CI](https://github.com/jr-codes/u/workflows/CI/badge.svg) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jr-codes/u/blob/master/LICENSE)
+
 # u
 
 U is a JavaScript bundler, transpiler, linter, formatter, dev server, and test framework. It combines several open-source tools into a single dependency that's both opinionated and configurable.
