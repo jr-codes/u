@@ -48,7 +48,7 @@
     "stylelint-config-u-scripts": "^0.7.1",
     "stylelint-formatter-pretty": "^2.0.0",
     "stylelint-prettier": "^1.1.2",
-    "typescript": "^3.7.5",
+    "typescript": "^3.8.2",
     "u-scripts-utils": "^0.7.1",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11",
