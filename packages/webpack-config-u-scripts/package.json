@@ -1,6 +1,6 @@
 {
   "name": "webpack-config-u-scripts",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Webpack config for u-scripts",
   "homepage": "https://github.com/jr-codes/u#readme",
   "bugs": {
@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "babel-loader": "^8.0.6",
-    "babel-preset-u-scripts": "^0.7.0",
+    "babel-preset-u-scripts": "^0.7.1",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.4.2",
     "file-loader": "^5.0.2",
