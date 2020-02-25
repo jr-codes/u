@@ -7,8 +7,8 @@
     "clean": "lerna clean",
     "format": "node packages/u-scripts/bin/u prettier --write '**/*.*'",
     "format-check": "node packages/u-scripts/bin/u prettier --check '**/*.*'",
-    "publish": "lerna publish --force-publish --conventional-commits --sign-git-commit --sign-git-tag",
-    "publish-canary": "lerna publish --force-publish --canary --conventional-commits --sign-git-commit --sign-git-tag",
+    "release": "lerna publish --force-publish --conventional-commits --sign-git-commit --sign-git-tag",
+    "release-canary": "lerna publish --force-publish --canary --conventional-commits --sign-git-commit --sign-git-tag",
     "sort": "lerna exec -- npx sort-package-json",
     "test": "npm run format && lerna run test",
     "test-ci": "npm run format-check && lerna run test-ci"
