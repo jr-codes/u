@@ -1,4 +1,4 @@
-[![npm](https://img.shields.io/npm/v/u-scripts)](https://www.npmjs.com/package/u-scripts) [![CI](https://github.com/jr-codes/u/workflows/CI/badge.svg)](https://github.com/jr-codes/u/actions) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jr-codes/u/blob/master/LICENSE)
+[![npm](https://img.shields.io/npm/v/u-scripts)](https://www.npmjs.com/package/u-scripts) [![CI](https://github.com/jr-codes/u/workflows/CI/badge.svg)](https://github.com/jr-codes/u/actions) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jr-codes/u/blob/master/LICENSE) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=jr-codes/u)](https://dependabot.com)
 
 # u
 
