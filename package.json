@@ -7,6 +7,8 @@
     "clean": "lerna clean",
     "format": "node packages/u-scripts/bin/u prettier --write '**/*.*'",
     "format-check": "node packages/u-scripts/bin/u prettier --check '**/*.*'",
+    "prerelease": "node release-checks",
+    "prerelease-canary": "node release-checks",
     "release": "lerna publish --force-publish --conventional-commits --sign-git-commit --sign-git-tag",
     "release-canary": "lerna publish --force-publish --canary --conventional-commits --sign-git-commit --sign-git-tag",
     "sort": "lerna exec -- npx sort-package-json",
@@ -14,6 +16,7 @@
     "test-ci": "npm run format-check && lerna run test-ci"
   },
   "devDependencies": {
+    "execa": "^4.0.0",
     "lerna": "^3.20.2"
   }
 }
