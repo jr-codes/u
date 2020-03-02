@@ -10,6 +10,7 @@ const runWithYargs = require('./run-with-yargs')
  * Returns a helper utility used for configuring scripts.
  *
  * @param {string} defaultConfigPath Path where default config files are located.
+ * @returns {Object} script helper
  */
 function createScriptHelper(defaultConfigPath) {
   const getDefault = name => path.join(defaultConfigPath, name)

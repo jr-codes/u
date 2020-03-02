@@ -13,6 +13,7 @@ const runScripts = require('./run-scripts')
  * @param {object} options
  * @param {Object.<string,Array>} options.commands Map of command names to an array of script commands.
  * @param {Object.<string,string>} options.scriptMap Map of script names to file paths.
+ * @returns {Function} command runner
  */
 function createCommandRunner({ commands = {}, scriptMap = {} }) {
   /**
