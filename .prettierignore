@@ -17,6 +17,7 @@ build
 CHANGELOG.md
 coverage
 dist
+fixtures
 lerna-debug.log
 lerna.json
 LICENSE
