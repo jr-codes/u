@@ -23,7 +23,7 @@
     "eslint-find-current": "eslint-find-rules index.js -c",
     "eslint-find-deprecated": "eslint-find-rules index.js -d",
     "eslint-find-unused": "eslint-find-rules index.js -u",
-    "lint": "eslint fixtures/**",
+    "lint": "eslint fixtures",
     "test": "npm run lint && jest",
     "test-ci": "npm run lint && jest --ci"
   },
