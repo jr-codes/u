@@ -7,13 +7,12 @@ on:
     branches: [master]
 
 jobs:
-  test:
-    name: Test
-    runs-on: ${{ matrix.os }}
+  test-node:
+    name: Test Node
+    runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        os: [macOS-latest, ubuntu-latest]
         node_version: [10.x, 12.x, 13.x]
 
     steps:
@@ -21,10 +20,27 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node_version }}
-      - name: Install and test
-        run: |
-          npm install
-          npm run bootstrap
-          npm run test-ci
+      - run: node --version
+      - run: npm install
+      - run: npm run test-ci
+        env:
+          CI: true
+
+  test-os:
+    name: Test OS
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest]
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - run: node --version
+      - run: npm install
+      - run: npm run test-ci
         env:
           CI: true
