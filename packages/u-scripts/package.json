@@ -29,7 +29,7 @@
   ],
   "scripts": {
     "test": "node bin/u eslint . --fix",
-    "test-ci": "node bin/u eslint ."
+    "test-ci": "node bin/u eslint . --ignore-pattern bin"
   },
   "dependencies": {
     "@babel/cli": "^7.8.4",

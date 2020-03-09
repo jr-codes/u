@@ -10,6 +10,7 @@
 .*ignore
 .DS_Store
 .editorconfig
+.gitattributes
 .idea
 .npmrc
 .vscode
@@ -17,6 +18,7 @@ build
 CHANGELOG.md
 coverage
 dist
+fixtures
 lerna-debug.log
 lerna.json
 LICENSE
