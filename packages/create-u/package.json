@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "test": "node ../u-scripts/bin/u eslint . --fix",
-    "test-ci": "node ../u-scripts/bin/u eslint ."
+    "test-ci": "node ../u-scripts/bin/u eslint . --ignore-pattern bin"
   },
   "dependencies": {
     "write-pkg": "^4.0.0",
