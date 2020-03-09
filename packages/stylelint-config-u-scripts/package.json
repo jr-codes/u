@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-u-scripts",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "Stylelint config for u-scripts",
   "homepage": "https://github.com/jr-codes/u#readme",
   "bugs": {
