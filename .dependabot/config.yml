@@ -2,6 +2,6 @@ version: 1
 update_configs:
   - package_manager: 'javascript'
     directory: '/'
-    update_schedule: 'weekly'
+    update_schedule: 'daily'
     commit_message:
       prefix: 'fix'
