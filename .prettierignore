@@ -10,6 +10,7 @@
 .*ignore
 .DS_Store
 .editorconfig
+.gitattributes
 .idea
 .npmrc
 .vscode
