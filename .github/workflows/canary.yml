@@ -17,4 +17,7 @@ jobs:
       - run: node --version
       - run: npm install
       - run: npm run test-ci
+      - run: echo //registry.npmjs.org/:_authToken=${NPM_TOKEN} > .npmrc
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: npm run release-canary
