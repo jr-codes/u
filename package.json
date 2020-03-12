@@ -10,7 +10,7 @@
     "prerelease": "node release-checks",
     "prerelease-canary": "node release-checks",
     "release": "lerna publish --force-publish --conventional-commits --sign-git-commit --sign-git-tag",
-    "release-canary": "lerna publish --force-publish --canary --conventional-commits --sign-git-commit --sign-git-tag",
+    "release-canary": "lerna publish --force-publish --canary --yes --exact --conventional-commits",
     "sort": "lerna exec -- npx sort-package-json",
     "test": "npm run format && lerna run test",
     "test-ci": "npm run format-check && lerna run test-ci"
