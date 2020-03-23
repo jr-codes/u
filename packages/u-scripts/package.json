@@ -42,7 +42,7 @@
     "jest": "^25.1.0",
     "jest-config-u-scripts": "^0.9.0",
     "nodemon": "^2.0.2",
-    "prettier": "1.19.1",
+    "prettier": "2.0.1",
     "stylelint": "^13.2.0",
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-config-u-scripts": "^0.9.0",
