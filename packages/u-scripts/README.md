@@ -3,6 +3,8 @@
 [![CI](https://github.com/jr-codes/u/workflows/CI/badge.svg)](https://github.com/jr-codes/u/actions)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jr-codes/u/blob/master/LICENSE)
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=jr-codes/u)](https://dependabot.com)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/jr-codes/u.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/jr-codes/u/context:javascript)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/jr-codes/u.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/jr-codes/u/alerts/)
 
 # u
 
