@@ -12,7 +12,8 @@
     "release-canary": "lerna publish --force-publish --canary --yes --exact",
     "sort": "lerna exec -- npx sort-package-json",
     "test": "npm run format && lerna run test",
-    "test-ci": "npm run format-check && lerna run test-ci"
+    "test-ci": "npm run format-check && lerna run test-ci",
+    "update": "lerna exec -- npx npm-check-updates -u"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
