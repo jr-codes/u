@@ -29,9 +29,7 @@
   ],
   "scripts": {
     "test": "node bin/u eslint . --fix",
-    "test-ci": "node bin/u eslint . --ignore-pattern bin",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "test-ci": "node bin/u eslint . --ignore-pattern bin"
   },
   "dependencies": {
     "@babel/cli": "^7.8.4",
@@ -55,8 +53,7 @@
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11",
     "webpack-config-u-scripts": "^0.9.0",
-    "webpack-dev-server": "^3.10.3",
-    "snyk": "^1.316.2"
+    "webpack-dev-server": "^3.10.3"
   },
   "devDependencies": {
     "@types/jest": "^25.1.3",
@@ -64,6 +61,5 @@
   },
   "engines": {
     "node": ">=10.3.0"
-  },
-  "snyk": true
+  }
 }

@@ -18,9 +18,7 @@
   ],
   "scripts": {
     "test": "node ../u-scripts/bin/u eslint . --fix",
-    "test-ci": "node ../u-scripts/bin/u eslint .",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "test-ci": "node ../u-scripts/bin/u eslint ."
   },
   "dependencies": {
     "@babel/core": "^7.8.4",
@@ -29,8 +27,6 @@
     "@babel/preset-react": "^7.8.3",
     "babel-plugin-dynamic-import-node": "^2.3.0",
     "babel-plugin-macros": "^2.8.0",
-    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
-    "snyk": "^*"
-  },
-  "snyk": true
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24"
+  }
 }

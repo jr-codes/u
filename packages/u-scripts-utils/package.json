@@ -22,9 +22,7 @@
   "scripts": {
     "jest": "node ../u-scripts/bin/u jest --watch",
     "test": "node ../u-scripts/bin/u eslint . --fix && node ../u-scripts/bin/u jest",
-    "test-ci": "node ../u-scripts/bin/u eslint . && node ../u-scripts/bin/u jest --ci",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "test-ci": "node ../u-scripts/bin/u eslint . && node ../u-scripts/bin/u jest --ci"
   },
   "dependencies": {
     "chalk": "^4.0.0",
@@ -32,8 +30,6 @@
     "debug": "^4.1.1",
     "execa": "^4.0.0",
     "yargs-parser": "^18.0.0",
-    "yargs-unparser": "^1.5.0",
-    "snyk": "^1.316.1"
-  },
-  "snyk": true
+    "yargs-unparser": "^1.5.0"
+  }
 }

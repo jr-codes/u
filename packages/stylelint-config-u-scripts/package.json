@@ -23,14 +23,11 @@
   ],
   "scripts": {
     "test": "jest",
-    "test-ci": "jest --ci",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "test-ci": "jest --ci"
   },
   "dependencies": {
     "stylelint-config-prettier": "^8.0.1",
-    "stylelint-order": "^4.0.0",
-    "snyk": "^1.316.1"
+    "stylelint-order": "^4.0.0"
   },
   "devDependencies": {
     "jest": "^25.1.0",
@@ -38,6 +35,5 @@
   },
   "peerDependencies": {
     "stylelint": "^13.2.0"
-  },
-  "snyk": true
+  }
 }
