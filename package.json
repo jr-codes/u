@@ -4,8 +4,8 @@
   "scripts": {
     "check": "lerna exec --stream -- npm pack --dry-run",
     "clean": "lerna clean",
-    "format": "node packages/u-scripts/bin/u prettier --write '**/*.*'",
-    "format-check": "node packages/u-scripts/bin/u prettier --check '**/*.*'",
+    "format": "node packages/u-scripts/bin/u prettier --write .",
+    "format-check": "node packages/u-scripts/bin/u prettier --check .",
     "postinstall": "lerna bootstrap --hoist",
     "prerelease": "node release-checks",
     "release": "lerna publish --force-publish --conventional-commits --sign-git-commit --sign-git-tag",

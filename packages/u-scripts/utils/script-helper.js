@@ -1,7 +1,7 @@
 'use strict'
 
 const path = require('path')
-const utils = require('u-scripts-utils')
+const utils = require('cli-rewire')
 
 const helper = utils.createScriptHelper(path.join(__dirname, '../config'))
 
