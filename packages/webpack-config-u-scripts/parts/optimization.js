@@ -10,7 +10,7 @@ module.exports = (config, options) => {
   }
 
   config.optimization.runtimeChunk = {
-    name: entrypoint => `runtime-${entrypoint.name}`,
+    name: (entrypoint) => `runtime-${entrypoint.name}`,
   }
 
   config.output.chunkFilename = options.isDevelopment

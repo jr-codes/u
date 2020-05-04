@@ -1,7 +1,7 @@
 'use strict'
 
 // https://webpack.js.org/configuration/stats/
-module.exports = config => {
+module.exports = (config) => {
   config.stats = {
     assetsSort: '!size',
     children: false,

@@ -15,7 +15,7 @@ describe('index', () => {
     })
 
     const result = cli.executeOnText('var foo = bar')
-    const rules = result.results[0].messages.map(x => x.ruleId)
+    const rules = result.results[0].messages.map((x) => x.ruleId)
 
     expect(result.errorCount).toBeGreaterThan(0)
     expect(result.results).toHaveLength(1)

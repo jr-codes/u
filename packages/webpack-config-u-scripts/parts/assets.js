@@ -2,7 +2,7 @@
 
 const WebpackManifestPlugin = require('webpack-manifest-plugin')
 
-module.exports = config => {
+module.exports = (config) => {
   config.plugins.push(
     new WebpackManifestPlugin({
       fileName: 'asset-manifest.json',
@@ -12,7 +12,7 @@ module.exports = config => {
           return manifest
         }, seed)
         const entrypointFiles = entrypoints.main.filter(
-          fileName => !fileName.endsWith('.map')
+          (fileName) => !fileName.endsWith('.map')
         )
 
         return {

@@ -7,18 +7,18 @@ module.exports = {
     lint: [
       'eslint --fix .',
       'stylelint **/*.{css,js,jsx,scss} --fix',
-      'prettier --write "**/*.*"',
+      'prettier --write .',
     ],
     test: [
       'eslint --fix .',
       'stylelint **/*.{css,js,jsx,scss} --fix',
-      'prettier --write "**/*.*"',
+      'prettier --write .',
       'jest',
     ],
     'test ci': [
       'eslint .',
       'stylelint **/*.{css,js,jsx,scss}',
-      'prettier --check "**/*.*"',
+      'prettier --check .',
       'jest --ci',
     ],
   },

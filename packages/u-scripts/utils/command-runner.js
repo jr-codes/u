@@ -2,7 +2,7 @@
 
 const path = require('path')
 const scriptMap = require('../scripts')
-const utils = require('u-scripts-utils')
+const utils = require('cli-rewire')
 
 const defaultConfig = path.join(__dirname, '../config', 'u.js')
 const config = utils.getConfig('u', {}, defaultConfig)

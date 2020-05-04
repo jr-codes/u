@@ -4,15 +4,16 @@
   "scripts": {
     "check": "lerna exec --stream -- npm pack --dry-run",
     "clean": "lerna clean",
-    "format": "node packages/u-scripts/bin/u prettier --write '**/*.*'",
-    "format-check": "node packages/u-scripts/bin/u prettier --check '**/*.*'",
+    "format": "node packages/u-scripts/bin/u prettier --write .",
+    "format-check": "node packages/u-scripts/bin/u prettier --check .",
     "postinstall": "lerna bootstrap --hoist",
     "prerelease": "node release-checks",
     "release": "lerna publish --force-publish --conventional-commits --sign-git-commit --sign-git-tag",
     "release-canary": "lerna publish --force-publish --canary --yes --exact",
     "sort": "lerna exec -- npx sort-package-json",
     "test": "npm run format && lerna run test",
-    "test-ci": "npm run format-check && lerna run test-ci"
+    "test-ci": "npm run format-check && lerna run test-ci",
+    "update": "lerna exec -- npx npm-check-updates -u"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
@@ -22,7 +23,9 @@
     "lerna": "^3.20.2"
   },
   "commitlint": {
-    "extends": ["@commitlint/config-conventional"]
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   },
   "husky": {
     "hooks": {
