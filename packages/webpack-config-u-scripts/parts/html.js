@@ -2,7 +2,7 @@
 
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-module.exports = config => {
+module.exports = (config) => {
   config.plugins.push(
     new HtmlWebpackPlugin({
       template: require.resolve('../templates/index.html'),

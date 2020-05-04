@@ -13,7 +13,7 @@ const runWithYargs = require('./run-with-yargs')
  * @returns {Object} script helper
  */
 function createScriptHelper(defaultConfigPath) {
-  const getDefault = name => path.join(defaultConfigPath, name)
+  const getDefault = (name) => path.join(defaultConfigPath, name)
 
   return {
     /**

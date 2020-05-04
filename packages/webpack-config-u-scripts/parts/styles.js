@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const postcssPresetEnv = require('postcss-preset-env')
 
-const getLoaders = options => {
+const getLoaders = (options) => {
   return [
     options.isDevelopment && require.resolve('style-loader'),
     options.isProduction && MiniCssExtractPlugin.loader,

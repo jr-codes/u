@@ -1,6 +1,6 @@
 'use strict'
 
-module.exports = api => {
+module.exports = (api) => {
   const isProd = api.env('production')
   const isTest = api.env('test')
 
