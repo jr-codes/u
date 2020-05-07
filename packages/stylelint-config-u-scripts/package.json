@@ -30,7 +30,7 @@
     "stylelint-order": "^4.0.0"
   },
   "devDependencies": {
-    "jest": "^25.5.4",
+    "jest": "^26.0.1",
     "stylelint": "^13.3.3"
   },
   "peerDependencies": {
