@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.1](https://github.com/jr-codes/create-u/compare/v0.9.0...v0.9.1) (2020-05-27)
+
+
+### Bug Fixes
+
+* ⬆️ upgrade dependencies ([f091e35](https://github.com/jr-codes/create-u/commit/f091e35c7bb9f62f3ff4d880c10d423b359019c1))
+
+
+
+
+
 # [0.9.0](https://github.com/jr-codes/create-u/compare/v0.7.1...v0.9.0) (2020-03-09)
 
 

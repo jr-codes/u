@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.1](https://github.com/jr-codes/u/compare/v0.9.0...v0.9.1) (2020-05-27)
+
+
+### Bug Fixes
+
+* ✅ prettier ([96e46a8](https://github.com/jr-codes/u/commit/96e46a82b13cb576bc5d7195c0745565f1761db5))
+* ➕ replace u-scripts-utils with cli-rewire ([df9357d](https://github.com/jr-codes/u/commit/df9357d487230153c0a6098f7a0eced62cc698f4))
+* ➖ remove snyk ([4592ffa](https://github.com/jr-codes/u/commit/4592ffaab55da29c250fd42c6d806f330013ea6a))
+* ⬆️ dependencies ([9bf46ca](https://github.com/jr-codes/u/commit/9bf46caef2d485bcf8f8eae25fda47d9fcd655b1))
+* ⬆️ upgrade dependencies ([f091e35](https://github.com/jr-codes/u/commit/f091e35c7bb9f62f3ff4d880c10d423b359019c1))
+* 👷‍♂️ publish canary version on master push ([b294ef7](https://github.com/jr-codes/u/commit/b294ef73d2593f360b07be98fc0595773e6cc81d))
+* 💚 add npm token ([fbbdcd6](https://github.com/jr-codes/u/commit/fbbdcd6f2378426dbbdf498ef268b13b546c8730))
+* 💚 remove release checks for canary ([0958fd1](https://github.com/jr-codes/u/commit/0958fd1f11be38124eab441f3be6127b247f7fdb))
+* 💚 try fixing lerna publish issue ([4222fb3](https://github.com/jr-codes/u/commit/4222fb370e72643cf190a45eb23fef51edb062c0))
+* 📝 add LGTM badges ([e298f18](https://github.com/jr-codes/u/commit/e298f1895eb7b4242e1f01cd3c418676d8179436))
+* 📝 update npm badges ([3b44067](https://github.com/jr-codes/u/commit/3b44067b579b00967dea534413f001da9fefba73))
+* 🔥 remove .npmrc ([80cd108](https://github.com/jr-codes/u/commit/80cd108eca3ece70c1147f8fee92d1d96cf37839))
+* 🔥 remove old stylelint-rules ([b745ea6](https://github.com/jr-codes/u/commit/b745ea6d46ce334c5da6fc86244a336999339cd3))
+* 🔧 add commit linting ([ecc892e](https://github.com/jr-codes/u/commit/ecc892e32d5d23ad1657b8ecbf1847c67e60e187))
+* 🔧 add keywords ([16d9336](https://github.com/jr-codes/u/commit/16d933690424737f87021e40c65814bccb9e095f))
+* 🔧 skip prompt for release-canary ([b354778](https://github.com/jr-codes/u/commit/b3547788c7b357da247ecff01ad06222031ed39f))
+* 🙈 ignore .npmrc ([530998b](https://github.com/jr-codes/u/commit/530998bb30d73429e8a1039fb24dd2fc3f89331a))
+* 🚚 rename config to configs ([e011340](https://github.com/jr-codes/u/commit/e011340ec0d99a4e382e22b260db86d2e52e0e41))
+* 🚚 rename utils to lib ([e4c2ac4](https://github.com/jr-codes/u/commit/e4c2ac4e46de02009e4d1ca375c603b6fc1fd84d))
+* bump babel-jest from 25.5.1 to 26.0.1 ([a491d6b](https://github.com/jr-codes/u/commit/a491d6b376eb13a5559ac63f5ae80dfbafcee031))
+* bump chalk from 3.0.0 to 4.0.0 ([2ddfba1](https://github.com/jr-codes/u/commit/2ddfba19ea989d78314721a4eb26b313f7ec768f))
+* bump eslint-plugin-react-hooks from 2.5.1 to 3.0.0 ([2468a0c](https://github.com/jr-codes/u/commit/2468a0c73d961c2bc1e6c1c5762671bcad9daa7e))
+* bump eslint-plugin-unicorn from 16.1.1 to 17.0.1 ([a2a0703](https://github.com/jr-codes/u/commit/a2a07039825db657848d86de83a33d4ee0509e01))
+* bump eslint-plugin-unicorn from 17.2.0 to 18.0.1 ([84ad3d9](https://github.com/jr-codes/u/commit/84ad3d95a643130fb95c68c0c42cfdbf937b5687))
+* bump eslint-plugin-unicorn from 18.0.1 to 19.0.1 ([832824b](https://github.com/jr-codes/u/commit/832824b6938f927b238b139a56ec91bdb32b0802))
+* bump file-loader from 5.1.0 to 6.0.0 ([55a5572](https://github.com/jr-codes/u/commit/55a55728d21f1fa795f18e87b92c43fcf37e2d72))
+* bump html-webpack-plugin from 4.0.0-beta.11 to 4.2.0 ([a6634be](https://github.com/jr-codes/u/commit/a6634be3fe66f66b23cb16a5a92807dca823c828))
+* bump html-webpack-plugin from 4.2.0 to 4.3.0 ([ec60885](https://github.com/jr-codes/u/commit/ec6088506c9a11478b0d7415e60113998aac1da7))
+* bump jest from 25.5.4 to 26.0.1 ([c411e28](https://github.com/jr-codes/u/commit/c411e285b63bb64e23df8441c3b96ed65d5a194b))
+* packages/babel-preset-u-scripts/package.json & packages/babel-preset-u-scripts/.snyk to reduce vulnerabilities ([7c8c924](https://github.com/jr-codes/u/commit/7c8c9248d652f5dbe3999aa429399ca8e06504ca))
+* packages/babel-preset-u-scripts/package.json & packages/babel-preset-u-scripts/.snyk to reduce vulnerabilities ([1af62ca](https://github.com/jr-codes/u/commit/1af62caeb394a558436b5e898c2d8cbd2d2fcefd))
+* packages/jest-config-u-scripts/package.json & packages/jest-config-u-scripts/.snyk to reduce vulnerabilities ([90a726d](https://github.com/jr-codes/u/commit/90a726decd35a2914cb3b6f49ce52d3652e9d761))
+* packages/jest-config-u-scripts/package.json & packages/jest-config-u-scripts/.snyk to reduce vulnerabilities ([d0bdd04](https://github.com/jr-codes/u/commit/d0bdd04a21e6926f733acb6c42c043496c7949cf))
+* packages/stylelint-config-u-scripts/package.json & packages/stylelint-config-u-scripts/.snyk to reduce vulnerabilities ([73619f0](https://github.com/jr-codes/u/commit/73619f01ecc660417d1f37e3c4018d8590f24e24))
+* packages/stylelint-config-u-scripts/package.json & packages/stylelint-config-u-scripts/.snyk to reduce vulnerabilities ([d454805](https://github.com/jr-codes/u/commit/d454805b810c2dad283fa5f6e3ecff64015eb495))
+* packages/u-scripts-utils/package.json & packages/u-scripts-utils/.snyk to reduce vulnerabilities ([d961f85](https://github.com/jr-codes/u/commit/d961f8528682c916196d0f74472060121a2b0493))
+* packages/u-scripts-utils/package.json & packages/u-scripts-utils/.snyk to reduce vulnerabilities ([b6436fc](https://github.com/jr-codes/u/commit/b6436fccd5732a38c4c64a7632f9f3526e4a1ddd))
+* packages/u-scripts/package.json & packages/u-scripts/.snyk to reduce vulnerabilities ([da7a3fe](https://github.com/jr-codes/u/commit/da7a3fe0b54cdafcd833c308ca683e4b9cee5fab))
+* packages/u-scripts/package.json & packages/u-scripts/.snyk to reduce vulnerabilities ([caec7f2](https://github.com/jr-codes/u/commit/caec7f2db51ef401ee8d36fc9dd1df9694afdef6))
+* packages/webpack-config-u-scripts/package.json & packages/webpack-config-u-scripts/.snyk to reduce vulnerabilities ([9b8484f](https://github.com/jr-codes/u/commit/9b8484ff93feb0643313e79348c40654cffc8e37))
+* packages/webpack-config-u-scripts/package.json & packages/webpack-config-u-scripts/.snyk to reduce vulnerabilities ([ff84371](https://github.com/jr-codes/u/commit/ff843712c5a051885ba8f0a464e716dc34c5b804))
+
+
+
+
+
 # [0.9.0](https://github.com/jr-codes/u/compare/v0.7.1...v0.9.0) (2020-03-09)
 
 
