@@ -1,5 +1,5 @@
 'use strict'
 
-const helper = require('../utils/script-helper')
+const helper = require('../lib/script-helper')
 
 helper.run('nodemon')

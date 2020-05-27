@@ -22,8 +22,8 @@
     "configs",
     "index.js",
     "jest-preset.js",
+    "lib",
     "scripts",
-    "utils",
     "!*.test.js",
     "!__tests__"
   ],
