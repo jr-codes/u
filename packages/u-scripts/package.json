@@ -19,7 +19,7 @@
   },
   "files": [
     "bin",
-    "config",
+    "configs",
     "index.js",
     "jest-preset.js",
     "scripts",
