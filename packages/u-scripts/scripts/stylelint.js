@@ -1,6 +1,6 @@
 'use strict'
 
-const helper = require('../utils/script-helper')
+const helper = require('../lib/script-helper')
 
 const name = 'stylelint'
 

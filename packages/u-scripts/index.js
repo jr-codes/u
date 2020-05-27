@@ -1,5 +1,5 @@
 'use strict'
 
-const runner = require('./utils/command-runner')
+const runner = require('./lib/command-runner')
 
 module.exports = runner

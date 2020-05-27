@@ -2,7 +2,21 @@
   "name": "u-scripts",
   "version": "0.9.0",
   "description": "Utility for building web apps",
-  "keywords": [],
+  "keywords": [
+    "babel",
+    "cli",
+    "eslint",
+    "javascript",
+    "jest",
+    "lint",
+    "nodemon",
+    "prettier",
+    "react",
+    "scripts",
+    "stylelint",
+    "test",
+    "webpack"
+  ],
   "homepage": "https://github.com/jr-codes/u#readme",
   "bugs": {
     "url": "https://github.com/jr-codes/u/issues"
@@ -19,11 +33,11 @@
   },
   "files": [
     "bin",
-    "config",
+    "configs",
     "index.js",
     "jest-preset.js",
+    "lib",
     "scripts",
-    "utils",
     "!*.test.js",
     "!__tests__"
   ],
@@ -32,31 +46,31 @@
     "test-ci": "node bin/u eslint . --ignore-pattern bin"
   },
   "dependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.6",
+    "@babel/cli": "^7.10.0",
+    "@babel/core": "^7.10.0",
     "babel-preset-u-scripts": "^0.9.0",
-    "cli-rewire": "^1.0.0",
+    "cli-rewire": "^1.0.1",
     "debug": "^4.1.1",
-    "eslint": "^6.8.0",
+    "eslint": "^7.1.0",
     "eslint-config-u-scripts": "^0.9.0",
     "eslint-formatter-pretty": "^3.0.1",
     "jest": "^26.0.1",
     "jest-config-u-scripts": "^0.9.0",
-    "nodemon": "^2.0.3",
+    "nodemon": "^2.0.4",
     "prettier": "2.0.5",
-    "stylelint": "^13.3.3",
+    "stylelint": "^13.5.0",
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-config-u-scripts": "^0.9.0",
-    "stylelint-formatter-pretty": "^2.0.1",
+    "stylelint-formatter-pretty": "^2.1.0",
     "stylelint-prettier": "^1.1.2",
-    "typescript": "^3.8.3",
+    "typescript": "^3.9.3",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-config-u-scripts": "^0.9.0",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.11.0"
   },
   "devDependencies": {
-    "@types/jest": "^25.2.1",
+    "@types/jest": "^25.2.3",
     "npm-run-all": "^4.1.5"
   },
   "engines": {
