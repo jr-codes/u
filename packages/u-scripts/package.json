@@ -2,7 +2,21 @@
   "name": "u-scripts",
   "version": "0.9.0",
   "description": "Utility for building web apps",
-  "keywords": [],
+  "keywords": [
+    "babel",
+    "cli",
+    "eslint",
+    "javascript",
+    "jest",
+    "lint",
+    "nodemon",
+    "prettier",
+    "react",
+    "scripts",
+    "stylelint",
+    "test",
+    "webpack"
+  ],
   "homepage": "https://github.com/jr-codes/u#readme",
   "bugs": {
     "url": "https://github.com/jr-codes/u/issues"
