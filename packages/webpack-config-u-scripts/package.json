@@ -27,7 +27,7 @@
     "babel-loader": "^8.1.0",
     "babel-preset-u-scripts": "^0.9.1",
     "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^3.5.3",
+    "css-loader": "^4.2.1",
     "debug": "^4.1.1",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "4.3.0",
