@@ -24,9 +24,9 @@
     "test-ci": "node ../u-scripts/bin/u eslint ."
   },
   "dependencies": {
-    "@babel/core": "^7.10.0",
-    "@testing-library/jest-dom": "^5.8.0",
-    "babel-jest": "^26.0.1",
+    "@babel/core": "^7.11.6",
+    "@testing-library/jest-dom": "^5.11.4",
+    "babel-jest": "^26.3.0",
     "babel-preset-u-scripts": "^0.9.1",
     "identity-obj-proxy": "^3.0.0"
   },
@@ -34,6 +34,6 @@
     "jest": "^26.0.1"
   },
   "peerDependencies": {
-    "jest": ">=26.0.1"
+    "jest": ">=26.4.2"
   }
 }
