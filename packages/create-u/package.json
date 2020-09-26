@@ -23,6 +23,6 @@
   },
   "dependencies": {
     "write-pkg": "^4.0.0",
-    "yargs": "^15.3.1"
+    "yargs": "^16.0.3"
   }
 }
