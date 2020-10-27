@@ -1,22 +1,24 @@
 'use strict'
 
-const helper = require('../lib/script-helper')
+const path = require('path')
+const { getConfigPath, rewire } = require('cli-rewire')
 
 const name = 'jest'
+const defaultConfigFile = path.join(__dirname, '../configs', `${name}.js`)
 
-// https://jestjs.io/docs/en/cli
-const defaultArgs = {
+const run = rewire(name, {
+  // https://jestjs.io/docs/en/cli
   alias: {
     config: 'c',
   },
   default: {
-    config: helper.getConfig(name),
+    config: getConfigPath(name, {}, defaultConfigFile),
     passWithNoTests: true,
     silent: true,
   },
-}
+})
 
 // Add line break before jest runs
 console.log() // eslint-disable-line no-console
 
-helper.run(name, defaultArgs)
+run()

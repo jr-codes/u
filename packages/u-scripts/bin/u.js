@@ -2,14 +2,25 @@
 
 'use strict'
 
-const debug = require('debug')('u')
-const u = require('..')
+const path = require('path')
+const { getConfig, wire } = require('cli-rewire')
 
-const arg = process.argv.slice(2).join(' ')
+const resolve = (...paths) => path.join(__dirname, ...paths)
 
-u(arg)
-  .then((exitCode) => (process.exitCode = exitCode))
-  .catch((error) => {
-    debug(error)
-    process.exitCode = 1
-  })
+const scripts = [
+  'babel',
+  'eslint',
+  'jest',
+  'nodemon',
+  'prettier',
+  'stylelint',
+  'webpack-dev-server',
+  'webpack',
+].map((script) => resolve('../scripts', script))
+
+const defaultConfig = resolve('../configs/u.js')
+const config = getConfig('u', {}, defaultConfig)
+
+const u = wire(scripts, config)
+
+u()
