@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.2](https://github.com/jr-codes/u/compare/v0.9.1...v0.9.2) (2020-10-27)
+
+
+### Bug Fixes
+
+* ✅ package updates ([65a1b46](https://github.com/jr-codes/u/commit/65a1b465e506e1ef4fb627a7c76e6bb44837e823))
+* 👷‍♂️ run CI tests for Node 10, 12, 14 ([3459694](https://github.com/jr-codes/u/commit/3459694db60873f697987b22163485716b3eb60a))
+* bump @commitlint/cli from 8.3.5 to 11.0.0 ([de6b2aa](https://github.com/jr-codes/u/commit/de6b2aa2daff68261ece8479cb36a8cfceb4cac7))
+* bump @commitlint/config-conventional from 8.3.4 to 11.0.0 ([468bedf](https://github.com/jr-codes/u/commit/468bedfd058667a432b7a577888f025c1c3bbcc4))
+* bump eslint-formatter-pretty from 3.0.1 to 4.0.0 ([61e0878](https://github.com/jr-codes/u/commit/61e0878dc1abecfdf2a3c148615bc247935a5405))
+* update Dependabot config file ([c547748](https://github.com/jr-codes/u/commit/c547748ac4145e713c119d8001d9e2e6067165ff))
+
+
+
+
+
 ## [0.9.1](https://github.com/jr-codes/u/compare/v0.9.0...v0.9.1) (2020-05-27)
 
 

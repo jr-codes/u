@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.2](https://github.com/jr-codes/u/compare/v0.9.1...v0.9.2) (2020-10-27)
+
+
+### Bug Fixes
+
+* ✅ package updates ([65a1b46](https://github.com/jr-codes/u/commit/65a1b465e506e1ef4fb627a7c76e6bb44837e823))
+
+
+
+
+
 ## [0.9.1](https://github.com/jr-codes/u/compare/v0.9.0...v0.9.1) (2020-05-27)
 
 
