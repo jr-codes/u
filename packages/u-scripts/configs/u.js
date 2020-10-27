@@ -15,7 +15,7 @@ module.exports = {
       'prettier --write .',
       'jest',
     ],
-    'test ci': [
+    'test-ci': [
       'eslint .',
       'stylelint **/*.{css,js,jsx,scss}',
       'prettier --check .',
