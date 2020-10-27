@@ -30,7 +30,7 @@ U comes with a set of default commands. You can make your own commands by defini
 | `u dev`     | Runs `webpack-dev-server` with `NODE_ENV` set to `development`.         |
 | `u lint`    | Runs `eslint --fix`, `stylelint --fix`, and `prettier --write`.         |
 | `u test`    | Runs `eslint --fix`, `stylelint --fix`, `prettier --write`, and `jest`. |
-| `u test ci` | Runs `eslint`, `stylelint`, `prettier --check`, and `jest --ci`.        |
+| `u test-ci` | Runs `eslint`, `stylelint`, `prettier --check`, and `jest --ci`.        |
 
 ### Scripts
 
