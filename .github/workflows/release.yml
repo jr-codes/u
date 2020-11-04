@@ -1,0 +1,19 @@
+name: Canary
+
+on: [workflow_dispatch]
+
+jobs:
+  release:
+    name: Release Canary Version
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+          registry-url: https://registry.npmjs.org
+      - run: node --version
+      - run: npm it
+      - run: npx lerna publish --force-publish --conventional-commits --sign-git-commit --sign-git-tag --create-release github
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
