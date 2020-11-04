@@ -12,7 +12,7 @@ const run = rewire(name, {
   // https://prettier.io/docs/en/cli.html
   default: {
     config: getConfigPath(name, {}, defaultConfigFile),
-    ignorePath: getIgnorePath(ignoreName, {}, defaultIgnoreFile),
+    'ignore-path': getIgnorePath(ignoreName, {}, defaultIgnoreFile),
   },
 })
 

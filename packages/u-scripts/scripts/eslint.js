@@ -14,6 +14,9 @@ const run = rewire(name, {
     config: 'c',
     format: 'f',
   },
+
+  boolean: ['cache', 'no-eslintrc'],
+
   default: {
     cache: true,
     config: getConfigPath(
@@ -23,9 +26,9 @@ const run = rewire(name, {
     ),
     ext: ['.js', '.jsx', '.json'],
     format: require.resolve('eslint-formatter-pretty'),
-    ignorePath: getIgnorePath(ignoreName, {}, defaultIgnoreFile),
-    noEslintrc: true,
-    resolvePluginsRelativeTo: __dirname,
+    'ignore-path': getIgnorePath(ignoreName, {}, defaultIgnoreFile),
+    'no-eslintrc': true,
+    'resolve-plugins-relative-to': __dirname,
   },
 })
 

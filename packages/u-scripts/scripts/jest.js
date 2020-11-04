@@ -11,9 +11,12 @@ const run = rewire(name, {
   alias: {
     config: 'c',
   },
+
+  boolean: ['pass-with-no-tests', 'silent'],
+
   default: {
     config: getConfigPath(name, {}, defaultConfigFile),
-    passWithNoTests: true,
+    'pass-with-no-tests': true,
     silent: true,
   },
 })

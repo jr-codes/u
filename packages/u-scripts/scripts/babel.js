@@ -7,10 +7,12 @@ const name = 'babel'
 const defaultConfigFile = path.join(__dirname, '../configs', `${name}.js`)
 
 const run = rewire(name, {
+  boolean: ['no-babelrc'],
+
   // https://babeljs.io/docs/en/babel-cli/
   default: {
-    configFile: getConfigPath(name, {}, defaultConfigFile),
-    noBabelrc: true,
+    'config-file': getConfigPath(name, {}, defaultConfigFile),
+    'no-babelrc': true,
   },
 })
 

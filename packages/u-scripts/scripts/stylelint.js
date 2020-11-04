@@ -11,13 +11,16 @@ const defaultIgnoreFile = path.join(__dirname, '../configs', ignoreName)
 const run = rewire(name, {
   // https://stylelint.io/user-guide/cli
   alias: {
-    ignorePath: 'i',
+    'ignore-path': 'i',
   },
+
+  boolean: ['cache'],
+
   default: {
     cache: true,
     config: getConfigPath(name, {}, defaultConfigFile),
-    customFormatter: require.resolve('stylelint-formatter-pretty'),
-    ignorePath: getIgnorePath(ignoreName, {}, defaultIgnoreFile),
+    'custom-formatter': require.resolve('stylelint-formatter-pretty'),
+    'ignore-path': getIgnorePath(ignoreName, {}, defaultIgnoreFile),
   },
 })
 
