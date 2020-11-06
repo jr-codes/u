@@ -1,11 +1,9 @@
 name: Canary
 
-on:
-  push:
-    branches: [master]
+on: [workflow_dispatch]
 
 jobs:
-  release-canary:
+  release:
     name: Release Canary Version
     runs-on: ubuntu-latest
     steps:
@@ -16,6 +14,6 @@ jobs:
           registry-url: https://registry.npmjs.org
       - run: node --version
       - run: npm it
-      - run: npx lerna publish --force-publish --canary --yes --exact
+      - run: npx lerna publish --force-publish --conventional-commits --sign-git-commit --sign-git-tag --create-release github
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
