@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.3](https://github.com/jr-codes/u/compare/v0.9.2...v0.9.3) (2020-11-10)
+
+
+### Bug Fixes
+
+* ⬆️ execa, husky, lerna ([de992ce](https://github.com/jr-codes/u/commit/de992ce76538a2e56712c2880ce8002706d1f762))
+* 👷‍♂️ add release workflow ([ae83b19](https://github.com/jr-codes/u/commit/ae83b19b2fa2bf2eba6dd0882157e80852a2b1c2))
+* 👷‍♂️ simplify GitHub workflows ([196713f](https://github.com/jr-codes/u/commit/196713fbb877f6d03dd7917bd992eba3a74d51a0))
+* 👷‍♂️ update workflows ([cd6a8ca](https://github.com/jr-codes/u/commit/cd6a8cabe6e2bb666a27a68bc9f381ef83af5eda))
+* 👷‍♂️ use default time and PR max for dependabot ([707e2f9](https://github.com/jr-codes/u/commit/707e2f90f7a250ed09a91cf05a1e2c399552ef8a))
+
+
+
+
+
 ## [0.9.2](https://github.com/jr-codes/u/compare/v0.9.1...v0.9.2) (2020-10-27)
 
 
