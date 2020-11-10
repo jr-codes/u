@@ -5,17 +5,26 @@ on:
     branches: [master]
 
 jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    if: "! contains(github.event.head_commit.message, '[skip ci]')"
+    steps:
+      - run: echo "${{ github.event.head_commit.message }}"
+
   release-canary:
-    name: Release Canary Version
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v1
         with:
           node-version: 12.x
           registry-url: https://registry.npmjs.org
       - run: node --version
-      - run: npm it
-      - run: npx lerna publish --force-publish --canary --yes --exact
+      - run: npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - run: npm whoami
+      - run: npm it
+      - run: npx lerna publish --force-publish --canary --yes
