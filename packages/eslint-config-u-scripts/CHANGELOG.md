@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.4](https://github.com/jr-codes/u/compare/v0.9.3...v0.9.4) (2020-11-11)
+
+
+### Bug Fixes
+
+* ⬆️ babel, jest ([f978494](https://github.com/jr-codes/u/commit/f978494b2c01dbdc9846a15255183aaf053ebce2))
+* ⬆️ eslint plugins ([e042ea0](https://github.com/jr-codes/u/commit/e042ea083c257716c1dc9d2e7025101402ed55cf))
+* ⬆️ nodemon, typescript, webpack, yargs, react ([4394fa9](https://github.com/jr-codes/u/commit/4394fa999e627e7f6e71687feb94c32767418390))
+* 🔧 add .npmrc ([03d3616](https://github.com/jr-codes/u/commit/03d3616ac183a31e74414356bd622651a64af5d3))
+* 🔧 fix eslint peer deps ([634fe32](https://github.com/jr-codes/u/commit/634fe32896be68be1f786a74453ae6c7e0fe2a62))
+* 🔧 simplify repository field ([72ad70e](https://github.com/jr-codes/u/commit/72ad70e34f11950a9e27336c8e14eb277d9c18ff))
+
+
+
+
+
 ## [0.9.3](https://github.com/jr-codes/u/compare/v0.9.2...v0.9.3) (2020-11-10)
 
 **Note:** Version bump only for package eslint-config-u-scripts

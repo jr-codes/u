@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-u-scripts",
-  "version": "0.9.3",
+  "version": "0.9.4",
   "description": "ESLint config for u-scripts",
   "homepage": "https://github.com/jr-codes/u#readme",
   "bugs": {
@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "babel-eslint": "^10.1.0",
-    "babel-preset-u-scripts": "^0.9.3",
+    "babel-preset-u-scripts": "^0.9.4",
     "eslint-config-prettier": "^6.15.0"
   },
   "devDependencies": {
