@@ -21,10 +21,7 @@
   "bugs": {
     "url": "https://github.com/jr-codes/u/issues"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jr-codes/u.git"
-  },
+  "repository": "jr-codes/u",
   "license": "MIT",
   "author": "JR Shampang",
   "main": "index.js",
