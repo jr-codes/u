@@ -2,7 +2,6 @@
 .eslintcache
 .stylelintcache
 .idea
-.npmrc
 .vscode
 build
 coverage
