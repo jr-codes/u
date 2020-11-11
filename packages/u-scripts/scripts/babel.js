@@ -1,15 +1,19 @@
 'use strict'
 
-const helper = require('../lib/script-helper')
+const path = require('path')
+const { getConfigPath, rewire } = require('cli-rewire')
 
 const name = 'babel'
+const defaultConfigFile = path.join(__dirname, '../configs', `${name}.js`)
 
-// https://babeljs.io/docs/en/babel-cli/
-const defaultArgs = {
+const run = rewire(name, {
+  boolean: ['no-babelrc'],
+
+  // https://babeljs.io/docs/en/babel-cli/
   default: {
-    configFile: helper.getConfig(name),
-    noBabelrc: true,
+    'config-file': getConfigPath(name, {}, defaultConfigFile),
+    'no-babelrc': true,
   },
-}
+})
 
-helper.run(name, defaultArgs)
+run()

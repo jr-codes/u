@@ -1,20 +1,27 @@
 'use strict'
 
-const helper = require('../lib/script-helper')
+const path = require('path')
+const { getConfigPath, getIgnorePath, rewire } = require('cli-rewire')
 
 const name = 'stylelint'
+const ignoreName = `.${name}ignore`
+const defaultConfigFile = path.join(__dirname, '../configs', `${name}.js`)
+const defaultIgnoreFile = path.join(__dirname, '../configs', ignoreName)
 
-// https://stylelint.io/user-guide/cli
-const defaultArgs = {
+const run = rewire(name, {
+  // https://stylelint.io/user-guide/cli
   alias: {
-    ignorePath: 'i',
+    'ignore-path': 'i',
   },
+
+  boolean: ['cache'],
+
   default: {
     cache: true,
-    config: helper.getConfig(name),
-    customFormatter: require.resolve('stylelint-formatter-pretty'),
-    ignorePath: helper.getIgnore('.stylelintignore'),
+    config: getConfigPath(name, {}, defaultConfigFile),
+    'custom-formatter': require.resolve('stylelint-formatter-pretty'),
+    'ignore-path': getIgnorePath(ignoreName, {}, defaultIgnoreFile),
   },
-}
+})
 
-helper.run(name, defaultArgs)
+run()
