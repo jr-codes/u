@@ -6,7 +6,7 @@
     "clean": "lerna clean",
     "format": "node packages/u-scripts/bin/u prettier --write .",
     "format-check": "node packages/u-scripts/bin/u prettier --check .",
-    "postinstall": "lerna bootstrap --hoist",
+    "postinstall": "lerna bootstrap --no-ci",
     "prerelease": "node release-checks",
     "sort": "lerna exec -- npx sort-package-json",
     "test": "npm run format-check && lerna run test-ci",
