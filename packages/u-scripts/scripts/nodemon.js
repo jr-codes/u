@@ -1,5 +1,7 @@
 'use strict'
 
-const helper = require('../lib/script-helper')
+const { rewire } = require('cli-rewire')
 
-helper.run('nodemon')
+const run = rewire('nodemon')
+
+run()

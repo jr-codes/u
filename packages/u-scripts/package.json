@@ -34,7 +34,6 @@
   "files": [
     "bin",
     "configs",
-    "index.js",
     "jest-preset.js",
     "lib",
     "scripts",

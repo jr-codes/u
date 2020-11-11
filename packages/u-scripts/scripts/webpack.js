@@ -1,16 +1,18 @@
 'use strict'
 
-const helper = require('../lib/script-helper')
+const path = require('path')
+const { getConfigPath, rewire } = require('cli-rewire')
 
 const name = 'webpack'
+const defaultConfigFile = path.join(__dirname, '../configs', `${name}.js`)
 
-const defaultArgs = {
+const run = rewire(name, {
   default: {
-    config: helper.getConfig(name),
+    config: getConfigPath(name, {}, defaultConfigFile),
   },
-}
+})
 
 // Add line break before webpack runs
 console.log() // eslint-disable-line no-console
 
-helper.run(name, defaultArgs)
+run()
