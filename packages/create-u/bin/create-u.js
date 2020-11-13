@@ -6,11 +6,11 @@ const argv = require('yargs').argv
 const path = require('path')
 const writePackage = require('write-pkg')
 
-const dir = argv._[0] || ''
-const name = path.basename(dir || process.cwd())
+const directory = argv._[0] || ''
+const name = path.basename(directory || process.cwd())
 
 async function main() {
-  const packagePath = path.join(dir, 'package.json')
+  const packagePath = path.join(directory, 'package.json')
   await writePackage(packagePath, {
     name,
     version: '1.0.0',

@@ -1,7 +1,12 @@
 'use strict'
 
-// 📐 eslint-plugin-jest:
+const pkg = require('../package.json')
+// Get Jest version
+const jestVersion = pkg.devDependencies.jest.match(/\d+/g)[0]
+
+// 📐 eslint-plugin-jest: https://github.com/jest-community/eslint-plugin-jest
 module.exports = {
+  extends: ['plugin:jest/recommended'],
   overrides: [
     {
       files: ['*.test.[jt]s?(x)', '*.spec.[jt]s?(x)'],
@@ -11,46 +16,9 @@ module.exports = {
     },
   ],
   plugins: ['jest'],
-  rules: {
-    'jest/consistent-test-it': 'error',
-    'jest/expect-expect': 'error',
-    // 'jest/lowercase-name': 'off',
-    'jest/no-alias-methods': 'error',
-    'jest/no-commented-out-tests': 'warn',
-    'jest/no-disabled-tests': 'warn',
-    'jest/no-done-callback': 'error',
-    'jest/no-duplicate-hooks': 'error',
-    // 'jest/no-expect-resolves': 'off',
-    'jest/no-export': 'error',
-    'jest/no-focused-tests': 'warn',
-    // 'jest/no-hooks': 'off',
-    'jest/no-identical-title': 'error',
-    // 'jest/no-if': 'off',
-    'jest/no-jasmine-globals': 'error',
-    'jest/no-jest-import': 'error',
-    'jest/no-large-snapshots': 'error',
-    'jest/no-mocks-import': 'error',
-    'jest/no-standalone-expect': 'error',
-    // 'jest/no-test-prefixes': 'off',
-    'jest/no-test-return-statement': 'error',
-    // 'jest/no-truthy-falsy': 'off',
-    'jest/no-try-expect': 'error',
-    // 'jest/prefer-called-with': 'off',
-    // 'jest/prefer-expect-assertions': 'off',
-    'jest/prefer-hooks-on-top': 'error',
-    // 'jest/prefer-inline-snapshots': 'off',
-    'jest/prefer-spy-on': 'error',
-    // 'jest/prefer-strict-equal': 'off',
-    'jest/prefer-to-be-null': 'error',
-    'jest/prefer-to-be-undefined': 'error',
-    'jest/prefer-to-contain': 'error',
-    'jest/prefer-to-have-length': 'error',
-    'jest/prefer-todo': 'error',
-    // 'jest/require-top-level-describe': 'off',
-    // 'jest/require-tothrow-message': 'off',
-    'jest/valid-describe': 'error',
-    'jest/valid-expect-in-promise': 'error',
-    'jest/valid-expect': 'error',
-    'jest/valid-title': 'error',
+  settings: {
+    jest: {
+      version: jestVersion,
+    },
   },
 }

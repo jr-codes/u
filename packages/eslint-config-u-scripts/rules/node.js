@@ -1,33 +1,10 @@
 'use strict'
 
+// 📐 eslint-plugin-node: https://github.com/mysticatea/eslint-plugin-node
 module.exports = {
+  extends: ['plugin:node/recommended'],
   plugins: ['node'],
   rules: {
-    // 'node/exports-style': 'off',
-    // 'node/file-extension-in-import': 'off',
-    // 'node/no-callback-literal': 'off',
-    'node/no-deprecated-api': 'warn',
-    'node/no-exports-assign': 'error',
-    'node/no-extraneous-import': 'error',
-    'node/no-extraneous-require': 'error',
-    'node/no-missing-import': 'error',
-    'node/no-missing-require': 'error',
-    // 'node/no-unpublished-bin': 'off',
-    // 'node/no-unpublished-import': 'off',
-    // 'node/no-unpublished-require': 'off',
-    'node/no-unsupported-features/es-builtins': 'error',
-    // 'node/no-unsupported-features/es-syntax': 'off',
-    // 'node/no-unsupported-features/node-builtins': 'off',
-    // 'node/prefer-global/buffer': 'off',
-    // 'node/prefer-global/console': 'off',
-    // 'node/prefer-global/process': 'off',
-    // 'node/prefer-global/text-decoder': 'off',
-    // 'node/prefer-global/text-encoder': 'off',
-    // 'node/prefer-global/url-search-params': 'off',
-    // 'node/prefer-global/url': 'off',
-    // 'node/prefer-promises/dns': 'off',
-    // 'node/prefer-promises/fs': 'off',
-    // 'node/process-exit-as-throw': 'off',
-    'node/shebang': 'error',
+    'node/no-unsupported-features/es-syntax': 'off',
   },
 }

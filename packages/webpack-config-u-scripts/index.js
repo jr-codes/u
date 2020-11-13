@@ -16,9 +16,9 @@ const utils = require('./utils')
  * @param {boolean} env.perf Specifies whether performance measurement tools should be run.
  * @returns {Function} webpack config
  */
-function config(env = {}) {
+function config(environment = {}) {
   // https://webpack.js.org/api/cli/#environment-options
-  debug('env %O', env)
+  debug('env %O', environment)
 
   const selectedParts = [
     parts.base,
@@ -30,7 +30,7 @@ function config(env = {}) {
 
     // SpeedMeasurePlugin conflicts with html-webpack-plugin,
     // so exclude this when speed testing
-    !env.perf && parts.html,
+    !environment.perf && parts.html,
 
     parts.images,
     parts.javascript,
@@ -38,7 +38,7 @@ function config(env = {}) {
     parts.text,
 
     // Must go last to wrap overall config
-    env.perf && parts.measurePerformance,
+    environment.perf && parts.measurePerformance,
   ].filter(Boolean)
 
   const selectedOptions = {
@@ -46,11 +46,11 @@ function config(env = {}) {
     isDevelopment: process.env.NODE_ENV === 'development',
     isProduction: process.env.NODE_ENV === 'production',
     paths: {
-      entry: env.entry || './src/index.js',
-      public: env.public || '/',
-      output: env.output || utils.resolveUserPath('dist'),
+      entry: environment.entry || './src/index.js',
+      public: environment.public || '/',
+      output: environment.output || utils.resolveUserPath('dist'),
     },
-    useSourceMap: !env.nosource,
+    useSourceMap: !environment.nosource,
   }
 
   return utils.build(selectedParts, selectedOptions)
