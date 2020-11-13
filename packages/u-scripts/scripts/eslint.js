@@ -28,7 +28,7 @@ const run = rewire(name, {
     format: require.resolve('eslint-formatter-pretty'),
     'ignore-path': getIgnorePath(ignoreName, {}, defaultIgnoreFile),
     'no-eslintrc': true,
-    'resolve-plugins-relative-to': __dirname,
+    'resolve-plugins-relative-to': path.join(__dirname, '../'),
   },
 })
 
