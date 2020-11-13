@@ -1,14 +1,14 @@
 'use strict'
 
 module.exports = (api) => {
-  const isProd = api.env('production')
+  const isProduction = api.env('production')
   const isTest = api.env('test')
 
   return {
     plugins: [
       require.resolve('babel-plugin-macros'),
       require.resolve('@babel/plugin-syntax-dynamic-import'),
-      isProd && [
+      isProduction && [
         require.resolve('babel-plugin-transform-react-remove-prop-types'),
         { removeImport: true },
       ],
