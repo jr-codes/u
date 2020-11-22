@@ -11,11 +11,7 @@ const scripts = [
   'babel',
   'eslint',
   'jest',
-  'nodemon',
   'prettier',
-  'stylelint',
-  'webpack-dev-server',
-  'webpack',
 ].map((script) => resolve('../scripts', script))
 
 const defaultConfig = resolve('../configs/u.js')
