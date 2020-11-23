@@ -1,7 +1,7 @@
 {
-  "name": "babel-preset-u-scripts",
+  "name": "@jr.codes/babel-preset",
   "version": "0.9.4",
-  "description": "Babel preset for u-scripts",
+  "description": "Babel preset for U",
   "homepage": "https://github.com/jr-codes/u#readme",
   "bugs": {
     "url": "https://github.com/jr-codes/u/issues"
@@ -14,8 +14,8 @@
     "index.js"
   ],
   "scripts": {
-    "test": "node ../u-scripts/bin/u eslint . --fix",
-    "test-ci": "node ../u-scripts/bin/u eslint ."
+    "test": "node ../u/bin/u eslint . --fix",
+    "test-ci": "node ../u/bin/u eslint ."
   },
   "dependencies": {
     "@babel/core": "^7.12.3",
@@ -25,5 +25,8 @@
     "babel-plugin-dynamic-import-node": "^2.3.3",
     "babel-plugin-macros": "^2.8.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

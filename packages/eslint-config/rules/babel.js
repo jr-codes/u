@@ -5,7 +5,7 @@ module.exports = {
   parser: require.resolve('babel-eslint'),
   parserOptions: {
     babelOptions: {
-      presets: require.resolve('babel-preset-u-scripts'),
+      presets: require.resolve('@jr.codes/babel-preset'),
     },
     ecmaVersion: 2020,
     sourceType: 'module',

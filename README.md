@@ -1,1 +1,1 @@
-./packages/u-scripts/README.md
+./packages/u/README.md

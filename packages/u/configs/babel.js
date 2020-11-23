@@ -7,5 +7,5 @@ debug('NODE_ENV %s', process.env.NODE_ENV)
 
 // https://babeljs.io/docs/en/configuration#babelrcjs
 module.exports = {
-  presets: ['u-scripts'],
+  presets: ['@jr.codes/babel-preset'],
 }

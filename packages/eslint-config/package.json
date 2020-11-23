@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-u-scripts",
+  "name": "@jr.codes/eslint-config",
   "version": "0.9.4",
-  "description": "ESLint config for u-scripts",
+  "description": "ESLint config for U",
   "homepage": "https://github.com/jr-codes/u#readme",
   "bugs": {
     "url": "https://github.com/jr-codes/u/issues"
@@ -30,8 +30,8 @@
     ]
   },
   "dependencies": {
+    "@jr.codes/babel-preset": "^0.9.4",
     "babel-eslint": "^10.1.0",
-    "babel-preset-u-scripts": "^0.9.4",
     "eslint-config-prettier": "^6.15.0"
   },
   "devDependencies": {
@@ -62,5 +62,8 @@
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-unicorn": "^23.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
