@@ -1,0 +1,39 @@
+{
+  "name": "@jr.codes/jest-preset",
+  "version": "0.9.4",
+  "description": "Jest preset for U",
+  "homepage": "https://github.com/jr-codes/u#readme",
+  "bugs": {
+    "url": "https://github.com/jr-codes/u/issues"
+  },
+  "repository": "jr-codes/u",
+  "license": "MIT",
+  "author": "JR Shampang <jr@shampang.com>",
+  "main": "jest-preset.js",
+  "files": [
+    "babel-jest-transform.js",
+    "file-stub.js",
+    "jest-preset.js",
+    "jest-setup.js"
+  ],
+  "scripts": {
+    "test": "node ../u/bin/u eslint . --fix",
+    "test-ci": "node ../u/bin/u eslint ."
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.7",
+    "@jr.codes/babel-preset": "^0.9.4",
+    "@testing-library/jest-dom": "^5.11.6",
+    "babel-jest": "^26.6.3",
+    "identity-obj-proxy": "^3.0.0"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "peerDependencies": {
+    "jest": ">=26.6.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -2,10 +2,10 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "check": "lerna exec --stream -- npm pack --dry-run",
     "clean": "lerna clean",
-    "format": "node packages/u-scripts/bin/u prettier --write .",
-    "format-check": "node packages/u-scripts/bin/u prettier --check .",
+    "dry-run": "lerna exec --stream -- npm pack --dry-run",
+    "format": "node packages/u/bin/u prettier --write .",
+    "format-check": "node packages/u/bin/u prettier --check .",
     "postinstall": "lerna bootstrap --no-ci",
     "prerelease": "node release-checks",
     "sort": "lerna exec -- npx sort-package-json",
