@@ -32,7 +32,7 @@
   "dependencies": {
     "@jr.codes/babel-preset": "^0.9.4",
     "babel-eslint": "^10.1.0",
-    "eslint-config-prettier": "^6.15.0"
+    "eslint-config-prettier": "^7.0.0"
   },
   "devDependencies": {
     "eslint": "^7.13.0",
