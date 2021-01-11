@@ -7,7 +7,7 @@ module.exports = {
     babelOptions: {
       presets: require.resolve('@jr.codes/babel-preset'),
     },
-    ecmaVersion: 2020,
+    ecmaVersion: 2021,
     sourceType: 'module',
   },
 }

@@ -1,16 +1,18 @@
-name: Canary
+name: Release canary
 
 on:
   push:
     branches: [master]
 
 jobs:
+  # Don't run if the last commit message has "[skip ci]"
   prepare:
     runs-on: ubuntu-latest
     if: "! contains(github.event.head_commit.message, '[skip ci]')"
     steps:
       - run: echo "${{ github.event.head_commit.message }}"
 
+  # Use Lerna to publish canary releases of monorepo packages
   release-canary:
     runs-on: ubuntu-latest
     steps:
