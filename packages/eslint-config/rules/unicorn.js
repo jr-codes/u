@@ -6,7 +6,9 @@ module.exports = {
   plugins: ['unicorn'],
   rules: {
     'unicorn/filename-case': 'off',
-    'unicorn/no-reduce': 'off',
+    'unicorn/no-array-callback-reference': 'off',
+    'unicorn/no-array-reduce': 'off',
+    'unicorn/no-null': 'off',
     'unicorn/prevent-abbreviations': 'off',
   },
 }
