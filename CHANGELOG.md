@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/jr-codes/u/compare/v0.9.4...v0.10.0) (2021-01-11)
+
+
+### Bug Fixes
+
+* ✅ test commands ([5626a1a](https://github.com/jr-codes/u/commit/5626a1a99be53b76e3a1aaa3a926be9d2ef87256))
+* ✅ use new ESLint API in tests ([ac35b0a](https://github.com/jr-codes/u/commit/ac35b0a381550af733f0f099c021d432bb56f78a))
+* ⬆️ babel deps, jest-dom ([c310c6d](https://github.com/jr-codes/u/commit/c310c6d8beb0eb4a6cc1a657a0e1a2f1c478469c))
+* ⬆️ babel, eslint deps ([78747d5](https://github.com/jr-codes/u/commit/78747d5f43c05a3d466028d3713bc01e50cd17ac))
+* ⬆️ babel, prettier, eslint, cli-rewire, debug ([b8e663f](https://github.com/jr-codes/u/commit/b8e663f8bc34da7e59e9d24d89890ce54f4305b8))
+* ⬆️ eslint deps ([436819c](https://github.com/jr-codes/u/commit/436819c817a6b0479262fde2cc080d4a0362e858))
+* ⬆️ eslint, cli-rewire, webpack deps ([b22ad97](https://github.com/jr-codes/u/commit/b22ad973bb09398074b91eafce73585f0dfe4c82))
+* ⬆️ husky ([1a8ea0f](https://github.com/jr-codes/u/commit/1a8ea0f93e1c8b0f0a0fad00c6051bed5253097d))
+* 🎨 symlink README ([051cdaf](https://github.com/jr-codes/u/commit/051cdaf54cb0ebc9f87d755b93550a8aa8a9d3d6))
+* 👷 update workflows ([c81a346](https://github.com/jr-codes/u/commit/c81a3468a548f4b8e62e890a1744bd99a2f2c83d))
+* 📝 remove broken dependabot badge ([6eaaddd](https://github.com/jr-codes/u/commit/6eaadddf2d91dafedf919f6e75d8d599a4ca42b9))
+* 📝 use GitHub markdown include ([9f5dc03](https://github.com/jr-codes/u/commit/9f5dc03266ceb1b737182da264e4150b29401311))
+* 🔧 check for dep version mismatches ([c3add4e](https://github.com/jr-codes/u/commit/c3add4e9f6a0a7fd0c67d31ea57a2cb83af5a992))
+* 🔧 ecmaVersion 2021, update unicorn rules ([fc8b265](https://github.com/jr-codes/u/commit/fc8b265a60101db0e6e287fcb96a5aff05c9cd58))
+* 🔧 resolve eslint plugins relative to u-scripts ([54d290a](https://github.com/jr-codes/u/commit/54d290a852dd30ff9a1a6a587d2fcd4c70464dfd))
+* bump execa from 4.1.0 to 5.0.0 ([d783f3e](https://github.com/jr-codes/u/commit/d783f3efdb101037697f088cfdef9c7e5c23f28c))
+* bump prettier from 2.2.0 to 2.2.1 ([58ce6f5](https://github.com/jr-codes/u/commit/58ce6f5240626b7621a4007dec3fa0eb455650a4))
+
+
+* feat!: 💥 rescope packages to @jr.codes ([b90bd59](https://github.com/jr-codes/u/commit/b90bd590cdae2ca922d3b093b48a72eb6f95b230))
+* feat!: 🔥 remove create-u ([80bbcf0](https://github.com/jr-codes/u/commit/80bbcf04ac1a6595f7d77528f423f8ae30e7e8e7))
+* feat!: 🔥 remove nodemon, stylelint, webpack ([2ddcb5c](https://github.com/jr-codes/u/commit/2ddcb5cccd76b067aa196752fe23369edfa7f1af))
+
+
+### BREAKING CHANGES
+
+* Use @jr.codes scope for these packages
+* Removes create-u package
+* Remove nodemon, stylelint, and webpack.
+
+Simplify U by focusing on linting and testing.
+
+
+
+
+
 ## [0.9.4](https://github.com/jr-codes/u/compare/v0.9.3...v0.9.4) (2020-11-11)
 
 

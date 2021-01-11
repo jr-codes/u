@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/jr-codes/u/compare/v0.9.4...v0.10.0) (2021-01-11)
+
+
+### Bug Fixes
+
+* ✅ test commands ([5626a1a](https://github.com/jr-codes/u/commit/5626a1a99be53b76e3a1aaa3a926be9d2ef87256))
+* ⬆️ babel, eslint deps ([78747d5](https://github.com/jr-codes/u/commit/78747d5f43c05a3d466028d3713bc01e50cd17ac))
+* ⬆️ babel, prettier, eslint, cli-rewire, debug ([b8e663f](https://github.com/jr-codes/u/commit/b8e663f8bc34da7e59e9d24d89890ce54f4305b8))
+* bump execa from 4.1.0 to 5.0.0 ([d783f3e](https://github.com/jr-codes/u/commit/d783f3efdb101037697f088cfdef9c7e5c23f28c))
+* bump prettier from 2.2.0 to 2.2.1 ([58ce6f5](https://github.com/jr-codes/u/commit/58ce6f5240626b7621a4007dec3fa0eb455650a4))
+
+
+* feat!: 💥 rescope packages to @jr.codes ([b90bd59](https://github.com/jr-codes/u/commit/b90bd590cdae2ca922d3b093b48a72eb6f95b230))
+
+
+### BREAKING CHANGES
+
+* Use @jr.codes scope for these packages
+
+
+
+
+
 ## [0.9.4](https://github.com/jr-codes/u/compare/v0.9.3...v0.9.4) (2020-11-11)
 
 

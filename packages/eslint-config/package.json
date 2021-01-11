@@ -1,6 +1,6 @@
 {
   "name": "@jr.codes/eslint-config",
-  "version": "0.9.4",
+  "version": "0.10.0",
   "description": "ESLint config for U",
   "homepage": "https://github.com/jr-codes/u#readme",
   "bugs": {
@@ -30,7 +30,7 @@
     ]
   },
   "dependencies": {
-    "@jr.codes/babel-preset": "^0.9.4",
+    "@jr.codes/babel-preset": "^0.10.0",
     "babel-eslint": "^10.1.0",
     "eslint-config-prettier": "^7.1.0"
   },

@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/jr-codes/u/compare/v0.9.4...v0.10.0) (2021-01-11)
+
+
+### Bug Fixes
+
+* ⬆️ babel deps, jest-dom ([c310c6d](https://github.com/jr-codes/u/commit/c310c6d8beb0eb4a6cc1a657a0e1a2f1c478469c))
+* ⬆️ babel, prettier, eslint, cli-rewire, debug ([b8e663f](https://github.com/jr-codes/u/commit/b8e663f8bc34da7e59e9d24d89890ce54f4305b8))
+
+
+* feat!: 💥 rescope packages to @jr.codes ([b90bd59](https://github.com/jr-codes/u/commit/b90bd590cdae2ca922d3b093b48a72eb6f95b230))
+
+
+### BREAKING CHANGES
+
+* Use @jr.codes scope for these packages
+
+
+
+
+
 ## [0.9.4](https://github.com/jr-codes/u/compare/v0.9.3...v0.9.4) (2020-11-11)
 
 
