@@ -1,8 +1,10 @@
 name: Release
 
+# Workflow must be dispatched manually
 on: [workflow_dispatch]
 
 jobs:
+  # Use Lerna to publish monorepo packages and generate changelogs
   release:
     runs-on: ubuntu-latest
     steps:
