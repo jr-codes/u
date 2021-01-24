@@ -1,26 +1,23 @@
 'use strict'
 
 module.exports = (api) => {
-  const isProduction = api.env('production')
   const isTest = api.env('test')
 
   return {
     plugins: [
+      // Add support for compile-time macros.
       require.resolve('babel-plugin-macros'),
-      require.resolve('@babel/plugin-syntax-dynamic-import'),
-      isProduction && [
-        require.resolve('babel-plugin-transform-react-remove-prop-types'),
-        { removeImport: true },
-      ],
-      isTest && require.resolve('babel-plugin-dynamic-import-node'),
-    ].filter(Boolean),
+    ],
     presets: [
-      isTest && [
-        require.resolve('@babel/preset-env'),
-        { targets: { node: 'current' } },
-      ],
-      !isTest && require.resolve('@babel/preset-env'),
+      // Add support for new JavaScript syntax based on browserslist config.
+      [require.resolve('@babel/preset-env'), {
+        // If in a test environment (e.g., Jest), transpile to Node.
+        // Otherwise, transpile to browsers.
+        targets: isTest ? { node: 'current' } : {}
+      }],
+
+      // Add support for React and JSX.
       require.resolve('@babel/preset-react'),
-    ].filter(Boolean),
+    ],
   }
 }
