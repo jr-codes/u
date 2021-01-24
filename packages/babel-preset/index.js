@@ -10,14 +10,20 @@ module.exports = (api) => {
     ],
     presets: [
       // Add support for new JavaScript syntax based on browserslist config.
-      [require.resolve('@babel/preset-env'), {
-        // If in a test environment (e.g., Jest), transpile to Node.
-        // Otherwise, transpile to browsers.
-        targets: isTest ? { node: 'current' } : {}
-      }],
+      [
+        require.resolve('@babel/preset-env'),
+        {
+          // If in a test environment (e.g., Jest), transpile to Node.
+          // Otherwise, transpile to browsers.
+          targets: isTest ? { node: 'current' } : {},
+        },
+      ],
 
       // Add support for React and JSX.
       require.resolve('@babel/preset-react'),
+
+      // Add support for TypeScript.
+      require.resolve('@babel/preset-typescript'),
     ],
   }
 }
