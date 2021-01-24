@@ -17,7 +17,7 @@ const PrintName: React.FC<Props> = (props) => {
   )
 }
 
-const ShowUser: React.FC<Props> = (props) => {
+const ShowUser: React.FC<Props> = () => {
   return <PrintName name='Ned' />
 }
 

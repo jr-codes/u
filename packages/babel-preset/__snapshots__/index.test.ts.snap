@@ -99,7 +99,7 @@ const PrintName = props => {
 
 exports.PrintName = PrintName;
 
-const ShowUser = props => {
+const ShowUser = () => {
   return /*#__PURE__*/React.createElement(PrintName, {
     name: \\"Ned\\"
   });

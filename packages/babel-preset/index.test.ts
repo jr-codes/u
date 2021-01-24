@@ -1,7 +1,5 @@
-'use strict'
-
-const babel = require('@babel/core')
-const preset = require('.')
+import * as babel from '@babel/core'
+import preset from '.'
 
 test('returns a config function', () => {
   expect(preset).toEqual(expect.any(Function))
