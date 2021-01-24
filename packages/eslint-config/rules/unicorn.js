@@ -5,7 +5,15 @@ module.exports = {
   extends: ['plugin:unicorn/recommended'],
   plugins: ['unicorn'],
   rules: {
-    'unicorn/filename-case': 'off',
+    'unicorn/filename-case': [
+      'error',
+      {
+        cases: {
+          kebabCase: true,
+          pascalCase: true,
+        },
+      },
+    ],
     'unicorn/no-array-callback-reference': 'off',
     'unicorn/no-array-reduce': 'off',
     'unicorn/no-null': 'off',
