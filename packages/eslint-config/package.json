@@ -30,8 +30,9 @@
     ]
   },
   "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/eslint-parser": "^7.12.1",
     "@jr.codes/babel-preset": "^0.10.0",
-    "babel-eslint": "^10.1.0",
     "eslint-config-prettier": "^7.2.0"
   },
   "devDependencies": {
