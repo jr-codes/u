@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/jr-codes/u/compare/v0.10.0...v0.11.0) (2021-01-25)
+
+
+### Bug Fixes
+
+* ✅ test babel-preset ([a7de02b](https://github.com/jr-codes/u/commit/a7de02b9affa468f4cbb6b4c3dca13a429cf1d52))
+* ✅ update tests ([fc0ebde](https://github.com/jr-codes/u/commit/fc0ebdeb290c7eef18e81fdef5ef6d14a956d110))
+* ✅ update TypeScript tests ([41f6970](https://github.com/jr-codes/u/commit/41f69706804026ebe1b6dafdf3a3b81816778f39))
+
+
+### Features
+
+* ➕ @babel/preset-typescript ([b48873a](https://github.com/jr-codes/u/commit/b48873a8fe8dcee963ed10fe167762a0e684f221))
+
+
+
+
+
 # [0.10.0](https://github.com/jr-codes/u/compare/v0.9.4...v0.10.0) (2021-01-11)
 
 

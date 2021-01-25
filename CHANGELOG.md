@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/jr-codes/u/compare/v0.10.0...v0.11.0) (2021-01-25)
+
+
+### Bug Fixes
+
+* ✅ test babel-preset ([a7de02b](https://github.com/jr-codes/u/commit/a7de02b9affa468f4cbb6b4c3dca13a429cf1d52))
+* ✅ update tests ([fc0ebde](https://github.com/jr-codes/u/commit/fc0ebdeb290c7eef18e81fdef5ef6d14a956d110))
+* ✅ update TypeScript tests ([41f6970](https://github.com/jr-codes/u/commit/41f69706804026ebe1b6dafdf3a3b81816778f39))
+* ⬆️ jest-dom, cli-rewire, eslint ([24f027e](https://github.com/jr-codes/u/commit/24f027e7bf5235f898fc60d01d3a9894132f5ca9))
+* 🔧 remove TypeScript-conflicting ESLint rules ([0bb4169](https://github.com/jr-codes/u/commit/0bb4169e4087ebc7bf2de2b0a5addb410994e41d))
+* 🔧 replace babel-eslint with @babel/eslint-parser ([2e64fc0](https://github.com/jr-codes/u/commit/2e64fc0321f296466306a13ac421f70769ef744c))
+
+
+### Features
+
+* ✨ add support for linting TypeScript files ([eace0f7](https://github.com/jr-codes/u/commit/eace0f77badfef3233fc286388189c16c1ff06ac))
+* ➕ @babel/preset-typescript ([b48873a](https://github.com/jr-codes/u/commit/b48873a8fe8dcee963ed10fe167762a0e684f221))
+* 🔧 enforce kebab-case and PascalCase ([d167952](https://github.com/jr-codes/u/commit/d1679528a28e9ad285fbf7ffdd212b8f6dcc8158))
+
+
+
+
+
 # [0.10.0](https://github.com/jr-codes/u/compare/v0.9.4...v0.10.0) (2021-01-11)
 
 

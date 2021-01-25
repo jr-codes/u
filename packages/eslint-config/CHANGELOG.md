@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/jr-codes/u/compare/v0.10.0...v0.11.0) (2021-01-25)
+
+
+### Bug Fixes
+
+* ⬆️ jest-dom, cli-rewire, eslint ([24f027e](https://github.com/jr-codes/u/commit/24f027e7bf5235f898fc60d01d3a9894132f5ca9))
+* 🔧 remove TypeScript-conflicting ESLint rules ([0bb4169](https://github.com/jr-codes/u/commit/0bb4169e4087ebc7bf2de2b0a5addb410994e41d))
+* 🔧 replace babel-eslint with @babel/eslint-parser ([2e64fc0](https://github.com/jr-codes/u/commit/2e64fc0321f296466306a13ac421f70769ef744c))
+
+
+### Features
+
+* 🔧 enforce kebab-case and PascalCase ([d167952](https://github.com/jr-codes/u/commit/d1679528a28e9ad285fbf7ffdd212b8f6dcc8158))
+
+
+
+
+
 # [0.10.0](https://github.com/jr-codes/u/compare/v0.9.4...v0.10.0) (2021-01-11)
 
 

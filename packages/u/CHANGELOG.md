@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/jr-codes/u/compare/v0.10.0...v0.11.0) (2021-01-25)
+
+
+### Bug Fixes
+
+* ⬆️ jest-dom, cli-rewire, eslint ([24f027e](https://github.com/jr-codes/u/commit/24f027e7bf5235f898fc60d01d3a9894132f5ca9))
+
+
+### Features
+
+* ✨ add support for linting TypeScript files ([eace0f7](https://github.com/jr-codes/u/commit/eace0f77badfef3233fc286388189c16c1ff06ac))
+
+
+
+
+
 # [0.10.0](https://github.com/jr-codes/u/compare/v0.9.4...v0.10.0) (2021-01-11)
 
 
