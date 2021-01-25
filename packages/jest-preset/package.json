@@ -23,7 +23,7 @@
   "dependencies": {
     "@babel/core": "^7.12.10",
     "@jr.codes/babel-preset": "^0.10.0",
-    "@testing-library/jest-dom": "^5.11.8",
+    "@testing-library/jest-dom": "^5.11.9",
     "babel-jest": "^26.6.3",
     "identity-obj-proxy": "^3.0.0"
   },

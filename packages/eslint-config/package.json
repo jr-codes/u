@@ -30,12 +30,13 @@
     ]
   },
   "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/eslint-parser": "^7.12.1",
     "@jr.codes/babel-preset": "^0.10.0",
-    "babel-eslint": "^10.1.0",
-    "eslint-config-prettier": "^7.1.0"
+    "eslint-config-prettier": "^7.2.0"
   },
   "devDependencies": {
-    "eslint": "^7.17.0",
+    "eslint": "^7.18.0",
     "eslint-find-rules": "^3.6.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jest": "^24.1.3",
@@ -45,14 +46,14 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "eslint-plugin-unicorn": "^25.0.1",
+    "eslint-plugin-unicorn": "^27.0.0",
     "jest": "^26.6.3",
     "prettier": "2.2.1",
     "react": "^17.0.1",
     "typescript": "^4.1.3"
   },
   "peerDependencies": {
-    "eslint": ">=7.17.0",
+    "eslint": ">=7.18.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jest": "^24.1.3",
     "eslint-plugin-json": "^2.1.2",
@@ -61,7 +62,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "eslint-plugin-unicorn": "^25.0.1"
+    "eslint-plugin-unicorn": "^27.0.0"
   },
   "publishConfig": {
     "access": "public"

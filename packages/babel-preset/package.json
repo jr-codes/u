@@ -11,22 +11,35 @@
   "author": "JR Shampang",
   "main": "index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "!*.test.js",
+    "!__fixtures__",
+    "!__tests__"
   ],
   "scripts": {
-    "test": "node ../u/bin/u eslint . --fix",
-    "test-ci": "node ../u/bin/u eslint ."
+    "jest": "node ../u/bin/u jest --watch",
+    "test": "node ../u/bin/u test",
+    "test-ci": "node ../u/bin/u test-ci"
   },
   "dependencies": {
     "@babel/core": "^7.12.10",
-    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
-    "babel-plugin-dynamic-import-node": "^2.3.3",
-    "babel-plugin-macros": "^3.0.1",
-    "babel-plugin-transform-react-remove-prop-types": "^0.4.24"
+    "@babel/preset-typescript": "^7.12.7",
+    "babel-plugin-macros": "^3.0.1"
+  },
+  "jest": {
+    "preset": "../jest-preset/jest-preset.js",
+    "collectCoverageFrom": [
+      "index.js"
+    ]
   },
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "@types/react": "^17.0.0",
+    "react": "^17.0.1"
   }
 }
