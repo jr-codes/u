@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.1](https://github.com/jr-codes/u/compare/v0.11.0...v0.11.1) (2021-01-31)
+
+
+### Bug Fixes
+
+* ⬆️ eslint, cli-rewire ([12eb1e3](https://github.com/jr-codes/u/commit/12eb1e36ef66641b9f890c73df17078a1eae4642))
+* 🎨 move no-undef override to eslint.js ([d5adc7c](https://github.com/jr-codes/u/commit/d5adc7ce1b5a04226c014ae28ac54ed231c3f494))
+* 🐛 prioritize babel parsing options ([5be548f](https://github.com/jr-codes/u/commit/5be548f6cdd16b73da4eb3778885c40ee27005c6))
+* 🔧 specify unicorn rules manually ([5767f69](https://github.com/jr-codes/u/commit/5767f69068b2c42b474d29bdac269da6d292e8e5))
+
+
+
+
+
 # [0.11.0](https://github.com/jr-codes/u/compare/v0.10.0...v0.11.0) (2021-01-25)
 
 
