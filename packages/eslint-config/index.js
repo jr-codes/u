@@ -6,7 +6,6 @@ module.exports = {
     node: true,
   },
   extends: [
-    'babel',
     'eslint',
     'import',
     'jest',
@@ -16,6 +15,7 @@ module.exports = {
     'react',
     'react-hooks',
     'unicorn',
+    'babel', // babel's parsing options should take precedence
     'prettier', // prettier must go last to disable styling rules
   ].map((x) => require.resolve(`./rules/${x}`)),
   globals: {
