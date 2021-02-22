@@ -33,7 +33,7 @@
     "@babel/core": "^7.12.10",
     "@babel/eslint-parser": "^7.12.1",
     "@jr.codes/babel-preset": "^0.11.1",
-    "eslint-config-prettier": "^7.2.0"
+    "eslint-config-prettier": "^8.0.0"
   },
   "devDependencies": {
     "eslint": "^7.19.0",
