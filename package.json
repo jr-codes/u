@@ -14,7 +14,7 @@
     "update": "lerna exec -- npx npm-check-updates -u"
   },
   "devDependencies": {
-    "@commitlint/cli": "^11.0.0",
+    "@commitlint/cli": "^12.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "execa": "^5.0.0",
     "husky": "^5.0.9",
