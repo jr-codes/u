@@ -44,7 +44,7 @@
     "@jr.codes/babel-preset": "^0.11.1",
     "@jr.codes/eslint-config": "^0.11.1",
     "@jr.codes/jest-preset": "^0.11.1",
-    "cli-rewire": "^2.0.15",
+    "cli-rewire": "^3.0.0",
     "debug": "^4.3.1",
     "eslint": "^7.21.0",
     "eslint-formatter-pretty": "^4.0.0",
