@@ -6,16 +6,22 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: ['src/**/*.{js,jsx}', 'lib/**/*.js'],
   moduleNameMapper: {
-    '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': require.resolve(
-      './file-stub.js'
-    ),
+    '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
+      require.resolve('./file-stub.js'),
     '\\.(css|less|scss)$': require.resolve('identity-obj-proxy'),
   },
   restoreMocks: true,
   rootDir: process.cwd(),
   setupFilesAfterEnv: [require.resolve('./jest-setup.js')],
   transform: {
-    '^.+\\.[t|j]sx?$': require.resolve('./babel-jest-transform.js'),
+    '^.+\\.[t|j]sx?$': [
+      'babel-jest',
+      {
+        presets: [require.resolve('@jr.codes/babel-preset')],
+        babelrc: false,
+        configFile: false,
+      },
+    ],
   },
   verbose: true,
 }
