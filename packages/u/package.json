@@ -65,7 +65,7 @@
     "npm-run-all": "^4.1.5"
   },
   "engines": {
-    "node": ">=10.3.0"
+    "node": ">=12.22.1"
   },
   "publishConfig": {
     "access": "public"
