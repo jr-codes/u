@@ -45,7 +45,7 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "eslint-plugin-unicorn": "^32.0.1",
+    "eslint-plugin-unicorn": "^33.0.1",
     "jest": "^27.0.3",
     "prettier": "2.3.0",
     "react": "^17.0.2",
@@ -60,7 +60,7 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "eslint-plugin-unicorn": "^32.0.1"
+    "eslint-plugin-unicorn": "^33.0.1"
   },
   "publishConfig": {
     "access": "public"
