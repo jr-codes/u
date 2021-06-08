@@ -39,34 +39,33 @@
     "test-ci": "node bin/u test-ci"
   },
   "dependencies": {
-    "@babel/cli": "^7.13.0",
-    "@babel/core": "^7.13.8",
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
     "@jr.codes/babel-preset": "^0.11.1",
     "@jr.codes/eslint-config": "^0.11.1",
     "@jr.codes/jest-preset": "^0.11.1",
-    "cli-rewire": "^3.0.0",
+    "cli-rewire": "^3.0.4",
     "debug": "^4.3.1",
-    "eslint": "^7.21.0",
+    "eslint": "^7.27.0",
     "eslint-formatter-pretty": "^4.0.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jest": "^24.1.5",
-    "eslint-plugin-json": "^2.1.2",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-json": "^3.0.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-promise": "^4.3.1",
-    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "eslint-plugin-unicorn": "^29.0.0",
-    "jest": "^26.6.3",
-    "prettier": "2.2.1"
+    "eslint-plugin-unicorn": "^32.0.1",
+    "jest": "^27.0.3",
+    "prettier": "2.3.0"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.20",
+    "@types/jest": "^26.0.23",
     "execa": "^5.0.0",
     "npm-run-all": "^4.1.5"
   },
   "engines": {
-    "node": ">=10.3.0"
+    "node": ">=12.22.1"
   },
   "publishConfig": {
     "access": "public"

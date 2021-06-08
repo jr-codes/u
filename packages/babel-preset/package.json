@@ -22,11 +22,11 @@
     "test-ci": "node ../u/bin/u test-ci"
   },
   "dependencies": {
-    "@babel/core": "^7.13.8",
-    "@babel/preset-env": "^7.13.9",
-    "@babel/preset-react": "^7.12.13",
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "@babel/preset-react": "^7.13.13",
     "@babel/preset-typescript": "^7.13.0",
-    "babel-plugin-macros": "^3.0.1"
+    "babel-plugin-macros": "^3.1.0"
   },
   "jest": {
     "preset": "../jest-preset/jest-preset.js",
@@ -38,8 +38,8 @@
     "access": "public"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.20",
-    "@types/react": "^17.0.2",
-    "react": "^17.0.1"
+    "@types/jest": "^26.0.23",
+    "@types/react": "^17.0.8",
+    "react": "^17.0.2"
   }
 }
