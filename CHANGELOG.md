@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.2](https://github.com/jr-codes/u/compare/v0.11.1...v0.11.2) (2021-08-14)
+
+
+### Bug Fixes
+
+* ➖ typescript ([9705291](https://github.com/jr-codes/u/commit/9705291e21240e5e0da06506d52ecd1a909d0efc))
+* ⬆️ babel, eslint ([e3e2f10](https://github.com/jr-codes/u/commit/e3e2f1044e2818ae465347b8dd83ef9f58dec457))
+* ⬆️ babel, eslint, jest, react, prettier ([7ae093e](https://github.com/jr-codes/u/commit/7ae093efe9bf822686cf932aae0f9cb8c7a73124))
+* 👷‍♂️ use Node 15, default to Node 14 ([9d5f45c](https://github.com/jr-codes/u/commit/9d5f45ce672375b1686608808aa123e7b106d9ef))
+* bump @commitlint/cli from 11.0.0 to 12.0.1 ([4d1dcba](https://github.com/jr-codes/u/commit/4d1dcba478378546efea118e879cdfb381bf7c32))
+* bump @commitlint/cli from 12.1.4 to 13.1.0 ([c53c342](https://github.com/jr-codes/u/commit/c53c342aa65922c66406dc844a5db8dd543427b7))
+* bump @commitlint/config-conventional from 11.0.0 to 12.0.1 ([add997f](https://github.com/jr-codes/u/commit/add997ffc16f2307cbf1dccc5a51ced62c8fe336))
+* bump @commitlint/config-conventional from 12.1.4 to 13.1.0 ([6a14ad4](https://github.com/jr-codes/u/commit/6a14ad461609f2e3f61c0b277911321bbb8180e6))
+* bump @types/jest from 26.0.24 to 27.0.1 ([0c169c8](https://github.com/jr-codes/u/commit/0c169c8bbb40e135337c9cb528e5b0012e3ab57e))
+* bump cli-rewire from 2.0.17 to 3.0.0 ([2b8268f](https://github.com/jr-codes/u/commit/2b8268f4e3e6d77134d89cf87e0ddf4495218e42))
+* bump eslint-plugin-unicorn from 28.0.2 to 29.0.0 ([4d85265](https://github.com/jr-codes/u/commit/4d85265cd518feff0abe591c3c1a3f90142ca448))
+* bump eslint-plugin-unicorn from 29.0.0 to 33.0.1 ([18329a9](https://github.com/jr-codes/u/commit/18329a981addfbe6bd75bf10dc12b08400a0bd0c))
+* bump eslint-plugin-unicorn from 33.0.1 to 35.0.0 ([753fc1c](https://github.com/jr-codes/u/commit/753fc1cfa1d1b929b8193798d0c53388e9d292b3))
+* bump husky from 4.3.8 to 5.0.9 ([f925d5f](https://github.com/jr-codes/u/commit/f925d5f63dca1144f9753eedff2edfd0247f7175))
+* bump husky from 5.2.0 to 6.0.0 ([0f78f98](https://github.com/jr-codes/u/commit/0f78f98edbeb3eed6de82165023bbfd460abe0f7))
+* bump husky from 6.0.0 to 7.0.1 ([bb55ffb](https://github.com/jr-codes/u/commit/bb55ffb6593a79fbcb09701d0015dc6bdd77b74d))
+* bump lerna from 3.22.1 to 4.0.0 ([564762c](https://github.com/jr-codes/u/commit/564762c69a5241d94aca88a7770f2ec9e6f25bea))
+* bump prettier from 2.2.1 to 2.3.1 ([d20b3ac](https://github.com/jr-codes/u/commit/d20b3ac47f9933820e6b223694ef4b72d8a1c865))
+* bump prettier from 2.3.1 to 2.3.2 ([bf70840](https://github.com/jr-codes/u/commit/bf70840b66f311dd8b0517423ca1f75abf20a38c))
+
+
+
+
+
 ## [0.11.1](https://github.com/jr-codes/u/compare/v0.11.0...v0.11.1) (2021-01-31)
 
 

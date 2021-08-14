@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.2](https://github.com/jr-codes/u/compare/v0.11.1...v0.11.2) (2021-08-14)
+
+
+### Bug Fixes
+
+* ⬆️ babel, eslint ([e3e2f10](https://github.com/jr-codes/u/commit/e3e2f1044e2818ae465347b8dd83ef9f58dec457))
+* ⬆️ babel, eslint, jest, react, prettier ([7ae093e](https://github.com/jr-codes/u/commit/7ae093efe9bf822686cf932aae0f9cb8c7a73124))
+* bump eslint-plugin-unicorn from 28.0.2 to 29.0.0 ([4d85265](https://github.com/jr-codes/u/commit/4d85265cd518feff0abe591c3c1a3f90142ca448))
+* bump eslint-plugin-unicorn from 29.0.0 to 33.0.1 ([18329a9](https://github.com/jr-codes/u/commit/18329a981addfbe6bd75bf10dc12b08400a0bd0c))
+* bump eslint-plugin-unicorn from 33.0.1 to 35.0.0 ([753fc1c](https://github.com/jr-codes/u/commit/753fc1cfa1d1b929b8193798d0c53388e9d292b3))
+* bump prettier from 2.2.1 to 2.3.1 ([d20b3ac](https://github.com/jr-codes/u/commit/d20b3ac47f9933820e6b223694ef4b72d8a1c865))
+* bump prettier from 2.3.1 to 2.3.2 ([bf70840](https://github.com/jr-codes/u/commit/bf70840b66f311dd8b0517423ca1f75abf20a38c))
+
+
+
+
+
 ## [0.11.1](https://github.com/jr-codes/u/compare/v0.11.0...v0.11.1) (2021-01-31)
 
 

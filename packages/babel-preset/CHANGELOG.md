@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.2](https://github.com/jr-codes/u/compare/v0.11.1...v0.11.2) (2021-08-14)
+
+
+### Bug Fixes
+
+* ⬆️ babel, eslint ([e3e2f10](https://github.com/jr-codes/u/commit/e3e2f1044e2818ae465347b8dd83ef9f58dec457))
+* ⬆️ babel, eslint, jest, react, prettier ([7ae093e](https://github.com/jr-codes/u/commit/7ae093efe9bf822686cf932aae0f9cb8c7a73124))
+* bump @types/jest from 26.0.24 to 27.0.1 ([0c169c8](https://github.com/jr-codes/u/commit/0c169c8bbb40e135337c9cb528e5b0012e3ab57e))
+
+
+
+
+
 ## [0.11.1](https://github.com/jr-codes/u/compare/v0.11.0...v0.11.1) (2021-01-31)
 
 **Note:** Version bump only for package @jr.codes/babel-preset
