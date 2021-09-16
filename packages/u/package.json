@@ -57,7 +57,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-unicorn": "^35.0.0",
     "jest": "^27.0.3",
-    "prettier": "2.4.0"
+    "prettier": "2.4.1"
   },
   "devDependencies": {
     "@types/jest": "^27.0.1",
