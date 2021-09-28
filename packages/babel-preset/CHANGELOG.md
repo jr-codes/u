@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.3](https://github.com/jr-codes/u/compare/v0.11.2...v0.11.3) (2021-09-28)
+
+
+### Bug Fixes
+
+* ⬆️ dependencies ([29b55fb](https://github.com/jr-codes/u/commit/29b55fb68081d20fa5b0f8aff556954b62a82306))
+
+
+
+
+
 ## [0.11.2](https://github.com/jr-codes/u/compare/v0.11.1...v0.11.2) (2021-08-14)
 
 
