@@ -9,8 +9,8 @@
     "postinstall": "lerna bootstrap --no-ci",
     "prerelease": "node release-checks",
     "sort": "lerna exec -- npx sort-package-json",
-    "test": "syncpack list-mismatches -pd && npm run format-check && lerna run test-ci",
-    "test-local": "syncpack list-mismatches -pd && npm run format && lerna run test",
+    "test-ci": "syncpack list-mismatches -pd && npm run format-check && lerna run test-ci",
+    "test": "syncpack list-mismatches -pd && npm run format && lerna run test",
     "update": "lerna exec -- npx npm-check-updates -u"
   },
   "devDependencies": {
