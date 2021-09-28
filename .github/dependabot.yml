@@ -3,6 +3,10 @@ updates:
   - package-ecosystem: npm
     directory: '/'
     schedule:
+      # Check for updates every weekday (Monday—Friday)
       interval: daily
+    # Always increase version requirement to match the new version.
+    versioning-strategy: increase
     commit-message:
+      # Use fix: for conventional commits.
       prefix: fix
