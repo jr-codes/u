@@ -28,7 +28,7 @@
     "identity-obj-proxy": "^3.0.0"
   },
   "devDependencies": {
-    "jest": "^27.2.2"
+    "jest": "^27.2.3"
   },
   "peerDependencies": {
     "jest": ">=27.2.2"
