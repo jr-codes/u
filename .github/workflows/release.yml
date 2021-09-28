@@ -1,30 +1,54 @@
 name: Release
 
-# Workflow must be dispatched manually
-on: [workflow_dispatch]
+on:
+  push:
+    branches: [master]
 
 jobs:
+  # Don't run if the last commit message has "[skip ci]"
+  prepare:
+    runs-on: ubuntu-latest
+    if: "! contains(github.event.head_commit.message, '[skip ci]')"
+    steps:
+      - run: echo "${{ github.event.head_commit.message }}"
+
   # Use Lerna to publish monorepo packages and generate changelogs
   release:
     runs-on: ubuntu-latest
     steps:
+      # Check out repo
       - uses: actions/checkout@v2
         with:
+          # Fetch all commits so Lerna can version properly
           fetch-depth: 0
-      - name: configure git
+
+      # Set name and email for release commit
+      - name: Configure Git
         run: |
-          git config --global user.name 'jr-codes'
-          git config --global user.email 'bot@jr.codes'
-      - uses: actions/setup-node@v1
+          git config user.name 'jr-codes'
+          git config user.email 'bot@jr.codes'
+
+      # Set up Node
+      - uses: actions/setup-node@v2
         with:
-          node-version: 14.x
-          registry-url: https://registry.npmjs.org
+          node-version: '14'
+          registry-url: 'https://registry.npmjs.org'
+
+      # Output which Node version is used
       - run: node --version
+
+      # Authenticate with NPM registry
       - run: npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      # Run whoami to verify authentication was successful
       - run: npm whoami
-      - run: npm it
+
+      # Install and test
+      - run: npm install && npm run test-ci
+
+      # Publish packages to npm, create GitHub release, and commit new tag
       - run: npx lerna publish --force-publish --conventional-commits --create-release github --yes
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
