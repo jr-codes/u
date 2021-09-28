@@ -1,11 +1,18 @@
-name: Release canary
+name: Release 1.0
 
 # Workflow must be dispatched manually
 on: [workflow_dispatch]
 
 jobs:
-  # Use Lerna to publish canary releases of monorepo packages
-  release-canary:
+  # Don't run if the last commit message has "[skip ci]"
+  prepare:
+    runs-on: ubuntu-latest
+    if: "! contains(github.event.head_commit.message, '[skip ci]')"
+    steps:
+      - run: echo "${{ github.event.head_commit.message }}"
+
+  # Use Lerna to publish monorepo packages and generate changelogs
+  release:
     runs-on: ubuntu-latest
     steps:
       # Check out repo
@@ -13,6 +20,12 @@ jobs:
         with:
           # Fetch all commits so Lerna can version properly
           fetch-depth: 0
+
+      # Set name and email for release commit
+      - name: Configure Git
+        run: |
+          git config user.name 'jr-codes'
+          git config user.email 'bot@jr.codes'
 
       # Set up Node
       - uses: actions/setup-node@v2
@@ -34,9 +47,7 @@ jobs:
       # Install and test
       - run: npm install && npm run test-ci
 
-      # Use commit sha to build a preid
-      - name: Generate prerelease ID
-        run: echo "PREID=$(echo $GITHUB_SHA | cut -c 1-3)" >> $GITHUB_ENV
-
-      # Publish canary packages to npm
-      - run: npx lerna publish --force-publish --canary --yes --preid ${{ env.PREID }}
+      # Publish packages to npm, create GitHub release, and commit new tag
+      - run: npx lerna publish 1.0 --force-publish --create-release github --yes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -9,17 +9,17 @@
     "postinstall": "lerna bootstrap --no-ci",
     "prerelease": "node release-checks",
     "sort": "lerna exec -- npx sort-package-json",
-    "test": "syncpack list-mismatches -pd && npm run format-check && lerna run test-ci",
-    "test-local": "syncpack list-mismatches -pd && npm run format && lerna run test",
+    "test-ci": "syncpack list-mismatches -pd && npm run format-check && lerna run test-ci",
+    "test": "syncpack list-mismatches -pd && npm run format && lerna run test",
     "update": "lerna exec -- npx npm-check-updates -u"
   },
   "devDependencies": {
-    "@commitlint/cli": "^13.1.0",
-    "@commitlint/config-conventional": "^13.1.0",
-    "execa": "^5.0.0",
-    "husky": "^7.0.1",
+    "@commitlint/cli": "^13.2.0",
+    "@commitlint/config-conventional": "^13.2.0",
+    "execa": "^5.1.1",
+    "husky": "^7.0.2",
     "lerna": "^4.0.0",
-    "syncpack": "^5.6.10"
+    "syncpack": "^5.8.15"
   },
   "commitlint": {
     "extends": [
