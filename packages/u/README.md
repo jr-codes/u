@@ -40,6 +40,18 @@ You can also run scripts directly. Each script is run with preconfigured default
 | `u jest`     | Runs [jest](https://jestjs.io/en/). Customize with `jest.config.js`.        |
 | `u prettier` | Runs [prettier](https://prettier.io/). Customize with `prettier.config.js`. |
 
+### Eslint in your code editor
+
+You can direct your code editor to use u script eslint rules by extending eslintConfig in your projects package.json
+
+```
+{
+  "eslintConfig": {
+    "extends": "@jr.codes"
+  }
+}
+```
+
 ## 🌱 Inspiration
 
 - [Create React App](https://github.com/facebook/create-react-app)
