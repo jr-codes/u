@@ -1,11 +1,11 @@
 const numberToString = (n: number) => {
-  return n.toString();
-};
-
-function wrapInArray<Type>(input: Type): Type[] {
-  return [input];
+  return n.toString()
 }
 
-const stringArray = wrapInArray("hello generics");
+function wrapInArray<Type>(input: Type): Type[] {
+  return [input]
+}
 
-export { numberToString, wrapInArray, stringArray };
+const stringArray = wrapInArray('hello generics')
+
+export { numberToString, wrapInArray, stringArray }

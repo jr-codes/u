@@ -1,11 +1,11 @@
-const [num] = [1, 2, 3];
+const [num] = [1, 2, 3]
 
 const user = {
   address: {
-    street: "1234",
+    street: '1234',
   },
-};
+}
 
-const street = user?.address?.street;
+const street = user?.address?.street
 
-export { num, user, street };
+export { num, user, street }

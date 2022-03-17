@@ -7,7 +7,7 @@ const { getConfig, wire } = require('cli-rewire')
 
 const resolve = (...paths) => path.join(__dirname, ...paths)
 
-const scripts = ['babel', 'eslint', 'jest', 'prettier'].map((script) =>
+const scripts = ['babel', 'eslint', 'jest', 'prettier', 'swc'].map((script) =>
   resolve('../scripts', script)
 )
 

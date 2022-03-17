@@ -11,6 +11,7 @@ test.each([
   ['eslint --help', 'eslint [options] file.js [file.js] [dir]'],
   ['jest --help', 'Usage: jest'],
   ['prettier --help', 'Usage: prettier [options] [file/dir/glob ...]'],
+  ['swc --help', 'Usage: swc [options] <files ...>'],
 ])('%s', async (command, expected) => {
   const { stdout } = await run(command)
   expect(stdout).toEqual(expect.stringContaining(expected))

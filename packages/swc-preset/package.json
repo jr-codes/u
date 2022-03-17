@@ -15,22 +15,22 @@
     "test": "node ../u/bin/u test",
     "test-ci": "node ../u/bin/u test-ci"
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "index.js"
+    ],
+    "preset": "../jest-preset/jest-preset.js"
+  },
   "dependencies": {
     "@swc/cli": "^0.1.55",
     "@swc/core": "^1.2.156"
-  },
-  "jest": {
-    "preset": "../jest-preset/jest-preset.js",
-    "collectCoverageFrom": [
-      "index.js"
-    ]
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "devDependencies": {
     "@types/jest": "^27.4.1",
     "@types/react": "^17.0.40",
     "react": "^17.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
