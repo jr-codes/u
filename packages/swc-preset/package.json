@@ -1,0 +1,36 @@
+{
+  "name": "swc-preset",
+  "version": "1.0.0",
+  "description": "SWC preset for U",
+  "homepage": "https://github.com/jr-codes/u#readme",
+  "bugs": {
+    "url": "https://github.com/jr-codes/u/issues"
+  },
+  "repository": "jr-codes/u",
+  "license": "MIT",
+  "author": "JR Shampang",
+  "main": "index.js",
+  "scripts": {
+    "jest": "node ../u/bin/u jest --watch",
+    "test": "node ../u/bin/u test",
+    "test-ci": "node ../u/bin/u test-ci"
+  },
+  "dependencies": {
+    "@swc/cli": "^0.1.55",
+    "@swc/core": "^1.2.156"
+  },
+  "jest": {
+    "preset": "../jest-preset/jest-preset.js",
+    "collectCoverageFrom": [
+      "index.js"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@types/react": "^17.0.40",
+    "react": "^17.0.2"
+  }
+}
