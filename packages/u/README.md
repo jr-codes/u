@@ -39,7 +39,7 @@ You can also run scripts directly. Each script is run with preconfigured default
 | `u eslint`   | Runs [eslint](https://eslint.org/). Customize with `.eslintrc.js`.          |
 | `u jest`     | Runs [jest](https://jestjs.io/en/). Customize with `jest.config.js`.        |
 | `u prettier` | Runs [prettier](https://prettier.io/). Customize with `prettier.config.js`. |
-| `u swc`      | Runs [swc](https://swc.rs/). Customize with `.swcrc`.                       |
+| `u swc`      | Runs [swc](https://swc.rs/). Customize with `.swcrc.js`.                       |
 
 ## 🌱 Inspiration
 

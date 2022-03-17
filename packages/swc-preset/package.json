@@ -10,6 +10,12 @@
   "license": "MIT",
   "author": "JR Shampang",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "!*.test.js",
+    "!__fixtures__",
+    "!__tests__"
+  ],
   "scripts": {
     "jest": "node ../u/bin/u jest --watch",
     "test": "node ../u/bin/u test",

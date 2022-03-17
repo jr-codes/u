@@ -1,5 +1,6 @@
-import * as babel from '@babel/core'
+import * as swc from '@swc/core'
 import preset from '.'
+console.log(preset)
 
 test('returns a config function', () => {
   expect(preset).toEqual(expect.any(Function))
@@ -46,8 +47,11 @@ test.each([
   const options = {
     presets: [preset],
   }
+  console.log('===========================================')
+  console.log(options)
+  console.log('===========================================')
 
-  const { code } = await babel.transformFileAsync(filename, options)
+  const { code } = await swc.transform(filename, options)
 
   expect(code).toBeDefined()
 })
