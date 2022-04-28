@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.4](https://github.com/jr-codes/u/compare/v1.0.3...v1.0.4) (2022-04-28)
+
+
+### Bug Fixes
+
+* update eslint-plugin-react requirement from ^7.26.0 to ^7.29.4 ([9743da7](https://github.com/jr-codes/u/commit/9743da783c53aaf562411ea376960f75ca0df2af))
+
+
+
+
+
 ## [1.0.3](https://github.com/jr-codes/u/compare/v1.0.2...v1.0.3) (2022-04-28)
 
 
