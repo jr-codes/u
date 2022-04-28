@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3](https://github.com/jr-codes/u/compare/v1.0.2...v1.0.3) (2022-04-28)
+
+
+### Bug Fixes
+
+* bump jest from 27.5.1 to 28.0.2 ([3145381](https://github.com/jr-codes/u/commit/3145381bac4853598ee9fb23d229578bb2285e13))
+
+
+
+
+
 ## [1.0.2](https://github.com/jr-codes/u/compare/v1.0.1...v1.0.2) (2022-04-20)
 
 **Note:** Version bump only for package root
