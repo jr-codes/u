@@ -1,6 +1,6 @@
 {
   "name": "@jr.codes/jest-preset",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Jest preset for U",
   "homepage": "https://github.com/jr-codes/u#readme",
   "bugs": {
@@ -21,8 +21,8 @@
     "test-ci": "node ../u/bin/u eslint ."
   },
   "dependencies": {
-    "@babel/core": "^7.15.5",
-    "@jr.codes/babel-preset": "^1.0.2",
+    "@babel/core": "^7.17.9",
+    "@jr.codes/babel-preset": "^1.0.3",
     "@testing-library/jest-dom": "^5.14.1",
     "babel-jest": "^27.2.2",
     "identity-obj-proxy": "^3.0.0"

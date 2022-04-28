@@ -1,6 +1,6 @@
 {
   "name": "@jr.codes/babel-preset",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Babel preset for U",
   "homepage": "https://github.com/jr-codes/u#readme",
   "bugs": {
@@ -22,7 +22,7 @@
     "test-ci": "node ../u/bin/u test-ci"
   },
   "dependencies": {
-    "@babel/core": "^7.15.5",
+    "@babel/core": "^7.17.9",
     "@babel/preset-env": "^7.15.6",
     "@babel/preset-react": "^7.14.5",
     "@babel/preset-typescript": "^7.15.0",

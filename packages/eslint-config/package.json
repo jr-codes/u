@@ -1,6 +1,6 @@
 {
   "name": "@jr.codes/eslint-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ESLint config for U",
   "homepage": "https://github.com/jr-codes/u#readme",
   "bugs": {
@@ -30,9 +30,9 @@
     ]
   },
   "dependencies": {
-    "@babel/core": "^7.15.5",
+    "@babel/core": "^7.17.9",
     "@babel/eslint-parser": "^7.15.7",
-    "@jr.codes/babel-preset": "^1.0.2",
+    "@jr.codes/babel-preset": "^1.0.3",
     "eslint-config-prettier": "^8.3.0"
   },
   "devDependencies": {
@@ -43,7 +43,7 @@
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
-    "eslint-plugin-react": "^7.26.0",
+    "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-unicorn": "^36.0.0",
     "jest": "^28.0.2",
@@ -58,7 +58,7 @@
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
-    "eslint-plugin-react": "^7.26.0",
+    "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-unicorn": "^36.0.0"
   },
