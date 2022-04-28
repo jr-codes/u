@@ -1,6 +1,6 @@
 {
   "name": "@jr.codes/babel-preset",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Babel preset for U",
   "homepage": "https://github.com/jr-codes/u#readme",
   "bugs": {
@@ -40,6 +40,6 @@
   "devDependencies": {
     "@types/jest": "^27.0.2",
     "@types/react": "^17.0.24",
-    "react": "^17.0.2"
+    "react": "^18.1.0"
   }
 }
