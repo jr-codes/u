@@ -17,7 +17,7 @@
     "@commitlint/cli": "^13.2.0",
     "@commitlint/config-conventional": "^13.2.0",
     "execa": "^5.1.1",
-    "husky": "^7.0.2",
+    "husky": "^8.0.1",
     "lerna": "^4.0.0",
     "syncpack": "^5.8.15"
   },
