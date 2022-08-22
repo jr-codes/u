@@ -21,7 +21,7 @@
     "test-ci": "node ../u/bin/u eslint ."
   },
   "dependencies": {
-    "@babel/core": "^7.15.5",
+    "@babel/core": "^7.18.13",
     "@jr.codes/babel-preset": "^1.0.4",
     "@testing-library/jest-dom": "^5.14.1",
     "babel-jest": "^27.2.2",
