@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@babel/cli": "^7.15.7",
-    "@babel/core": "^7.15.5",
+    "@babel/core": "^7.19.1",
     "@jr.codes/babel-preset": "^1.0.4",
     "@jr.codes/eslint-config": "^1.0.4",
     "@jr.codes/jest-preset": "^1.0.4",
